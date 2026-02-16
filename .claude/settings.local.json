@@ -5,7 +5,10 @@
       "Bash(gh run:*)",
       "WebFetch(domain:github.com)",
       "Bash(git fetch:*)",
-      "WebFetch(domain:roman-savitskyi.github.io)"
+      "WebFetch(domain:roman-savitskyi.github.io)",
+      "Bash(brew install:*)",
+      "Bash(pdftoppm:*)",
+      "Bash(pdftotext:*)"
     ]
   }
 }
