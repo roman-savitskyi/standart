@@ -1,0 +1,690 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>GDPR, CCPA, Privacy and Policy, EULA</title>
+
+	<link rel="stylesheet" href="reveal.css">
+	<link rel="stylesheet" href="theme/ztu.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/high-contrast.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="footer-ztu-logo"></div>
+		<div class="footer-conference-logo"></div>
+		<div class="footer-beerjs-logo"></div>
+		<div class="slides">
+			<!-- Title Slide -->
+			<section>
+				<h1 class="ztu-blue">СТАНДАРТИЗАЦІЯ ТА ДОКУМЕНТАЦІЯ ПЗ</h1>
+				<p class="ztu-orange">GDPR, CCPA, Privacy and Policy, EULA</p>
+			</section>
+
+			<!-- РОЗДІЛ 1: PRIVACY AND POLICY -->
+			<section>
+				<h2 class="ztu-blue">PRIVACY AND POLICY</h2>
+				<p class="fragment" style="font-size: 0.9em;">Приватність в ІТ визначається як право користувачів контролювати
+					доступ, використання та розголошення своїх особистих даних. Це означає, що користувачі мають право знати, як їхні дані збираються,
+					зберігаються та використовуються.</p>
+			</section>
+
+			<!-- ===== КРОК 2: ТЕОРІЯ — РЕГУЛЮВАННЯ ===== -->
+
+			<!-- 2.1: ОСНОВНІ ПРИНЦИПИ -->
+			<section>
+				<h2 class="ztu-blue">ОСНОВНІ ПРИНЦИПИ PRIVACY AND POLICY</h2>
+				<ul class="ztu-list">
+					<li class="fragment">Збір та зберігання даних</li>
+					<li class="fragment">Доступ та контроль</li>
+					<li class="fragment">Компанії повинні чітко комунікувати свою політику захисту особистих даних та умови використання</li>
+					<li class="fragment">Дані користувачів повинні бути захищені від несанкціонованого доступу, зміни та видалення</li>
+				</ul>
+			</section>
+
+			<!-- 2.2: ЯК ІМПЛЕМЕНТУВАТИ -->
+			<section>
+				<h2 class="ztu-blue">ЯК ІМПЛЕМЕНТУВАТИ ПРИНЦИПИ?</h2>
+				<ul class="ztu-list">
+					<li class="fragment"><span class="ztu-orange">GDPR</span> — Загальний регламент про захист персональних даних</li>
+					<li class="fragment"><span class="ztu-orange">CCPA</span> — Каліфорнійський закон про конфіденційність споживачів</li>
+					<li class="fragment"><span class="ztu-orange">Безпека даних</span> — захист персональних даних від несанкціонованого доступу, витоку та крадіжки</li>
+					<li class="fragment"><span class="ztu-orange">Політики конфіденційності</span> — узгоджені документи, що визначають, як збираються, зберігаються, використовуються та передаються персональні дані</li>
+				</ul>
+			</section>
+
+			<!-- 2.3: GDPR -->
+			<section>
+				<h1 class="ztu-blue">GDPR</h1>
+				<p class="ztu-orange">General Data Protection Regulation</p>
+				<p class="fragment ztu-green" style="margin-top: 20px;">https://gdpr-text.com/uk/</p>
+			</section>
+
+			<section>
+				<h2 class="ztu-blue">GDPR — ЩО ЦЕ?</h2>
+				<p style="font-size: 0.8em;">Загальний регламент про захист даних (Regulation (EU) 2016/679) — регламент
+					в межах законодавства ЄС щодо захисту персональних даних усіх осіб у межах ЄС та ЄЕЗ.</p>
+				<p class="fragment" style="font-size: 0.8em; margin-top: 15px;">Також стосується експорту персональних даних за межі ЄС.
+					GDPR покликаний надати громадянам та резидентам ЄС контроль за їхніми персональними даними
+					та спростити регуляторне середовище для міжнародного бізнесу шляхом уніфікації регулювання.</p>
+			</section>
+
+			<!-- 2.4: ПЕРСОНАЛЬНІ ДАНІ -->
+			<section>
+				<h2 class="ztu-blue">ПЕРСОНАЛЬНІ ДАНІ</h2>
+				<p class="ztu-orange">Будь-яка інформація, що стосується фізичної особи, яку ідентифіковано або можна ідентифікувати</p>
+				<ul class="ztu-list" style="margin-top: 20px;">
+					<li class="fragment">Паспортні дані</li>
+					<li class="fragment">Адреса</li>
+					<li class="fragment">Email</li>
+					<li class="fragment">Телефон</li>
+					<li class="fragment">IP адреси</li>
+					<li class="fragment">Нікнейми</li>
+				</ul>
+			</section>
+
+			<!-- 2.5: КЛЮЧОВІ РОЛІ GDPR -->
+			<section>
+				<h2 class="ztu-blue">КЛЮЧОВІ РОЛІ В GDPR</h2>
+				<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px; font-size: 0.75em;">
+					<div class="fragment" style="background: rgba(37, 99, 235, 0.1); padding: 15px; border-radius: 8px;">
+						<h3 class="ztu-orange" style="font-size: 1.1em;">Data Controller</h3>
+						<p>Визначає <strong>цілі та способи</strong> обробки даних. Контролює, що збирається і для чого.</p>
+					</div>
+					<div class="fragment" style="background: rgba(37, 99, 235, 0.1); padding: 15px; border-radius: 8px;">
+						<h3 class="ztu-orange" style="font-size: 1.1em;">Data Processor</h3>
+						<p>Обробляє дані <strong>від імені контролера</strong>. Дотримується інструкцій, забезпечує безпеку.</p>
+					</div>
+					<div class="fragment" style="background: rgba(37, 99, 235, 0.1); padding: 15px; border-radius: 8px;">
+						<h3 class="ztu-orange" style="font-size: 1.1em;">Data Subject</h3>
+						<p>Людина, якої <strong>стосуються</strong> персональні дані. Має права згідно GDPR.</p>
+					</div>
+					<div class="fragment" style="background: rgba(37, 99, 235, 0.1); padding: 15px; border-radius: 8px;">
+						<h3 class="ztu-orange" style="font-size: 1.1em;">Data Protection</h3>
+						<p>Принципи, процеси та технічні заходи для <strong>безпеки та цілісності</strong> даних.</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- 2.6: ПРАВА СУБ'ЄКТА -->
+			<section>
+				<h2 class="ztu-blue">ПРАВА СУБ'ЄКТА ДАНИХ</h2>
+				<ul class="ztu-list">
+					<li class="fragment">Право на <span class="ztu-orange">доступ</span> до даних</li>
+					<li class="fragment">Право на <span class="ztu-orange">виправлення</span> даних</li>
+					<li class="fragment">Право <span class="ztu-orange">"бути забутим"</span> (erasure)</li>
+					<li class="fragment">Право на <span class="ztu-orange">обмеження</span> опрацювання</li>
+					<li class="fragment">Право на <span class="ztu-orange">мобільність</span> (portability)</li>
+					<li class="fragment">Право на <span class="ztu-orange">заперечення</span></li>
+					<li class="fragment">Право на заборону <span class="ztu-orange">автоматичного профайлингу</span></li>
+				</ul>
+			</section>
+
+			<!-- 2.7: ARTICLE 6 — LEGAL BASIS (НОВИЙ) -->
+			<section>
+				<h2 class="ztu-blue">СТАТТЯ 6 — ЗАКОННІ ПІДСТАВИ ДЛЯ ОБРОБКИ</h2>
+				<p class="ztu-orange" style="font-size: 0.8em;">Обробка персональних даних є законною лише за наявності однієї з підстав:</p>
+				<ul class="ztu-list" style="margin-top: 15px; font-size: 0.85em;">
+					<li class="fragment"><span class="ztu-orange">Згода</span> — суб'єкт дав явну згоду на обробку</li>
+					<li class="fragment"><span class="ztu-orange">Контракт</span> — обробка необхідна для виконання договору</li>
+					<li class="fragment"><span class="ztu-orange">Юридичне зобов'язання</span> — вимога закону</li>
+					<li class="fragment"><span class="ztu-orange">Життєво важливі інтереси</span> — захист життя особи</li>
+					<li class="fragment"><span class="ztu-orange">Публічне завдання</span> — виконання завдань в суспільних інтересах</li>
+					<li class="fragment"><span class="ztu-orange">Законні інтереси</span> — легітимні інтереси контролера (якщо не переважають права суб'єкта)</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2 class="ztu-blue">СТАТТЯ 6 — ПРИКЛАДИ ДЛЯ РОЗРОБНИКА</h2>
+				<ul class="ztu-list" style="font-size: 0.8em;">
+					<li><span class="ztu-orange">Згода</span> — користувач натискає "Підписатись на розсилку", checkbox НЕ може бути pre-checked</li>
+					<li style="margin-top: 10px;"><span class="ztu-orange">Контракт</span> — обробка email для створення акаунту, без акаунту сервіс не працює</li>
+					<li style="margin-top: 10px;"><span class="ztu-orange">Юридичне зобов'язання</span> — зберігання фінансових транзакцій 7 років (вимога податкового законодавства)</li>
+					<li style="margin-top: 10px;"><span class="ztu-orange">Законні інтереси</span> — fraud detection, аналітика безпеки, баланс між бізнесом і правами користувача</li>
+				</ul>
+			</section>
+
+			<!-- 2.8: CCPA (НОВИЙ) -->
+			<section>
+				<h1 class="ztu-blue">CCPA</h1>
+				<p class="ztu-orange">California Consumer Privacy Act</p>
+			</section>
+
+			<section>
+				<h2 class="ztu-blue">CCPA — ЩО ЦЕ?</h2>
+				<p style="font-size: 0.8em;">Каліфорнійський закон про конфіденційність споживачів (2020) — один з найсуворіших
+					законів про захист даних у США.</p>
+				<p class="ztu-orange" style="font-size: 0.8em; margin-top: 15px;">Поширюється на бізнеси, що відповідають хоча б одному критерію:</p>
+				<ul class="ztu-list" style="margin-top: 10px; font-size: 0.8em;">
+					<li>Річний дохід > <span class="ztu-orange">$25 млн</span></li>
+					<li>Обробка даних > <span class="ztu-orange">50 000</span> споживачів/пристроїв</li>
+					<li>Більше <span class="ztu-orange">50%</span> доходу від продажу персональних даних</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2 class="ztu-blue">CCPA — ПРАВА СПОЖИВАЧІВ</h2>
+				<ul class="ztu-list">
+					<li class="fragment">Право <span class="ztu-orange">знати</span>, які дані збираються і як використовуються</li>
+					<li class="fragment">Право на <span class="ztu-orange">видалення</span> персональних даних</li>
+					<li class="fragment">Право <span class="ztu-orange">відмовитись</span> від продажу даних (Opt-Out)</li>
+					<li class="fragment">Право на <span class="ztu-orange">недискримінацію</span> за використання своїх прав</li>
+				</ul>
+				<p class="fragment ztu-red" style="margin-top: 20px; font-size: 0.85em;">Штрафи: $2,500 за ненавмисне / $7,500 за навмисне порушення (per violation)</p>
+			</section>
+
+			<!-- 2.9: GDPR vs CCPA (НОВИЙ) -->
+			<section>
+				<h2 class="ztu-blue">GDPR vs CCPA</h2>
+				<table style="font-size: 0.5em; width: 100%;">
+					<thead>
+						<tr>
+							<th></th>
+							<th class="ztu-blue">GDPR</th>
+							<th class="ztu-orange">CCPA</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Територія</td>
+							<td>ЄС / ЄЕЗ</td>
+							<td>Каліфорнія, США</td>
+						</tr>
+						<tr>
+							<td>Модель згоди</td>
+							<td class="ztu-green">Opt-In (за замовчуванням заборонено)</td>
+							<td class="ztu-orange">Opt-Out (за замовчуванням дозволено)</td>
+						</tr>
+						<tr>
+							<td>Максимальний штраф</td>
+							<td>4% обороту або 20М EUR</td>
+							<td>$7,500 per violation</td>
+						</tr>
+						<tr>
+							<td>Право видалення</td>
+							<td class="ztu-green">Так</td>
+							<td class="ztu-green">Так</td>
+						</tr>
+						<tr>
+							<td>DPO (Data Protection Officer)</td>
+							<td class="ztu-green">Обов'язковий</td>
+							<td class="ztu-red">Ні</td>
+						</tr>
+						<tr>
+							<td>Вік дітей</td>
+							<td>16 років (або 13-16 за країною)</td>
+							<td>16 років</td>
+						</tr>
+						<tr>
+							<td>Продаж даних</td>
+							<td>Потрібна явна згода</td>
+							<td>Кнопка "Do Not Sell My Info"</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<!-- 2.10: EULA -->
+			<section>
+				<h2 class="ztu-blue">EULA</h2>
+				<p class="ztu-orange">End User License Agreement</p>
+				<ul class="ztu-list" style="margin-top: 20px;">
+					<li class="fragment">Ліцензійна угода з кінцевим користувачем</li>
+					<li class="fragment">Умови використання та ліцензійні права</li>
+					<li class="fragment">Власність на програмне забезпечення</li>
+					<li class="fragment">Відповідальність та обмеження відповідальності</li>
+					<li class="fragment">Умови відмови від гарантій</li>
+					<li class="fragment">Умови ліцензування</li>
+				</ul>
+				<p class="fragment ztu-green" style="margin-top: 15px; font-size: 0.7em;">https://ain.ua/2023/03/22/eula-yakoyu-vona-maye-buty/</p>
+			</section>
+
+			<!-- 2.11: TERMS AND CONDITIONS -->
+			<section>
+				<h2 class="ztu-blue">TERMS AND CONDITIONS</h2>
+				<p class="fragment" style="font-size: 0.85em;">Визначають рамки взаємодії між користувачами
+					та постачальниками послуг, надаючи правову ясність та захист для обох сторін</p>
+				<ul class="ztu-list" style="margin-top: 20px;">
+					<li class="fragment">Визначення термінів</li>
+					<li class="fragment">Права та обов'язки</li>
+					<li class="fragment">Користувацька поведінка</li>
+					<li class="fragment">Платежі та вартість</li>
+					<li class="fragment">Відповідальність та відшкодування</li>
+					<li class="fragment">Політика конфіденційності</li>
+					<li class="fragment">Контактна інформація</li>
+				</ul>
+			</section>
+
+			<!-- ===== КРОК 3: РОЛЬ ДЕВЕЛОПЕРА + DPA ===== -->
+
+			<!-- 3.1: РОЛЬ ДЕВЕЛОПЕРА -->
+			<section>
+				<h2 class="ztu-blue">ЯКА РОЛЬ ДЕВЕЛОПЕРА В ЛАНЦЮЖКУ GDPR?</h2>
+				<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin-top: 25px; font-size: 0.8em;">
+					<div class="fragment" style="background: rgba(22, 163, 74, 0.1); padding: 20px; border-radius: 8px;">
+						<h3 class="ztu-green" style="font-size: 1em;">Трудовий контракт</h3>
+						<ul class="ztu-list" style="font-size: 0.85em;">
+							<li>Без DPA, NDA та субконтрактів</li>
+							<li>Працюють від імені компанії</li>
+							<li>Компанія несе відповідальність</li>
+						</ul>
+					</div>
+					<div class="fragment" style="background: rgba(234, 88, 12, 0.1); padding: 20px; border-radius: 8px;">
+						<h3 class="ztu-orange" style="font-size: 1em;">ФОП (підрядник)</h3>
+						<ul class="ztu-list" style="font-size: 0.85em;">
+							<li>Додатковий контракт + <span class="ztu-orange">DPA</span></li>
+							<li>Може діяти як субконтракт від свого імені</li>
+							<li>Особиста відповідальність за дані</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<!-- 3.2: DPA -->
+			<section>
+				<h2 class="ztu-blue">DPA — DATA PROCESSING AGREEMENT</h2>
+				<p style="font-size: 0.8em;">Угода між <span class="ztu-orange">контролером</span> та <span class="ztu-orange">оператором</span> про обробку персональних даних</p>
+				<p class="fragment" style="font-size: 0.75em; margin-top: 20px;">Є компанія, що займається роздрібною торгівлею та законно збирає
+					інформацію про клієнтів. Вона — <span class="ztu-orange">контролер</span>.</p>
+				<p class="fragment" style="font-size: 0.75em; margin-top: 10px;">Компанія залучає спеціаліста для email-розсилки, якому передає персональні дані.
+					Він — <span class="ztu-orange">оператор</span>.</p>
+				<p class="fragment" style="font-size: 0.75em; margin-top: 10px;">Саме ці відносини оформлюються у вигляді <span class="ztu-orange">DPA</span>.</p>
+				<p class="fragment ztu-green" style="margin-top: 15px; font-size: 0.6em;">https://legalitgroup.com/data-processing-agreement-uzgodzhennya-tamenedzhment/</p>
+			</section>
+
+			<!-- 3.3: DPA ДЛЯ РОЗРОБНИКА -->
+			<section>
+				<h2 class="ztu-blue">DPA — КОЛИ ПОТРІБЕН РОЗРОБНИКУ?</h2>
+				<ul class="ztu-list" style="font-size: 0.85em;">
+					<li>Ви <span class="ztu-orange">ФОП</span> і працюєте з даними клієнтів замовника</li>
+					<li>Ваш сервіс <span class="ztu-orange">зберігає/обробляє</span> персональні дані від імені іншої компанії</li>
+					<li>Ви інтегруєте <span class="ztu-orange">third-party сервіси</span> (аналітика, CRM, email-провайдер)</li>
+					<li>Ви передаєте дані <span class="ztu-orange">субпідрядникам</span></li>
+				</ul>
+				<p class="ztu-red" style="margin-top: 20px; font-size: 0.8em;">Без DPA — обробка даних є незаконною за GDPR</p>
+			</section>
+
+			<!-- ===== КРОК 4: ТЕХНІЧНА ІМПЛЕМЕНТАЦІЯ ===== -->
+
+			<!-- 4.1: TITLE -->
+			<section>
+				<h1 class="ztu-blue">ТЕХНІЧНА ІМПЛЕМЕНТАЦІЯ</h1>
+				<p class="ztu-orange">GDPR очима розробника</p>
+			</section>
+
+			<!-- 4.2: PRIVACY BY DESIGN / DEFAULT -->
+			<section>
+				<h2 class="ztu-blue">PRIVACY BY DESIGN / BY DEFAULT</h2>
+				<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin-top: 20px; font-size: 0.75em;">
+					<div class="fragment" style="background: rgba(37, 99, 235, 0.1); padding: 15px; border-radius: 8px;">
+						<h3 class="ztu-orange" style="font-size: 1em;">Privacy by Design</h3>
+						<p>Захист даних закладається <strong>на етапі проектування</strong></p>
+					</div>
+					<div class="fragment" style="background: rgba(37, 99, 235, 0.1); padding: 15px; border-radius: 8px;">
+						<h3 class="ztu-orange" style="font-size: 1em;">Privacy by Default</h3>
+						<p>За замовчуванням обробляються <strong>лише необхідні</strong> дані</p>
+					</div>
+				</div>
+				<ul class="ztu-list" style="margin-top: 20px; font-size: 0.8em;">
+					<li class="fragment">Мінімізація обробки</li>
+					<li class="fragment">Псевдонімізація даних</li>
+					<li class="fragment">Обмеження періоду зберігання</li>
+					<li class="fragment">Вдосконалення безпеки</li>
+				</ul>
+			</section>
+
+			<!-- 4.3: АРХІТЕКТУРНІ ПАТТЕРНИ -->
+			<section>
+				<h2 class="ztu-blue">АРХІТЕКТУРНІ ПАТТЕРНИ PRIVACY BY DESIGN</h2>
+				<ul class="ztu-list" style="font-size: 0.85em;">
+					<li class="fragment"><span class="ztu-orange">Data Minimization</span> — збирай тільки ті поля, які реально потрібні для функціоналу</li>
+					<li class="fragment"><span class="ztu-orange">Encryption at Rest</span> — шифрування даних у БД (AES-256)</li>
+					<li class="fragment"><span class="ztu-orange">Encryption in Transit</span> — TLS/HTTPS для всіх з'єднань</li>
+					<li class="fragment"><span class="ztu-orange">Audit Trail</span> — логування хто, коли і що робив з даними</li>
+					<li class="fragment"><span class="ztu-orange">Access Control</span> — RBAC/ABAC для доступу до персональних даних</li>
+					<li class="fragment"><span class="ztu-orange">Data Retention</span> — автоматичне видалення після закінчення терміну</li>
+				</ul>
+			</section>
+
+			<!-- 4.4: COOKIE CONSENT -->
+			<section>
+				<h2 class="ztu-blue">COOKIE CONSENT</h2>
+				<p class="ztu-orange" style="font-size: 0.85em;">Перше, з чим стикається веброзробник</p>
+				<ul class="ztu-list" style="margin-top: 15px; font-size: 0.8em;">
+					<li>Банер має з'явитись <span class="ztu-orange">до</span> завантаження будь-яких трекерів</li>
+					<li>Необхідні cookies (сесія, CSRF) — <span class="ztu-green">без згоди</span></li>
+					<li>Аналітика (Google Analytics) — <span class="ztu-orange">потрібна згода</span></li>
+					<li>Маркетинг (Facebook Pixel) — <span class="ztu-red">потрібна явна згода</span></li>
+					<li>Кнопка "Відхилити все" має бути <span class="ztu-orange">такою ж помітною</span>, як "Прийняти"</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2 class="ztu-blue">COOKIE CONSENT — ІМПЛЕМЕНТАЦІЯ</h2>
+				<pre><code class="javascript" data-line-numbers>// Категорії cookies
+const COOKIE_CATEGORIES = {
+  necessary: true,   // завжди активні
+  analytics: false,   // за замовчуванням OFF
+  marketing: false    // за замовчуванням OFF
+};
+
+// Завантажити скрипти ТІЛЬКИ після згоди
+if (consent.analytics) {
+  loadScript('google-analytics.js');
+}
+if (consent.marketing) {
+  loadScript('facebook-pixel.js');
+}</code></pre>
+				<p class="ztu-orange" style="margin-top: 15px; font-size: 0.7em;">Популярні рішення: CookieBot, OneTrust, cookie-consent (open source)</p>
+			</section>
+
+			<!-- 4.5: RIGHT TO BE FORGOTTEN -->
+			<section>
+				<h2 class="ztu-blue">RIGHT TO BE FORGOTTEN</h2>
+				<p class="ztu-orange" style="font-size: 0.85em;">Стаття 17 — Право на видалення</p>
+				<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin-top: 20px; font-size: 0.7em;">
+					<div class="fragment" style="background: rgba(234, 88, 12, 0.1); padding: 15px; border-radius: 8px;">
+						<h3 class="ztu-orange" style="font-size: 1.1em;">Soft Delete</h3>
+						<ul class="ztu-list">
+							<li>Поле <code>deleted_at</code> в таблиці</li>
+							<li>Дані залишаються в БД</li>
+							<li>Можна відновити</li>
+							<li class="ztu-red">Не відповідає GDPR!</li>
+						</ul>
+					</div>
+					<div class="fragment" style="background: rgba(22, 163, 74, 0.1); padding: 15px; border-radius: 8px;">
+						<h3 class="ztu-green" style="font-size: 1.1em;">Hard Delete + Anonymize</h3>
+						<ul class="ztu-list">
+							<li>Видалення PII з усіх таблиць</li>
+							<li>Анонімізація пов'язаних записів</li>
+							<li>Каскадне видалення з бекапів</li>
+							<li class="ztu-green">GDPR-compliant</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<h2 class="ztu-blue">ERASURE — ПРИКЛАД API</h2>
+				<pre><code class="javascript" data-line-numbers="|1-2|4-7|9-11">// DELETE /api/users/:id/data
+async function eraseUserData(userId) {
+  // 1. Видалити персональні дані
+  await db.users.update(userId, {
+    email: 'deleted@anonymous.com',
+    name: 'Anonymous User',
+    phone: null, address: null
+  });
+  // 2. Видалити з third-party сервісів
+  await analytics.deleteUser(userId);
+  await emailService.removeSubscriber(userId);
+  // 3. Залогувати факт видалення (без PII)
+  await auditLog.record('USER_DATA_ERASED', userId);
+}</code></pre>
+			</section>
+
+			<!-- 4.6: RIGHT TO DATA PORTABILITY -->
+			<section>
+				<h2 class="ztu-blue">RIGHT TO DATA PORTABILITY</h2>
+				<p class="ztu-orange" style="font-size: 0.85em;">Стаття 20 — Право на перенесення даних</p>
+				<ul class="ztu-list" style="margin-top: 15px; font-size: 0.8em;">
+					<li>Користувач має право отримати <span class="ztu-orange">свої дані</span> у машиночитабельному форматі</li>
+					<li>Формати: <span class="ztu-orange">JSON</span>, CSV, XML</li>
+					<li>Реалізація: endpoint <code>GET /api/users/:id/export</code></li>
+					<li>Включає: профіль, замовлення, коментарі, завантажені файли</li>
+				</ul>
+				<pre><code class="json">{
+  "user": { "name": "...", "email": "..." },
+  "orders": [...],
+  "comments": [...],
+  "exported_at": "2025-01-15T10:30:00Z"
+}</code></pre>
+			</section>
+
+			<!-- 4.7: CONSENT MANAGEMENT -->
+			<section>
+				<h2 class="ztu-blue">CONSENT MANAGEMENT</h2>
+				<p class="ztu-orange" style="font-size: 0.85em;">Як зберігати згоди в базі даних</p>
+				<pre><code class="sql" data-line-numbers>CREATE TABLE user_consents (
+  id          SERIAL PRIMARY KEY,
+  user_id     INT NOT NULL,
+  purpose     VARCHAR(50),  -- 'marketing', 'analytics'
+  granted     BOOLEAN DEFAULT false,
+  granted_at  TIMESTAMP,
+  revoked_at  TIMESTAMP,
+  ip_address  INET,
+  version     INT DEFAULT 1  -- версія Privacy Policy
+);
+-- Кожна зміна згоди = новий запис (audit trail)
+-- НІКОЛИ не UPDATE, тільки INSERT
+-- Зберігати версію документа, на який дали згоду</code></pre>
+			</section>
+
+			<!-- 4.8: DATA BREACH NOTIFICATION -->
+			<section>
+				<h2 class="ztu-blue">DATA BREACH NOTIFICATION</h2>
+				<p class="ztu-red" style="font-size: 1.2em;">72 години</p>
+				<p style="font-size: 0.85em; margin-top: 15px;">Стаття 33 — контролер повинен повідомити наглядовий орган
+					протягом <span class="ztu-red">72 годин</span> після виявлення порушення</p>
+				<ul class="ztu-list" style="margin-top: 15px; font-size: 0.8em;">
+					<li><span class="ztu-orange">Detect</span> — моніторинг, alerting (SIEM, IDS)</li>
+					<li><span class="ztu-orange">Contain</span> — ізоляція, блокування доступу</li>
+					<li><span class="ztu-orange">Assess</span> — які дані скомпрометовані, скільки суб'єктів</li>
+					<li><span class="ztu-orange">Notify</span> — наглядовий орган (72 год) + суб'єкти (без зволікань)</li>
+					<li><span class="ztu-orange">Document</span> — зафіксувати всі деталі інциденту</li>
+				</ul>
+			</section>
+
+			<!-- 4.9: МІЖНАРОДНА ПЕРЕДАЧА ДАНИХ -->
+			<section>
+				<h2 class="ztu-blue">МІЖНАРОДНА ПЕРЕДАЧА ДАНИХ</h2>
+				<p class="ztu-orange" style="font-size: 0.85em;">Актуально для кожного, хто працює з хмарними сервісами</p>
+				<ul class="ztu-list" style="margin-top: 15px; font-size: 0.8em;">
+					<li class="fragment"><span class="ztu-orange">Вибір регіону</span> — AWS eu-west-1, GCP europe-west1, Azure West Europe</li>
+					<li class="fragment"><span class="ztu-orange">Adequacy Decision</span> — список країн, визнаних ЄС "безпечними"</li>
+					<li class="fragment"><span class="ztu-orange">SCC</span> (Standard Contractual Clauses) — для передачі в "небезпечні" країни</li>
+					<li class="fragment"><span class="ztu-orange">Data Residency</span> — дані фізично зберігаються в ЄС</li>
+				</ul>
+				<p class="fragment ztu-red" style="margin-top: 15px; font-size: 0.75em;">Schrems II (2020): EU-US Privacy Shield визнано недійсним. Використовуйте SCC або EU-US Data Privacy Framework (2023)</p>
+			</section>
+
+			<!-- 4.10: DEVELOPER CHECKLIST -->
+			<section>
+				<h2 class="ztu-blue">GDPR DEVELOPER CHECKLIST</h2>
+				<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px; font-size: 0.65em;">
+					<div style="background: rgba(234, 88, 12, 0.1); padding: 15px; border-radius: 8px;">
+						<h3 class="ztu-orange" style="font-size: 1.1em; margin-bottom: 10px;">UI & Consent</h3>
+						<ul class="ztu-list">
+							<li>Cookie banner <strong>до</strong> завантаження трекерів</li>
+							<li>Checkboxes згоди <strong>не pre-checked</strong></li>
+							<li>Таблиця <strong>user_consents</strong> з версіонуванням</li>
+						</ul>
+					</div>
+					<div style="background: rgba(37, 99, 235, 0.1); padding: 15px; border-radius: 8px;">
+						<h3 class="ztu-blue" style="font-size: 1.1em; margin-bottom: 10px;">API Endpoints</h3>
+						<ul class="ztu-list">
+							<li>Endpoint <strong>експорту даних</strong> (JSON/CSV)</li>
+							<li>Endpoint <strong>видалення даних</strong> (hard delete / anonymize)</li>
+						</ul>
+					</div>
+					<div style="background: rgba(22, 163, 74, 0.1); padding: 15px; border-radius: 8px;">
+						<h3 class="ztu-green" style="font-size: 1.1em; margin-bottom: 10px;">Безпека</h3>
+						<ul class="ztu-list">
+							<li><strong>HTTPS</strong> скрізь, шифрування PII в БД</li>
+							<li><strong>Audit log</strong> доступу до персональних даних</li>
+							<li><strong>Data retention</strong> — автовидалення старих даних</li>
+						</ul>
+					</div>
+					<div style="background: rgba(220, 38, 38, 0.1); padding: 15px; border-radius: 8px;">
+						<h3 class="ztu-red" style="font-size: 1.1em; margin-bottom: 10px;">Інфраструктура</h3>
+						<ul class="ztu-list">
+							<li>Сервери / хмара — <strong>регіон ЄС</strong></li>
+							<li><strong>Incident response plan</strong> — хто, що, коли при breach</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<!-- ===== КРОК 5: КЕЙСИ ТА ШТРАФИ ===== -->
+
+			<!-- 5.1: TITLE -->
+			<section>
+				<h1 class="ztu-blue">КЕЙСИ ТА ШТРАФИ</h1>
+				<p class="ztu-orange">Чому це не просто теорія</p>
+				<p class="ztu-green" style="margin-top: 20px; font-size: 0.7em;">https://ain.ua/2022/06/03/4-roky-diyi-gdpr-yak-vchytysya-na-chuzhyh-shtrafah/</p>
+			</section>
+
+			<!-- 5.2: РІВНІ ШТРАФІВ -->
+			<section>
+				<h2 class="ztu-blue">РІВНІ ШТРАФІВ GDPR</h2>
+				<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin-top: 25px; font-size: 0.75em;">
+					<div style="background: rgba(234, 88, 12, 0.1); padding: 20px; border-radius: 8px;">
+						<h3 class="ztu-orange" style="font-size: 1.1em;">Нижній рівень</h3>
+						<p class="ztu-red" style="font-size: 1.3em;">до 10 млн EUR</p>
+						<p>або 2% річного обороту</p>
+						<p style="margin-top: 10px; font-size: 0.9em;">Порушення: технічні заходи, DPO, повідомлення про breach</p>
+					</div>
+					<div style="background: rgba(220, 38, 38, 0.1); padding: 20px; border-radius: 8px;">
+						<h3 class="ztu-red" style="font-size: 1.1em;">Верхній рівень</h3>
+						<p class="ztu-red" style="font-size: 1.3em;">до 20 млн EUR</p>
+						<p>або 4% річного обороту</p>
+						<p style="margin-top: 10px; font-size: 0.9em;">Порушення: принципи обробки, права суб'єктів, згода, міжнародна передача</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- 5.3: КЛАСИЧНІ ПРОБЛЕМИ -->
+			<section>
+				<h2 class="ztu-blue">КЛАСИЧНІ ПРОБЛЕМИ</h2>
+				<ul class="ztu-list" style="font-size: 0.85em;">
+					<li><span class="ztu-orange">Підписки</span> — Фінляндія, 50к — <span class="ztu-red">немає згоди (ст. 6)</span></li>
+					<li><span class="ztu-orange">Автоматичні боти</span> — збір даних без правової підстави</li>
+					<li><span class="ztu-orange">Розіграші зі списком людей</span> — публікація PII без згоди</li>
+					<li><span class="ztu-orange">Батьківська згода</span> — діти до 16 років (ст. 8)</li>
+					<li><span class="ztu-orange">Відбитки пальців</span> при вході в спортклуб — 20к, Литва — <span class="ztu-red">надмірний збір (ст. 5)</span></li>
+					<li><span class="ztu-orange">Дискримінуючі алгоритми</span> — Італія, 2.6М — <span class="ztu-red">профайлинг (ст. 22)</span></li>
+					<li><span class="ztu-orange">Купівля послуг ≠ Згода на одержання</span> — Норвегія — <span class="ztu-red">ст. 6(1)(a)</span></li>
+				</ul>
+			</section>
+
+			<!-- 5.4: ШТРАФ META -->
+			<section>
+				<h2 class="ztu-blue">META (FACEBOOK)</h2>
+				<p class="ztu-red" style="font-size: 1.3em;">390 млн EUR</p>
+				<p style="font-size: 0.8em; margin-top: 15px;">DPC Ірландії (2023) — Meta не змогла продемонструвати
+					законну основу для обробки даних користувачів Facebook.</p>
+				<p class="ztu-orange" style="font-size: 0.75em; margin-top: 10px;">Порушення: ст. 6(1) — відсутність legal basis. Спроба використати "контракт" замість "згоди" для таргетованої реклами.</p>
+			</section>
+
+			<!-- 5.5: ШТРАФ H&M -->
+			<section>
+				<h2 class="ztu-blue">H&M</h2>
+				<p class="ztu-red" style="font-size: 1.3em;">35.3 млн EUR</p>
+				<p style="font-size: 0.8em; margin-top: 15px;">LfDI Німеччина (2024) — незаконне відеоспостереження
+					за працівниками без законної підстави.</p>
+				<p class="ztu-orange" style="font-size: 0.75em; margin-top: 10px;">Порушення: ст. 5(1)(c) — мінімізація даних. Збирали надмірну кількість інформації про приватне життя працівників.</p>
+			</section>
+
+			<!-- 5.6: ШТРАФ GOOGLE -->
+			<section>
+				<h2 class="ztu-blue">GOOGLE</h2>
+				<p class="ztu-red" style="font-size: 1.3em;">150 млн EUR</p>
+				<p style="font-size: 0.8em; margin-top: 15px;">CNIL Франція (2024) — непрозорість у використанні даних,
+					відсутність чіткої згоди користувачів.</p>
+				<p class="ztu-orange" style="font-size: 0.75em; margin-top: 10px;">Порушення: ст. 7 (умови згоди) + ст. 12 (прозорість). Cookie banner не дозволяв легко відхилити cookies.</p>
+			</section>
+
+			<!-- 5.7: ШТРАФ AMAZON -->
+			<section>
+				<h2 class="ztu-blue">AMAZON</h2>
+				<p class="ztu-red" style="font-size: 1.3em;">746 млн EUR</p>
+				<p style="font-size: 0.8em; margin-top: 15px;">CNPD Люксембург — рекордний штраф. Обробка персональних даних для
+					цільової реклами без належного отримання згоди користувачів.</p>
+				<p class="ztu-orange" style="font-size: 0.75em; margin-top: 10px;">Порушення: ст. 6(1)(a) — відсутність валідної згоди на обробку для рекламних цілей.</p>
+				<p class="ztu-red" style="font-size: 0.75em; margin-top: 10px;">Один із найбільших штрафів в історії GDPR.</p>
+			</section>
+
+			<!-- 5.8: ШТРАФ AUSTRIAN POST -->
+			<section>
+				<h2 class="ztu-blue">AUSTRIAN POST</h2>
+				<p class="ztu-red" style="font-size: 1.3em;">18 млн EUR</p>
+				<p style="font-size: 0.8em; margin-top: 15px;">Австрія (2022) — неналежне зберігання даних, створення
+					профілів політичних уподобань громадян для продажу.</p>
+				<p class="ztu-orange" style="font-size: 0.75em; margin-top: 10px;">Порушення: ст. 9 — обробка спеціальних категорій даних (політичні погляди) без явної згоди.</p>
+			</section>
+
+			<!-- 5.9: ПІДСУМОК ШТРАФІВ -->
+			<section>
+				<h2 class="ztu-blue">ТОП-5 ШТРАФІВ — ВИСНОВКИ</h2>
+				<table style="font-size: 0.5em; width: 100%;">
+					<thead>
+						<tr>
+							<th>Компанія</th>
+							<th>Сума</th>
+							<th>Стаття</th>
+							<th>Урок для розробника</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="ztu-orange">Amazon</td>
+							<td class="ztu-red">746М</td>
+							<td>ст. 6(1)(a)</td>
+							<td>Не трекай без згоди</td>
+						</tr>
+						<tr>
+							<td class="ztu-orange">Meta</td>
+							<td class="ztu-red">390М</td>
+							<td>ст. 6(1)</td>
+							<td>"Контракт" ≠ "Згода" для реклами</td>
+						</tr>
+						<tr>
+							<td class="ztu-orange">Google</td>
+							<td class="ztu-red">150М</td>
+							<td>ст. 7, 12</td>
+							<td>Cookie banner має бути чесним</td>
+						</tr>
+						<tr>
+							<td class="ztu-orange">H&M</td>
+							<td class="ztu-red">35.3М</td>
+							<td>ст. 5(1)(c)</td>
+							<td>Не збирай зайвого</td>
+						</tr>
+						<tr>
+							<td class="ztu-orange">Austrian Post</td>
+							<td class="ztu-red">18М</td>
+							<td>ст. 9</td>
+							<td>Sensitive data = особлива обережність</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<!-- ===== КРОК 6: Q&A ===== -->
+			<section>
+				<h1 class="ztu-blue">ВАШІ ЗАПИТАННЯ?</h1>
+				<p class="ztu-orange" style="margin-top: 40px;">Що залишилось незрозумілим?</p>
+				<p class="fragment" style="margin-top: 30px; font-size: 0.6em;">GDPR Mobile App & Site: https://www.youtube.com/watch?v=vVD37L1YKi8</p>
+			</section>
+
+		</div>
+	</div>
+
+	<script src="reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		Reveal.initialize({
+			hash: true,
+			progress: true,
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
