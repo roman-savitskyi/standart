@@ -1,0 +1,680 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>TC39, ISO, W3C, IEC. Персональні сертифікації</title>
+
+	<link rel="stylesheet" href="reveal.css">
+	<link rel="stylesheet" href="theme/ztu.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/high-contrast.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="footer-ztu-logo"></div>
+		<div class="footer-conference-logo"></div>
+		<div class="footer-beerjs-logo"></div>
+		<div class="slides">
+
+			<!-- Title Slide -->
+			<section>
+				<h1 class="ztu-blue">СТАНДАРТИЗАЦІЯ ТА ДОКУМЕНТАЦІЯ ПЗ</h1>
+				<p class="ztu-orange">TC39, ISO, W3C, IEC. Персональні сертифікації</p>
+			</section>
+
+			<!-- ===== IEC ===== -->
+
+			<section>
+				<h1 class="ztu-blue">IEC</h1>
+				<p class="ztu-orange">International Electrotechnical Commission</p>
+				<p class="ztu-green" style="margin-top: 20px; font-size: 0.7em;">https://www.iec.ch/homepage</p>
+			</section>
+
+			<section>
+				<h2 class="ztu-blue">IEC — ЩО ЦЕ?</h2>
+				<ul class="ztu-list" style="font-size: 0.85em;">
+					<li><span class="ztu-orange">Міжнародна електротехнічна комісія</span> — заснована 1906 р., Женева
+					</li>
+					<li>Охоплює <span class="ztu-orange">173 країни</span></li>
+					<li>Україна — член з <span class="ztu-orange">1993 року</span> (представник: ДП «УкрНДНЦ»)</li>
+					<li>Напрямки: електрика, електроніка, електромагнетизм</li>
+					<li>Основний внесок для ПЗ — стандарти серії <span class="ztu-orange">IEC/ISO 25000</span> та <span
+							class="ztu-orange">IEC 62443</span> (кібербезпека)</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2 class="ztu-blue">ДСТУ — ЩО ЦЕ?</h2>
+				<p style="font-size: 0.85em;">ДСТУ — Державний стандарт України. Технічні нормативи, прийняті як
+					національні стандарти на основі міжнародних (ISO, IEC, IEEE).</p>
+				<div
+					style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; margin-top: 20px; font-size: 0.7em;">
+					<div
+						style="background: rgba(37, 99, 235, 0.1); padding: 15px; border-radius: 8px; text-align: center;">
+						<p class="ztu-blue" style="font-weight: bold;">ДСТУ ISO/IEC 25022</p>
+						<p>Якість ПЗ (SQuaRE)</p>
+					</div>
+					<div
+						style="background: rgba(234, 88, 12, 0.1); padding: 15px; border-radius: 8px; text-align: center;">
+						<p class="ztu-orange" style="font-weight: bold;">ДСТУ ISO/IEC 14598-6</p>
+						<p>Оцінювання ПЗ</p>
+					</div>
+					<div
+						style="background: rgba(22, 163, 74, 0.1); padding: 15px; border-radius: 8px; text-align: center;">
+						<p class="ztu-green" style="font-weight: bold;">ДСТУ ISO/IEC/IEEE 15939</p>
+						<p>Процес вимірювання</p>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<h2 class="ztu-blue">ДСТУ ISO/IEC 25022:2019</h2>
+				<p class="ztu-orange" style="font-size: 0.85em;">SQuaRE — Software product Quality Requirements and
+					Evaluation</p>
+				<p style="font-size: 0.8em; margin-top: 15px;">Інженерія систем і програмних засобів. Вимоги до якості
+					та оцінювання. <strong>Вимірювання якості під час застосування.</strong></p>
+				<ul class="ztu-list" style="font-size: 0.75em; margin-top: 15px;">
+					<li><span class="ztu-orange">Результативність</span> — чи вирішує продукт задачу користувача</li>
+					<li><span class="ztu-orange">Ефективність</span> — витрати ресурсів для досягнення мети</li>
+					<li><span class="ztu-orange">Задоволеність</span> — зручність та позитивний досвід</li>
+					<li><span class="ztu-orange">Безризиковість</span> — вплив на здоров'я, безпеку, економіку</li>
+					<li><span class="ztu-orange">Покриття контексту</span> — застосовність у різних умовах</li>
+				</ul>
+				<p class="ztu-green" style="font-size: 0.6em; margin-top: 10px;">
+					https://uas.org.ua/ua/standart/dstu-iso-iec-25022-2019/</p>
+			</section>
+
+			<section>
+				<h2 class="ztu-blue">ДСТУ ISO/IEC 14598-6:2005</h2>
+				<p class="ztu-orange" style="font-size: 0.85em;">Інформаційні технології. Оцінювання програмного
+					продукту</p>
+				<p style="font-size: 0.8em; margin-top: 15px;"><strong>Частина 6 — Документація модулів
+						оцінювання</strong></p>
+				<ul class="ztu-list" style="font-size: 0.8em; margin-top: 15px;">
+					<li>Визначає вимоги до <span class="ztu-orange">документування</span> процесу оцінювання ПЗ</li>
+					<li>Описує структуру <span class="ztu-orange">модулів оцінювання</span> (evaluation modules)</li>
+					<li>Використовується при <span class="ztu-orange">сертифікації та аудиті</span> програмних продуктів
+					</li>
+					<li>Базується на серії <span class="ztu-orange">ISO/IEC 14598</span> — 6 частин стандарту</li>
+				</ul>
+				<p class="ztu-green" style="font-size: 0.6em; margin-top: 10px;">
+					https://uas.org.ua/ua/standart/dstu-iso-iec-14598-6-2005/</p>
+			</section>
+
+			<section>
+				<h2 class="ztu-blue">ДСТУ ISO/IEC/IEEE 15939:2018</h2>
+				<p class="ztu-orange" style="font-size: 0.85em;">Інженерія систем і програмних засобів. Процес
+					вимірювання</p>
+				<p style="font-size: 0.8em; margin-top: 15px;">Стандарт визначає <strong>концептуальну модель і
+						термінологію</strong> для вимірювань у програмній інженерії.</p>
+				<div
+					style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 15px; font-size: 0.75em;">
+					<div style="background: rgba(37, 99, 235, 0.1); padding: 12px; border-radius: 8px;">
+						<p class="ztu-blue" style="font-weight: bold;">Модель вимірювання</p>
+						<p>Базова міра → Похідна міра → Індикатор</p>
+					</div>
+					<div style="background: rgba(234, 88, 12, 0.1); padding: 12px; border-radius: 8px;">
+						<p class="ztu-orange" style="font-weight: bold;">Процес</p>
+						<p>Планування → Збір → Аналіз → Комунікація</p>
+					</div>
+				</div>
+				<p class="ztu-green" style="font-size: 0.6em; margin-top: 10px;">
+					https://uas.org.ua/ua/standart/dstu-iso-iec-ieee-15939-2018/</p>
+			</section>
+
+			<!-- ===== ISO ===== -->
+
+			<section>
+				<h1 class="ztu-blue">ISO</h1>
+				<p class="ztu-orange">International Organization for Standardization</p>
+				<p class="ztu-green" style="margin-top: 20px; font-size: 0.7em;">https://www.iso.org/about-us.html</p>
+			</section>
+
+			<section>
+				<h2 class="ztu-blue">ISO — ЩО ЦЕ?</h2>
+				<ul class="ztu-list" style="font-size: 0.85em;">
+					<li>Міжнародна організація зі стандартизації — заснована <span class="ztu-orange">1947 р.</span>,
+						Женева</li>
+					<li><span class="ztu-orange">167 національних</span> органів стандартизації</li>
+					<li>Понад <span class="ztu-orange">24 000 стандартів</span> у всіх галузях</li>
+					<li>Не урядова організація — членство через нац. органи (в Україні — ДП «УкрНДНЦ»)</li>
+				</ul>
+				<p class="ztu-orange" style="margin-top: 20px; font-size: 0.8em; font-weight: bold;">Ключові
+					ISO-стандарти для ПЗ</p>
+				<ul class="ztu-list" style="font-size: 0.75em;">
+					<li><span class="ztu-orange">ISO 9001</span> — система менеджменту якості</li>
+					<li><span class="ztu-orange">ISO/IEC 27001</span> — інформаційна безпека (ISMS)</li>
+					<li><span class="ztu-orange">ISO/IEC 12207</span> — процеси життєвого циклу ПЗ</li>
+					<li><span class="ztu-orange">ISO/IEC 25000</span> (SQuaRE) — якість ПЗ</li>
+				</ul>
+			</section>
+
+			<!-- ===== TC39 ===== -->
+
+			<section>
+				<h1 class="ztu-blue">TC39</h1>
+				<p class="ztu-orange">Specifying JavaScript</p>
+				<p class="ztu-green" style="margin-top: 20px; font-size: 0.7em;">https://tc39.es/</p>
+			</section>
+
+			<section>
+				<h2 class="ztu-blue">TC39 — ЩО ЦЕ?</h2>
+				<p style="font-size: 0.8em;">Технічний комітет 39 (TC39) — підрозділ <span class="ztu-orange">ECMA
+						International</span>, що підтримує та розвиває специфікацію JavaScript (ECMAScript).</p>
+				<ul class="ztu-list" style="font-size: 0.8em; margin-top: 15px;">
+					<li>Учасники: <span class="ztu-orange">Google, Mozilla, Apple, Microsoft, Meta</span> та незалежні
+						розробники</li>
+					<li>Нові пропозиції публічно обговорюються на <span class="ztu-orange">GitHub</span></li>
+					<li>Зустрічі кожні 2 місяці; рішення через <span class="ztu-orange">консенсус</span></li>
+					<li>Специфікація: <span class="ztu-green">https://tc39.es/ecma262/</span></li>
+				</ul>
+			</section>
+
+			<section>
+				<h2 class="ztu-blue">TC39 — ПРОЦЕС ПРОПОЗИЦІЙ</h2>
+				<p style="font-size: 0.75em;">Кожна нова функція JavaScript проходить 5 стадій:</p>
+				<div
+					style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 15px; font-size: 0.7em;">
+					<div style="background: rgba(220, 38, 38, 0.1); padding: 12px; border-radius: 8px;">
+						<p class="ztu-red" style="font-weight: bold;">Stage 0 — Strawperson</p>
+						<p>Початкова ідея, без формальних вимог</p>
+					</div>
+					<div style="background: rgba(234, 88, 12, 0.1); padding: 12px; border-radius: 8px;">
+						<p class="ztu-orange" style="font-weight: bold;">Stage 1 — Proposal</p>
+						<p>Є champion, описана задача та рішення</p>
+					</div>
+					<div style="background: rgba(37, 99, 235, 0.1); padding: 12px; border-radius: 8px;">
+						<p class="ztu-blue" style="font-weight: bold;">Stage 2 — Draft</p>
+						<p>Початковий текст специфікації</p>
+					</div>
+					<div style="background: rgba(22, 163, 74, 0.1); padding: 12px; border-radius: 8px;">
+						<p class="ztu-green" style="font-weight: bold;">Stage 3 — Candidate</p>
+						<p>Повна специфікація, готова до реалізації у браузерах</p>
+					</div>
+				</div>
+				<div
+					style="background: rgba(22, 163, 74, 0.2); padding: 12px; border-radius: 8px; margin-top: 12px; font-size: 0.7em;">
+					<p class="ztu-green" style="font-weight: bold;">Stage 4 — Finished</p>
+					<p>Включена до наступного видання ECMAScript</p>
+				</div>
+			</section>
+
+			<section>
+				<h2 class="ztu-blue">ECMA INTERNATIONAL</h2>
+				<p style="font-size: 0.8em;">Організація зі стандартизації інформаційних та комунікаційних систем,
+					заснована <span class="ztu-orange">1961 р.</span> у Женеві.</p>
+				<ul class="ztu-list" style="font-size: 0.8em; margin-top: 15px;">
+					<li><span class="ztu-orange">ECMA-262</span> — специфікація ECMAScript (JavaScript)</li>
+					<li><span class="ztu-orange">ECMA-404</span> — формат JSON</li>
+					<li><span class="ztu-orange">ECMA-334</span> — специфікація C#</li>
+					<li><span class="ztu-orange">ECMA-335</span> — CLI (Common Language Infrastructure, .NET)</li>
+				</ul>
+				<p class="ztu-green" style="font-size: 0.7em; margin-top: 15px;">https://www.ecma-international.org/</p>
+			</section>
+
+			<!-- ===== W3C ===== -->
+
+			<section>
+				<h1 class="ztu-blue">W3C</h1>
+				<p class="ztu-orange">World Wide Web Consortium</p>
+				<p class="ztu-green" style="margin-top: 20px; font-size: 0.7em;">https://www.w3.org/</p>
+			</section>
+
+			<section>
+				<h2 class="ztu-blue">W3C — ЩО ЦЕ?</h2>
+				<ul class="ztu-list" style="font-size: 0.85em;">
+					<li>Заснований <span class="ztu-orange">1994 р.</span> Тімом Бернерсом-Лі (MIT, CERN)</li>
+					<li>Понад <span class="ztu-orange">400 організацій-членів</span></li>
+					<li>Розробляє відкриті стандарти вебу — через <span class="ztu-orange">Working Groups</span></li>
+				</ul>
+				<p class="ztu-orange" style="margin-top: 20px; font-size: 0.8em; font-weight: bold;">Ключові стандарти
+					W3C</p>
+				<ul class="ztu-list" style="font-size: 0.75em;">
+					<li><span class="ztu-orange">HTML</span> — структура вебсторінок</li>
+					<li><span class="ztu-orange">CSS</span> — стилізація</li>
+					<li><span class="ztu-orange">SVG</span> — векторна графіка</li>
+					<li><span class="ztu-orange">ARIA</span> — доступність (accessibility)</li>
+					<li><span class="ztu-orange">WebAssembly</span> — виконання коду у браузері</li>
+					<li><span class="ztu-orange">XML, XPath, XSLT</span> — обробка даних</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2 class="ztu-blue">W3C VALIDATOR</h2>
+				<p class="ztu-orange" style="font-size: 0.85em;">Інструмент перевірки валідності HTML та CSS</p>
+				<p style="font-size: 0.8em; margin-top: 15px;">Перевіряє, чи відповідає розмітка специфікаціям W3C.
+					Допомагає уникати:</p>
+				<ul class="ztu-list" style="font-size: 0.8em; margin-top: 10px;">
+					<li>Помилок синтаксису HTML</li>
+					<li>Проблем сумісності між браузерами</li>
+					<li>Порушень доступності (accessibility)</li>
+					<li>SEO-проблем, пов'язаних з некоректною розміткою</li>
+				</ul>
+				<p class="ztu-green" style="font-size: 0.75em; margin-top: 20px;">https://validator.w3.org/</p>
+				<p class="ztu-green" style="font-size: 0.75em;">https://jigsaw.w3.org/css-validator/</p>
+			</section>
+
+			<!-- ===== ПЕРСОНАЛЬНІ СЕРТИФІКАЦІЇ ===== -->
+
+			<section>
+				<h1 class="ztu-blue">ПЕРСОНАЛЬНІ СЕРТИФІКАЦІЇ</h1>
+				<p class="ztu-orange">Навіщо і як</p>
+			</section>
+
+			<section>
+				<h2 class="ztu-blue">НАВІЩО СЕРТИФІКУВАТИСЯ?</h2>
+				<div
+					style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px; font-size: 0.78em;">
+					<div style="background: rgba(22, 163, 74, 0.1); padding: 15px; border-radius: 8px;">
+						<h3 class="ztu-green" style="font-size: 1em; margin-bottom: 10px;">Ще немає досвіду?</h3>
+						<ul class="ztu-list" style="font-size: 0.9em;">
+							<li>Сертифікат — <strong>перший сигнал рекрутеру</strong> до першого місця роботи</li>
+							<li>Підтверджує самонавчання та мотивацію</li>
+							<li>Відкриває двері до стажування</li>
+							<li>Конкретна перевага у резюме серед однокурсників</li>
+						</ul>
+					</div>
+					<div style="background: rgba(234, 88, 12, 0.1); padding: 15px; border-radius: 8px;">
+						<h3 class="ztu-orange" style="font-size: 1em; margin-bottom: 10px;">Довгострокова цінність</h3>
+						<ul class="ztu-list" style="font-size: 0.9em;">
+							<li>Систематизація знань із практикою</li>
+							<li>LinkedIn-бейдж — видимий HR-спеціалістам</li>
+							<li>Умова для участі у партнерських програмах (Microsoft, AWS)</li>
+							<li>Часто — підвищення зарплати після отримання</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<h2 class="ztu-blue">MICROSOFT СЕРТИФІКАЦІЇ</h2>
+				<p class="ztu-orange" style="font-size: 0.75em;">Microsoft Learn — безкоштовні матеріали до кожного
+					іспиту. Всі іспити: <strong>$165 / ~7 000 грн</strong></p>
+				<table style="font-size: 0.58em; width: 100%; margin-top: 12px;">
+					<thead>
+						<tr>
+							<th>Іспит</th>
+							<th>Назва</th>
+							<th>Рівень</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="ztu-orange">AZ-900</td>
+							<td>Azure Fundamentals</td>
+							<td>Початківець</td>
+						</tr>
+						<tr>
+							<td class="ztu-orange">AZ-104</td>
+							<td>Azure Administrator</td>
+							<td>Середній</td>
+						</tr>
+						<tr>
+							<td class="ztu-orange">AZ-204</td>
+							<td>Azure Developer Associate</td>
+							<td>Середній</td>
+						</tr>
+						<tr>
+							<td class="ztu-orange">AZ-305</td>
+							<td>Azure Solutions Architect</td>
+							<td>Просунутий</td>
+						</tr>
+						<tr>
+							<td class="ztu-blue">MS-900</td>
+							<td>Microsoft 365 Fundamentals</td>
+							<td>Початківець</td>
+						</tr>
+						<tr>
+							<td colspan="3" style="background: rgba(22, 163, 74, 0.15); font-weight: bold; color: #16a34a; text-align: center; padding: 4px;">AI &amp; ML</td>
+						</tr>
+						<tr>
+							<td class="ztu-green">AI-900</td>
+							<td>Azure AI Fundamentals</td>
+							<td>Початківець</td>
+						</tr>
+						<tr>
+							<td class="ztu-green">AI-102</td>
+							<td>Azure AI Engineer Associate</td>
+							<td>Середній</td>
+						</tr>
+						<tr>
+							<td class="ztu-green">DP-900</td>
+							<td>Azure Data Fundamentals</td>
+							<td>Початківець</td>
+						</tr>
+						<tr>
+							<td class="ztu-green">DP-100</td>
+							<td>Azure Data Scientist Associate</td>
+							<td>Середній</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="ztu-green" style="font-size: 0.6em; margin-top: 8px;">
+					https://learn.microsoft.com/en-us/certifications</p>
+			</section>
+
+			<section>
+				<h2 class="ztu-blue">ХМАРНІ СЕРТИФІКАЦІЇ</h2>
+				<div
+					style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 15px; font-size: 0.72em;">
+					<div style="background: rgba(234, 88, 12, 0.1); padding: 15px; border-radius: 8px;">
+						<h3 class="ztu-orange" style="font-size: 1em; margin-bottom: 10px;">Amazon AWS</h3>
+						<ul class="ztu-list">
+							<li><strong>CLF-C02</strong> — Cloud Practitioner <span class="ztu-green">$100 / ~4 200
+									грн</span></li>
+							<li><strong>SAA-C03</strong> — Solutions Architect Associate <span class="ztu-green">$150 /
+									~6 300 грн</span></li>
+							<li><strong>DVA-C02</strong> — Developer Associate <span class="ztu-green">$150 / ~6 300
+									грн</span></li>
+							<li><strong>SAP-C02</strong> — Solutions Architect Professional <span class="ztu-green">$300
+									/ ~12 600 грн</span></li>
+						</ul>
+					</div>
+					<div style="background: rgba(37, 99, 235, 0.1); padding: 15px; border-radius: 8px;">
+						<h3 class="ztu-blue" style="font-size: 1em; margin-bottom: 10px;">Google Cloud</h3>
+						<ul class="ztu-list">
+							<li><strong>ACE</strong> — Associate Cloud Engineer <span class="ztu-green">$200 / ~8 400
+									грн</span></li>
+							<li><strong>PCA</strong> — Professional Cloud Architect <span class="ztu-green">$200 / ~8
+									400 грн</span></li>
+							<li><strong>PDE</strong> — Professional Data Engineer <span class="ztu-green">$200 / ~8 400
+									грн</span></li>
+							<li><strong>PCSE</strong> — Professional Cloud Security Engineer <span
+									class="ztu-green">$200 / ~8 400 грн</span></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<h2 class="ztu-blue">SNOWFLAKE СЕРТИФІКАЦІЇ</h2>
+				<p style="font-size: 0.8em;"><span class="ztu-orange">Snowflake</span> — хмарна платформа для зберігання та обробки даних. Популярна в Data Engineering, Analytics та ML-проєктах.</p>
+				<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 15px; font-size: 0.78em;">
+					<div style="background: rgba(37, 99, 235, 0.1); padding: 15px; border-radius: 8px;">
+						<h3 class="ztu-blue" style="font-size: 1em; margin-bottom: 8px;">SnowPro Core <span class="ztu-green">$175 / ~7 400 грн</span></h3>
+						<ul class="ztu-list">
+							<li>Базова сертифікація для всіх спеціалізацій</li>
+							<li>Охоплює: архітектуру, завантаження даних, SQL, безпеку</li>
+							<li>Обов'язковий крок перед Advanced рівнем</li>
+							<li>Дійсна <span class="ztu-orange">2 роки</span></li>
+						</ul>
+					</div>
+					<div style="background: rgba(234, 88, 12, 0.1); padding: 15px; border-radius: 8px;">
+						<h3 class="ztu-orange" style="font-size: 1em; margin-bottom: 8px;">SnowPro Advanced <span class="ztu-green">$375 / ~15 800 грн</span></h3>
+						<ul class="ztu-list">
+							<li><strong>Architect</strong> — проєктування рішень</li>
+							<li><strong>Data Engineer</strong> — пайплайни та трансформації</li>
+							<li><strong>Data Scientist</strong> — ML та аналітика</li>
+							<li><strong>Data Analyst</strong> — запити та візуалізація</li>
+						</ul>
+					</div>
+				</div>
+				<p class="ztu-green" style="font-size: 0.65em; margin-top: 10px;">https://learn.snowflake.com/en/certifications/</p>
+			</section>
+
+			<section>
+				<h2 class="ztu-blue">SCRUM / AGILE СЕРТИФІКАЦІЇ</h2>
+				<p style="font-size: 0.8em;">Найшвидший спосіб отримати підтвердження компетентності — актуально для
+					командної роботи в будь-якому напрямку.</p>
+				<div
+					style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 15px; font-size: 0.75em;">
+					<div style="background: rgba(22, 163, 74, 0.1); padding: 15px; border-radius: 8px;">
+						<h3 class="ztu-green" style="font-size: 1em; margin-bottom: 8px;">Scrum.org</h3>
+						<ul class="ztu-list">
+							<li><strong>PSM I</strong> — Professional Scrum Master I</li>
+							<li><strong>PSPO I</strong> — Professional Scrum Product Owner I</li>
+							<li>Обидва: <span class="ztu-green">$150 / ~6 300 грн</span></li>
+							<li>Без обов'язкового тренінгу — можна самостійно</li>
+							<li>Безстроковий (не закінчується)</li>
+						</ul>
+					</div>
+					<div style="background: rgba(234, 88, 12, 0.1); padding: 15px; border-radius: 8px;">
+						<h3 class="ztu-orange" style="font-size: 1em; margin-bottom: 8px;">Scrum Alliance</h3>
+						<ul class="ztu-list">
+							<li><strong>CSM</strong> — Certified ScrumMaster</li>
+							<li><strong>CSPO</strong> — Certified Scrum Product Owner</li>
+							<li>Потребує 2-денного тренінгу</li>
+							<li>Дорожче, але ширше визнаний у корпоративному секторі</li>
+							<li>Дійсний <span class="ztu-orange">2 роки</span></li>
+						</ul>
+					</div>
+				</div>
+				<p class="ztu-green" style="font-size: 0.65em; margin-top: 10px;">
+					https://www.scrum.org/professional-scrum-certifications</p>
+			</section>
+
+			<section>
+				<h2 class="ztu-blue">ІНШІ ПОПУЛЯРНІ СЕРТИФІКАЦІЇ</h2>
+				<table style="font-size: 0.62em; width: 100%; margin-top: 15px;">
+					<thead>
+						<tr>
+							<th>Сертифікація</th>
+							<th>Опис</th>
+							<th>Вартість</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="ztu-orange">CompTIA Security+</td>
+							<td>Кібербезпека, визнана у всьому світі, зокрема DoD</td>
+							<td class="ztu-green">$392 / ~16 500 грн</td>
+						</tr>
+						<tr>
+							<td class="ztu-orange">CKA</td>
+							<td>Certified Kubernetes Administrator (CNCF)</td>
+							<td class="ztu-green">$395 / ~16 600 грн</td>
+						</tr>
+						<tr>
+							<td class="ztu-orange">Terraform Associate</td>
+							<td>HashiCorp, інфраструктура як код (IaC)</td>
+							<td class="ztu-green">$70 / ~3 000 грн</td>
+						</tr>
+						<tr>
+							<td class="ztu-orange">GitHub Actions</td>
+							<td>Офіційна сертифікація CI/CD від GitHub</td>
+							<td class="ztu-green">$200 / ~8 400 грн</td>
+						</tr>
+						<tr>
+							<td class="ztu-red">CISSP</td>
+							<td>InfoSec (просунутий) ⚠️ потребує 5 років досвіду</td>
+							<td class="ztu-green">$749 / ~31 500 грн</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section>
+				<h2 class="ztu-blue">З ЧОГО ПОЧИНАТИ?</h2>
+				<p style="font-size: 0.78em;">Залежить від напрямку, але є універсальні точки входу:</p>
+				<table style="font-size: 0.6em; width: 100%; margin-top: 12px;">
+					<thead>
+						<tr>
+							<th>Напрямок</th>
+							<th>Перша сертифікація</th>
+							<th>Чому саме вона</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="ztu-orange">Хмарні технології</td>
+							<td><strong>AZ-900</strong> або <strong>AWS CLF-C02</strong></td>
+							<td>Найдешевший вхід, багато безкоштовних матеріалів</td>
+						</tr>
+						<tr>
+							<td class="ztu-orange">DevOps / IaC</td>
+							<td><strong>Terraform Associate</strong></td>
+							<td>Найдешевша у своїй ніші ($70), практична та популярна</td>
+						</tr>
+						<tr>
+							<td class="ztu-orange">Командні процеси</td>
+							<td><strong>PSM I</strong> (Scrum.org)</td>
+							<td>Самостійна підготовка, без обов'язкового тренінгу, безстрокова</td>
+						</tr>
+						<tr>
+							<td class="ztu-orange">Кібербезпека</td>
+							<td><strong>CompTIA Security+</strong></td>
+							<td>Найбільш визнана entry-level, включно з держсектором (DoD)</td>
+						</tr>
+						<tr>
+							<td class="ztu-orange">Немає пріоритету</td>
+							<td><strong>AZ-900</strong></td>
+							<td>Найширше застосування, безкоштовні матеріали на Microsoft Learn</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section>
+				<h2 class="ztu-blue">СТУДЕНТСЬКІ ПРОГРАМИ</h2>
+				<p style="font-size: 0.8em;">Більшість вендорів мають безкоштовні або знижені програми для студентів:
+				</p>
+				<ul class="ztu-list" style="font-size: 0.78em; margin-top: 15px;">
+					<li><span class="ztu-orange">Microsoft Learn Student Ambassadors</span> — безкоштовні ваучери на
+						іспити, Azure credits, доступ до навчальних матеріалів</li>
+					<li><span class="ztu-orange">AWS Educate</span> — безкоштовні лабораторії, навчальні шляхи без
+						кредитної картки</li>
+					<li><span class="ztu-orange">GitHub Student Developer Pack</span> — безкоштовний доступ до десятків
+						інструментів (включно з Azure, JetBrains, Namecheap)</li>
+					<li><span class="ztu-orange">Google Cloud Skills Boost</span> — безкоштовний рівень + щомісячні
+						кредити для практики</li>
+					<li><span class="ztu-orange">Exam Replay bundle</span> — Microsoft пропонує пакет "іспит + 1
+						безкоштовний ретейк" при невдачі (купується наперед)</li>
+				</ul>
+				<p class="ztu-green" style="font-size: 0.65em; margin-top: 10px;">
+					https://studentambassadors.microsoft.com/ &nbsp;|&nbsp; https://aws.amazon.com/education/awseducate/
+				</p>
+			</section>
+
+			<section>
+				<h2 class="ztu-blue">ДЕ ЗДАВАТИ ІСПИТИ?</h2>
+				<div
+					style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 15px; font-size: 0.78em;">
+					<div style="background: rgba(37, 99, 235, 0.1); padding: 15px; border-radius: 8px;">
+						<h3 class="ztu-blue" style="font-size: 1em; margin-bottom: 8px;">Тестові центри</h3>
+						<ul class="ztu-list">
+							<li><strong>Pearson VUE</strong> — найпоширеніша мережа (Microsoft, AWS, CompTIA, CKA)</li>
+							<li><strong>PSI</strong> — Google Cloud, деякі інші</li>
+							<li>Центри в Києві, Львові, Харкові, Дніпрі</li>
+						</ul>
+					</div>
+					<div style="background: rgba(22, 163, 74, 0.1); padding: 15px; border-radius: 8px;">
+						<h3 class="ztu-green" style="font-size: 1em; margin-bottom: 8px;">Онлайн-прокторинг</h3>
+						<ul class="ztu-list">
+							<li>Здавати <strong>вдома або в університеті</strong></li>
+							<li>Потрібні: вебкамера, мікрофон, тихе приміщення</li>
+							<li>OnVUE (Pearson) або PSI Bridge</li>
+							<li>Зручно — без поїздки до центру</li>
+						</ul>
+					</div>
+				</div>
+				<p class="ztu-green" style="font-size: 0.65em; margin-top: 12px;">https://home.pearsonvue.com/
+					&nbsp;|&nbsp; https://candidate.psiexams.com/</p>
+			</section>
+
+			<section>
+				<h2 class="ztu-blue">ТЕРМІН ДІЇ ТА ПОНОВЛЕННЯ</h2>
+				<table style="font-size: 0.62em; width: 100%; margin-top: 15px;">
+					<thead>
+						<tr>
+							<th>Вендор</th>
+							<th>Термін дії</th>
+							<th>Поновлення</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="ztu-orange">Microsoft</td>
+							<td>1 рік</td>
+							<td class="ztu-green">Безкоштовно онлайн через Microsoft Learn (щорічний assessment)</td>
+						</tr>
+						<tr>
+							<td class="ztu-orange">AWS</td>
+							<td>3 роки</td>
+							<td>Повторний іспит або вищий рівень</td>
+						</tr>
+						<tr>
+							<td class="ztu-orange">Google Cloud</td>
+							<td>2 роки</td>
+							<td>Повторний іспит</td>
+						</tr>
+						<tr>
+							<td class="ztu-orange">CompTIA</td>
+							<td>3 роки</td>
+							<td>CEU (Continuing Education Units) або повторний іспит</td>
+						</tr>
+						<tr>
+							<td class="ztu-orange">CKA / CKAD</td>
+							<td>2 роки</td>
+							<td>Повторний іспит</td>
+						</tr>
+						<tr>
+							<td class="ztu-green">PSM I (Scrum.org)</td>
+							<td class="ztu-green">Безстроковий</td>
+							<td class="ztu-green">Не потребує поновлення</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section>
+				<h2 class="ztu-blue">CREDLY ТА LINKEDIN</h2>
+				<p style="font-size: 0.8em;">Після складання іспиту — автоматично надходить <span
+						class="ztu-orange">цифровий бейдж</span> на email.</p>
+				<div
+					style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 15px; font-size: 0.78em;">
+					<div style="background: rgba(234, 88, 12, 0.1); padding: 15px; border-radius: 8px;">
+						<h3 class="ztu-orange" style="font-size: 1em; margin-bottom: 8px;">Credly / Acclaim</h3>
+						<ul class="ztu-list">
+							<li>Платформа цифрових бейджів</li>
+							<li>Використовують: Microsoft, CompTIA, AWS, CNCF</li>
+							<li>Публічне посилання на верифікований бейдж</li>
+							<li>Можна поділитися в соціальних мережах</li>
+						</ul>
+					</div>
+					<div style="background: rgba(37, 99, 235, 0.1); padding: 15px; border-radius: 8px;">
+						<h3 class="ztu-blue" style="font-size: 1em; margin-bottom: 8px;">Додати до LinkedIn</h3>
+						<ul class="ztu-list">
+							<li>Profile → Add section → <strong>Licenses &amp; Certifications</strong></li>
+							<li>Або прийняти badge у Credly → Share to LinkedIn</li>
+							<li>Бейджі <strong>помітні рекрутерам</strong> при пошуку</li>
+							<li>Верифікація: роботодавець може перевірити автентичність</li>
+						</ul>
+					</div>
+				</div>
+				<p class="ztu-green" style="font-size: 0.65em; margin-top: 10px;">https://credly.com/</p>
+			</section>
+
+			<!-- ===== Q&A ===== -->
+
+			<section>
+				<h1 class="ztu-blue">ВАШІ ЗАПИТАННЯ?</h1>
+				<p class="ztu-orange" style="margin-top: 40px;">Що залишилось незрозумілим?</p>
+				<div style="margin-top: 30px; font-size: 0.6em;">
+					<p class="ztu-green">TC39 proposals: https://github.com/tc39/proposals</p>
+					<p class="ztu-green" style="margin-top: 5px;">W3C standards: https://www.w3.org/TR/</p>
+					<p class="ztu-green" style="margin-top: 5px;">ISO catalogue: https://www.iso.org/standards.html</p>
+				</div>
+			</section>
+
+		</div>
+	</div>
+
+	<script src="reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		Reveal.initialize({
+			hash: true,
+			progress: true,
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
