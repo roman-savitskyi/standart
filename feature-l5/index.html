@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>ISO 9001. Системи управління якістю</title>
+
+	<link rel="stylesheet" href="reveal.css">
+	<link rel="stylesheet" href="theme/ztu.css">
+
+	<link rel="stylesheet" href="plugin/highlight/high-contrast.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="footer-ztu-logo"></div>
+		<div class="footer-conference-logo"></div>
+		<div class="footer-beerjs-logo"></div>
+		<div class="slides">
+
+			<!-- ===================================================== -->
+			<!-- ===== НАПИСАННЯ СТУДЕНТСЬКИХ ДИПЛОМНИХ РОБІТ ===== -->
+			<!-- ===================================================== -->
+
+			<!-- 1. Титульний -->
+			<section>
+				<h1 class="ztu-blue">НАПИСАННЯ СТУДЕНТСЬКИХ ДИПЛОМНИХ РОБІТ</h1>
+				<p class="ztu-orange">Від вибору теми до захисту</p>
+			</section>
+
+			<!-- 2. Що таке дипломна робота -->
+			<section>
+				<h2 class="ztu-blue">ЩО ТАКЕ ДИПЛОМНА РОБОТА?</h2>
+				<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-top: 9px; font-size: 0.63em;">
+					<div style="background: rgba(37, 99, 235, 0.08); padding: 10px 12px; border-radius: 8px;">
+						<p class="ztu-blue" style="font-weight: bold;">Бакалаврська робота</p>
+						<ul class="ztu-list">
+							<li>Завершальна робота 1-го циклу вищої освіти</li>
+							<li>Обсяг: ~80–100 стор.</li>
+							<li>Демонструє здатність застосовувати знання на практиці</li>
+							<li>Мінімум 30 джерел</li>
+						</ul>
+					</div>
+					<div style="background: rgba(22, 163, 74, 0.08); padding: 10px 12px; border-radius: 8px;">
+						<p class="ztu-green" style="font-weight: bold;">Магістерська робота</p>
+						<ul class="ztu-list">
+							<li>Завершальна робота 2-го циклу вищої освіти</li>
+							<li>Обсяг: ~100–120 стор.</li>
+							<li>Містить елементи наукового дослідження</li>
+							<li>Мінімум 50 джерел</li>
+						</ul>
+					</div>
+				</div>
+				<div style="background: rgba(234, 88, 12, 0.1); padding: 10px 12px; border-radius: 8px; margin-top: 9px; font-size: 0.63em;">
+					<p class="ztu-orange" style="font-weight: bold;">Мета</p>
+					<p>Самостійно розробити та реалізувати програмний продукт або провести дослідження і захистити його перед екзаменаційною комісією</p>
+				</div>
+			</section>
+
+			<!-- 3. Вибір теми -->
+			<section>
+				<h2 class="ztu-blue">ВИБІР ТЕМИ</h2>
+				<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-top: 9px; font-size: 0.63em;">
+					<div style="background: rgba(37, 99, 235, 0.08); padding: 10px 12px; border-radius: 8px;">
+						<p class="ztu-blue" style="font-weight: bold;">Як обрати тему?</p>
+						<ul class="ztu-list">
+							<li>З переліку кафедри або власна пропозиція</li>
+							<li>Відповідає спеціальності та інтересам</li>
+							<li>Реалізується за відведений час</li>
+							<li>Має практичне застосування</li>
+							<li>Є доступна наукова literatura</li>
+						</ul>
+					</div>
+					<div style="background: rgba(22, 163, 74, 0.08); padding: 10px 12px; border-radius: 8px;">
+						<p class="ztu-green" style="font-weight: bold;">Критерії хорошої теми</p>
+						<ul class="ztu-list">
+							<li>Актуальна у 2024–2025 роках</li>
+							<li>Наявність джерел та аналогів</li>
+							<li>Можливість продемонструвати технічні навички</li>
+							<li>Зрозуміла назва та чіткий результат</li>
+						</ul>
+					</div>
+				</div>
+				<div style="background: rgba(220, 38, 38, 0.08); padding: 9px 12px; border-radius: 8px; margin-top: 9px; font-size: 0.63em;">
+					<p class="ztu-red" style="font-weight: bold;">Типові помилки при виборі теми</p>
+					<p>Занадто широка → неможливо реалізувати за 1 семестр &nbsp;·&nbsp; Занадто вузька → недостатньо матеріалу для 3 розділів</p>
+				</div>
+			</section>
+
+			<!-- 4. Типова структура записки -->
+			<section>
+				<h2 class="ztu-blue">ТИПОВА СТРУКТУРА ЗАПИСКИ</h2>
+				<div style="display: grid; grid-template-columns: 1fr 2fr; gap: 9px; margin-top: 9px; font-size: 0.61em;">
+					<div style="background: rgba(37, 99, 235, 0.06); padding: 10px 12px; border-radius: 8px;">
+						<p class="ztu-blue" style="font-weight: bold; margin-bottom: 6px;">Вступна частина</p>
+						<ul class="ztu-list">
+							<li>Реферат / Abstract</li>
+							<li>Перелік умовних скорочень</li>
+							<li>Вступ</li>
+						</ul>
+						<p class="ztu-orange" style="font-weight: bold; margin-top: 10px; margin-bottom: 6px;">Заключна частина</p>
+						<ul class="ztu-list">
+							<li>Висновки</li>
+							<li>Список джерел</li>
+							<li>Додатки</li>
+						</ul>
+					</div>
+					<div style="background: rgba(22, 163, 74, 0.06); padding: 10px 12px; border-radius: 8px;">
+						<p class="ztu-green" style="font-weight: bold; margin-bottom: 8px;">Основна частина — 3 розділи</p>
+						<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px;">
+							<div style="background: rgba(37, 99, 235, 0.08); padding: 8px; border-radius: 6px;">
+								<p style="font-weight: bold;" class="ztu-blue">Розділ 1</p>
+								<p style="color: #555; margin-top: 4px;">Аналіз предметної області</p>
+								<ul class="ztu-list" style="margin-top: 6px; color: #666;">
+									<li>Постановка задачі</li>
+									<li>Огляд аналогів</li>
+									<li>Вибір технологій</li>
+									<li>Висновки</li>
+								</ul>
+							</div>
+							<div style="background: rgba(22, 163, 74, 0.08); padding: 8px; border-radius: 6px;">
+								<p style="font-weight: bold;" class="ztu-green">Розділ 2</p>
+								<p style="color: #555; margin-top: 4px;">Проєктування та розробка</p>
+								<ul class="ztu-list" style="margin-top: 6px; color: #666;">
+									<li>Архітектура</li>
+									<li>Моделювання</li>
+									<li>Реалізація</li>
+									<li>Висновки</li>
+								</ul>
+							</div>
+							<div style="background: rgba(234, 88, 12, 0.08); padding: 8px; border-radius: 6px;">
+								<p style="font-weight: bold;" class="ztu-orange">Розділ 3</p>
+								<p style="color: #555; margin-top: 4px;">Тестування / Опис продукту</p>
+								<ul class="ztu-list" style="margin-top: 6px; color: #666;">
+									<li>Тестування</li>
+									<li>Розгортання</li>
+									<li>Демонстрація</li>
+									<li>Висновки</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- 5а. Актуальність -->
+			<section>
+				<h2 class="ztu-blue">ВСТУП — АКТУАЛЬНІСТЬ</h2>
+				<div style="background: rgba(37, 99, 235, 0.08); padding: 10px 12px; border-radius: 8px; margin-top: 9px; font-size: 0.63em;">
+					<p class="ztu-blue" style="font-weight: bold;">Що таке актуальність?</p>
+					<p>Обґрунтування того, чому саме ця задача важлива сьогодні. Відповідь на питання: <span class="ztu-orange">"Навіщо це вирішувати?"</span></p>
+				</div>
+				<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-top: 9px; font-size: 0.63em;">
+					<div style="background: rgba(22, 163, 74, 0.08); padding: 10px 12px; border-radius: 8px;">
+						<p class="ztu-green" style="font-weight: bold;">Структура актуальності</p>
+						<ul class="ztu-list">
+							<li>Загальна проблема галузі</li>
+							<li>Конкретна незакрита задача</li>
+							<li>Чому вирішення важливе зараз</li>
+							<li>Підкріплено посиланнями на джерела</li>
+						</ul>
+					</div>
+					<div style="background: rgba(220, 38, 38, 0.08); padding: 10px 12px; border-radius: 8px;">
+						<p class="ztu-red" style="font-weight: bold;">Типові помилки</p>
+						<ul class="ztu-list">
+							<li>Занадто загально: "сфера IT розвивається"</li>
+							<li>Актуальність ≠ мета роботи</li>
+							<li>Без підтвердження джерелами</li>
+							<li>Переказ вступу підручника</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<!-- 5б. Мета і завдання -->
+			<section>
+				<h2 class="ztu-blue">ВСТУП — МЕТА І ЗАВДАННЯ</h2>
+				<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-top: 9px; font-size: 0.63em;">
+					<div style="background: rgba(37, 99, 235, 0.08); padding: 10px 12px; border-radius: 8px;">
+						<p class="ztu-blue" style="font-weight: bold;">Мета роботи</p>
+						<p>Одне речення. Починається зі слів:</p>
+						<p class="ztu-orange" style="margin-top: 6px; font-weight: bold;">"Розробити...", "Дослідити...", "Створити..."</p>
+						<p style="margin-top: 8px; color: #555; font-style: italic;">Приклад: Метою роботи є розробка вебзастосунку для автоматизації обліку клієнтських заявок.</p>
+					</div>
+					<div style="background: rgba(22, 163, 74, 0.08); padding: 10px 12px; border-radius: 8px;">
+						<p class="ztu-green" style="font-weight: bold;">Завдання (4–6 пунктів)</p>
+						<ul class="ztu-list">
+							<li>Проаналізувати предметну область</li>
+							<li>Розглянути існуючі рішення та аналоги</li>
+							<li>Спроєктувати архітектуру системи</li>
+							<li>Реалізувати програмний продукт</li>
+							<li>Провести тестування і оцінити результати</li>
+						</ul>
+					</div>
+				</div>
+				<div style="background: rgba(234, 88, 12, 0.08); padding: 9px 12px; border-radius: 8px; margin-top: 9px; font-size: 0.63em;">
+					<p><span class="ztu-orange" style="font-weight: bold;">Важливо:</span> Завдання мають відповідати підрозділам роботи — кожен підрозділ вирішує одне завдання</p>
+				</div>
+			</section>
+
+			<!-- 5в. Об'єкт і предмет -->
+			<section>
+				<h2 class="ztu-blue">ВСТУП — ОБ'ЄКТ І ПРЕДМЕТ</h2>
+				<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 15px; font-size: 0.65em;">
+					<div style="background: rgba(37, 99, 235, 0.1); padding: 14px; border-radius: 10px; text-align: center;">
+						<p class="ztu-blue" style="font-weight: bold; font-size: 1.1em;">ОБ'ЄКТ дослідження</p>
+						<p style="margin-top: 8px;">Широка сфера або явище, в межах якого відбувається дослідження</p>
+						<p class="ztu-orange" style="margin-top: 10px; font-style: italic;">Приклад: процес управління задачами в командах розробки</p>
+					</div>
+					<div style="background: rgba(22, 163, 74, 0.1); padding: 14px; border-radius: 10px; text-align: center;">
+						<p class="ztu-green" style="font-weight: bold; font-size: 1.1em;">ПРЕДМЕТ дослідження</p>
+						<p style="margin-top: 8px;">Конкретний аспект об'єкту, який ви безпосередньо досліджуєте</p>
+						<p class="ztu-orange" style="margin-top: 10px; font-style: italic;">Приклад: методи автоматизації розподілу завдань у Kanban-системах</p>
+					</div>
+				</div>
+				<div style="background: rgba(220, 38, 38, 0.06); padding: 10px 12px; border-radius: 8px; margin-top: 12px; font-size: 0.63em;">
+					<p><span class="ztu-red" style="font-weight: bold;">Підказка:</span> Предмет — це частина об'єкту. Ланцюжок: Об'єкт → Предмет → Мета роботи має бути логічним</p>
+				</div>
+			</section>
+
+			<!-- 5г. Практичне значення -->
+			<section>
+				<h2 class="ztu-blue">ВСТУП — ПРАКТИЧНЕ ЗНАЧЕННЯ</h2>
+				<div style="background: rgba(37, 99, 235, 0.08); padding: 10px 12px; border-radius: 8px; margin-top: 9px; font-size: 0.63em;">
+					<p class="ztu-blue" style="font-weight: bold;">Практичне значення одержаних результатів</p>
+					<p>Відповідає на питання: <span class="ztu-orange">"Хто і як може використати результати вашої роботи?"</span></p>
+				</div>
+				<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-top: 9px; font-size: 0.63em;">
+					<div style="background: rgba(22, 163, 74, 0.08); padding: 10px 12px; border-radius: 8px;">
+						<p class="ztu-green" style="font-weight: bold;">Що писати</p>
+						<ul class="ztu-list">
+							<li>Конкретна назва розробленого продукту</li>
+							<li>Де та ким може бути застосований</li>
+							<li>Яку проблему вирішує на практиці</li>
+							<li>Чи впроваджено (акт впровадження)</li>
+						</ul>
+					</div>
+					<div style="background: rgba(234, 88, 12, 0.08); padding: 10px 12px; border-radius: 8px;">
+						<p class="ztu-orange" style="font-weight: bold;">Приклад</p>
+						<p style="font-style: italic; color: #555;">"Розроблений застосунок може використовуватись малим бізнесом для автоматизації обліку клієнтів. Результати роботи впроваджено в ТОВ «Назва компанії»"</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- 6. Планування і таймлайн -->
+			<section>
+				<h2 class="ztu-blue">ПЛАНУВАННЯ І ТАЙМЛАЙН</h2>
+				<div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 9px; font-size: 0.58em;">
+					<div style="background: rgba(37, 99, 235, 0.1); padding: 10px; border-radius: 10px; text-align: center;">
+						<div style="font-size: 1.5em; font-weight: bold;" class="ztu-blue">Вер–Жов</div>
+						<p style="font-weight: bold; margin-top: 6px;">Вибір теми і керівника</p>
+						<ul class="ztu-list" style="text-align: left; margin-top: 6px;">
+							<li>Затвердити тему на кафедрі</li>
+							<li>Отримати завдання</li>
+							<li>Скласти план роботи</li>
+						</ul>
+					</div>
+					<div style="background: rgba(234, 88, 12, 0.1); padding: 10px; border-radius: 10px; text-align: center;">
+						<div style="font-size: 1.5em; font-weight: bold;" class="ztu-orange">Жов–Гру</div>
+						<p style="font-weight: bold; margin-top: 6px;">Розділ 1 + Вступ</p>
+						<ul class="ztu-list" style="text-align: left; margin-top: 6px;">
+							<li>Аналіз літератури</li>
+							<li>Огляд аналогів</li>
+							<li>Написати Розділ 1</li>
+						</ul>
+					</div>
+					<div style="background: rgba(22, 163, 74, 0.1); padding: 10px; border-radius: 10px; text-align: center;">
+						<div style="font-size: 1.5em; font-weight: bold;" class="ztu-green">Січ–Бер</div>
+						<p style="font-weight: bold; margin-top: 6px;">Розділ 2 + Розробка</p>
+						<ul class="ztu-list" style="text-align: left; margin-top: 6px;">
+							<li>Проєктування архітектури</li>
+							<li>Реалізація продукту</li>
+							<li>Написати Розділ 2</li>
+						</ul>
+					</div>
+					<div style="background: rgba(220, 38, 38, 0.1); padding: 10px; border-radius: 10px; text-align: center;">
+						<div style="font-size: 1.5em; font-weight: bold;" class="ztu-red">Кві–Тра</div>
+						<p style="font-weight: bold; margin-top: 6px;">Розділ 3 + Захист</p>
+						<ul class="ztu-list" style="text-align: left; margin-top: 6px;">
+							<li>Тестування</li>
+							<li>Написати Розділ 3</li>
+							<li>Підготовка до захисту</li>
+						</ul>
+					</div>
+				</div>
+				<div style="background: rgba(37, 99, 235, 0.06); padding: 8px 12px; border-radius: 8px; margin-top: 9px; font-size: 0.6em;">
+					<p><span class="ztu-orange" style="font-weight: bold;">Порада:</span> Регулярні зустрічі з керівником — мінімум 1 раз на 2 тижні. Не чекайте останнього місяця!</p>
+				</div>
+			</section>
+
+			<!-- 7. Робота з науковою літературою -->
+			<section>
+				<h2 class="ztu-blue">РОБОТА З НАУКОВОЮ ЛІТЕРАТУРОЮ</h2>
+				<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-top: 9px; font-size: 0.63em;">
+					<div style="background: rgba(37, 99, 235, 0.08); padding: 10px 12px; border-radius: 8px;">
+						<p class="ztu-blue" style="font-weight: bold;">Де шукати?</p>
+						<ul class="ztu-list">
+							<li><span class="ztu-orange">Google Scholar</span> — наукові статті</li>
+							<li><span class="ztu-orange">IEEE Xplore</span> — технічні публікації</li>
+							<li><span class="ztu-orange">arXiv.org</span> — препринти (CS, AI)</li>
+							<li><span class="ztu-orange">Scopus / Web of Science</span> — реферовані бази</li>
+							<li>Електронна бібліотека університету</li>
+						</ul>
+					</div>
+					<div style="background: rgba(22, 163, 74, 0.08); padding: 10px 12px; border-radius: 8px;">
+						<p class="ztu-green" style="font-weight: bold;">Як оформити список джерел?</p>
+						<ul class="ztu-list">
+							<li>ДСТУ 8302:2015 або APA style</li>
+							<li>Кожне джерело — посилання в тексті [1]</li>
+							<li>Бакалавр: 30+ джерел</li>
+							<li>Магістр: 50+ джерел</li>
+							<li>Не менше 30% — іноземні джерела</li>
+						</ul>
+					</div>
+				</div>
+				<div style="background: rgba(234, 88, 12, 0.08); padding: 9px 12px; border-radius: 8px; margin-top: 9px; font-size: 0.63em;">
+					<p><span class="ztu-orange" style="font-weight: bold;">Важливо:</span> Джерела старіші за 10 років — тільки з обґрунтуванням. Основна частина джерел — не старіша за 5 років</p>
+				</div>
+			</section>
+
+			<!-- 8. Написання теоретичної частини -->
+			<section>
+				<h2 class="ztu-blue">НАПИСАННЯ ТЕОРЕТИЧНОЇ ЧАСТИНИ</h2>
+				<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-top: 9px; font-size: 0.63em;">
+					<div style="background: rgba(37, 99, 235, 0.08); padding: 10px 12px; border-radius: 8px;">
+						<p class="ztu-blue" style="font-weight: bold;">Розділ 1 — що включає</p>
+						<ul class="ztu-list">
+							<li>Постановка задачі дослідження</li>
+							<li>Аналіз предметної області</li>
+							<li>Огляд існуючих рішень / аналогів</li>
+							<li>Обґрунтування вибору підходу та технологій</li>
+							<li>Висновки до розділу</li>
+						</ul>
+					</div>
+					<div style="background: rgba(22, 163, 74, 0.08); padding: 10px 12px; border-radius: 8px;">
+						<p class="ztu-green" style="font-weight: bold;">Правила написання</p>
+						<ul class="ztu-list">
+							<li>Науковий стиль — без "я зробив"</li>
+							<li>Кожна думка підтверджена посиланням</li>
+							<li>Таблиці порівняння аналогів</li>
+							<li>Власний висновок наприкінці огляду</li>
+							<li>Логічний зв'язок з наступними розділами</li>
+						</ul>
+					</div>
+				</div>
+				<div style="background: rgba(220, 38, 38, 0.08); padding: 9px 12px; border-radius: 8px; margin-top: 9px; font-size: 0.63em;">
+					<p><span class="ztu-red" style="font-weight: bold;">Типова помилка:</span> Переписати Вікіпедію. Теоретична частина — це аналіз та синтез знань, а не переказ чужих текстів</p>
+				</div>
+			</section>
+
+			<!-- 9. Практична частина -->
+			<section>
+				<h2 class="ztu-blue">ПРАКТИЧНА ЧАСТИНА</h2>
+				<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-top: 9px; font-size: 0.63em;">
+					<div style="background: rgba(37, 99, 235, 0.08); padding: 10px 12px; border-radius: 8px;">
+						<p class="ztu-blue" style="font-weight: bold;">Розділ 2 — Проєктування</p>
+						<ul class="ztu-list">
+							<li>Вимоги до системи (функціональні / нефункціональні)</li>
+							<li>Use case / UML діаграми</li>
+							<li>Архітектурні рішення (шари, компоненти)</li>
+							<li>Структура бази даних / API</li>
+							<li>Обґрунтування технічних рішень</li>
+						</ul>
+					</div>
+					<div style="background: rgba(22, 163, 74, 0.08); padding: 10px 12px; border-radius: 8px;">
+						<p class="ztu-green" style="font-weight: bold;">Розділ 3 — Реалізація і тестування</p>
+						<ul class="ztu-list">
+							<li>Опис реалізації ключових модулів</li>
+							<li>Фрагменти коду (найважливіші частини)</li>
+							<li>Unit / інтеграційне тестування</li>
+							<li>Скриншоти інтерфейсу</li>
+							<li>Аналіз результатів тестування</li>
+						</ul>
+					</div>
+				</div>
+				<div style="background: rgba(234, 88, 12, 0.08); padding: 9px 12px; border-radius: 8px; margin-top: 9px; font-size: 0.63em;">
+					<p><span class="ztu-orange" style="font-weight: bold;">Порада:</span> Весь код — у додатках. У тексті розділу — лише пояснення архітектурних рішень та ключові фрагменти</p>
+				</div>
+			</section>
+
+			<!-- 10. Оформлення за ДСТУ -->
+			<section>
+				<h2 class="ztu-blue">ОФОРМЛЕННЯ ЗА ДСТУ</h2>
+				<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 9px; font-size: 0.61em;">
+					<div style="background: rgba(37, 99, 235, 0.08); padding: 10px 12px; border-radius: 8px;">
+						<p class="ztu-blue" style="font-weight: bold;">Сторінка</p>
+						<ul class="ztu-list">
+							<li>A4, Times New Roman 14pt</li>
+							<li>Міжрядковий інтервал: 1.5</li>
+							<li>Поля: ліво 3 см, решта 2 см</li>
+							<li>Нумерація з 2-ї сторінки</li>
+						</ul>
+					</div>
+					<div style="background: rgba(22, 163, 74, 0.08); padding: 10px 12px; border-radius: 8px;">
+						<p class="ztu-green" style="font-weight: bold;">Заголовки і рисунки</p>
+						<ul class="ztu-list">
+							<li>Розділ — ВЕЛИКІ ЛІТЕРИ, жирний</li>
+							<li>Підрозділ — Жирний</li>
+							<li>Рис. 1.1 — назва під рисунком</li>
+							<li>Табл. 1.1 — назва над таблицею</li>
+						</ul>
+					</div>
+					<div style="background: rgba(234, 88, 12, 0.08); padding: 10px 12px; border-radius: 8px;">
+						<p class="ztu-orange" style="font-weight: bold;">Список джерел</p>
+						<ul class="ztu-list">
+							<li>ДСТУ 8302:2015</li>
+							<li>Посилання в тексті: [1, с. 25]</li>
+							<li>Алфавітний порядок або за появою</li>
+							<li>Перевіряти кожне посилання!</li>
+						</ul>
+					</div>
+				</div>
+				<div style="background: rgba(220, 38, 38, 0.08); padding: 8px 12px; border-radius: 8px; margin-top: 9px; font-size: 0.61em;">
+					<p><span class="ztu-red" style="font-weight: bold;">Комісія перевіряє оформлення!</span> Неправильне оформлення = зниження оцінки. Використовуйте шаблон кафедри з першого дня</p>
+				</div>
+			</section>
+
+			<!-- 11. Антиплагіат -->
+			<section>
+				<h2 class="ztu-blue">АНТИПЛАГІАТ</h2>
+				<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-top: 9px; font-size: 0.63em;">
+					<div style="background: rgba(37, 99, 235, 0.08); padding: 10px 12px; border-radius: 8px;">
+						<p class="ztu-blue" style="font-weight: bold;">Вимоги до оригінальності</p>
+						<ul class="ztu-list">
+							<li>Бакалавр: <span class="ztu-orange">≥ 70%</span> оригінальності</li>
+							<li>Магістр: <span class="ztu-orange">≥ 75%</span> оригінальності</li>
+							<li>Перевірка через Unicheck / Antiplagiat</li>
+							<li>Довідка додається до роботи</li>
+						</ul>
+					</div>
+					<div style="background: rgba(22, 163, 74, 0.08); padding: 10px 12px; border-radius: 8px;">
+						<p class="ztu-green" style="font-weight: bold;">Як підвищити оригінальність</p>
+						<ul class="ztu-list">
+							<li>Перефразовувати, а не копіювати</li>
+							<li>Аналізувати, а не переказувати</li>
+							<li>Цитувати правильно з посиланням</li>
+							<li>Власний код і результати дослідження</li>
+						</ul>
+					</div>
+				</div>
+				<div style="background: rgba(220, 38, 38, 0.1); padding: 9px 12px; border-radius: 8px; margin-top: 9px; font-size: 0.63em;">
+					<p><span class="ztu-red" style="font-weight: bold;">Увага:</span> Використання AI-генерованого тексту без переробки — це також плагіат. Системи перевірки вміють виявляти AI-текст</p>
+				</div>
+			</section>
+
+			<!-- 12. Підготовка до захисту -->
+			<section>
+				<h2 class="ztu-blue">ПІДГОТОВКА ДО ЗАХИСТУ</h2>
+				<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-top: 9px; font-size: 0.63em;">
+					<div style="background: rgba(37, 99, 235, 0.08); padding: 10px 12px; border-radius: 8px;">
+						<p class="ztu-blue" style="font-weight: bold;">Що підготувати</p>
+						<ul class="ztu-list">
+							<li>Презентація (10–15 слайдів)</li>
+							<li>Доповідь: <span class="ztu-orange">7 хвилин</span></li>
+							<li>Демонстрація продукту: <span class="ztu-orange">5 хвилин</span></li>
+							<li>Рецензія наукового керівника</li>
+							<li>Відгук з місця практики (якщо є)</li>
+						</ul>
+					</div>
+					<div style="background: rgba(22, 163, 74, 0.08); padding: 10px 12px; border-radius: 8px;">
+						<p class="ztu-green" style="font-weight: bold;">Структура доповіді (7 хв)</p>
+						<ul class="ztu-list">
+							<li>Актуальність і мета — 1 хв</li>
+							<li>Теоретична база, аналіз — 1.5 хв</li>
+							<li>Архітектура і реалізація — 2 хв</li>
+							<li>Результати, тестування — 1.5 хв</li>
+							<li>Висновки і перспективи — 1 хв</li>
+						</ul>
+					</div>
+				</div>
+				<div style="background: rgba(234, 88, 12, 0.08); padding: 9px 12px; border-radius: 8px; margin-top: 9px; font-size: 0.63em;">
+					<p><span class="ztu-orange" style="font-weight: bold;">Порада:</span> Відрепетируйте доповідь мінімум 3 рази. Підготуйте відповіді на 5–7 типових питань комісії</p>
+				</div>
+			</section>
+
+			<!-- 13. Система оцінювання -->
+			<section>
+				<h2 class="ztu-blue">СИСТЕМА ОЦІНЮВАННЯ</h2>
+				<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 7px; margin-top: 8px; font-size: 0.53em;">
+
+					<div style="background: rgba(37, 99, 235, 0.08); padding: 8px 10px; border-radius: 8px;">
+						<p class="ztu-blue" style="font-weight: bold; margin-bottom: 5px;">Загальне</p>
+						<div style="display: grid; grid-template-columns: 1fr auto; gap: 3px 8px; align-items: baseline;">
+							<span>Відгук керівника</span><span class="ztu-orange" style="font-weight: bold; text-align:right;">3</span>
+							<span>Рецензія</span><span class="ztu-orange" style="font-weight: bold; text-align:right;">3</span>
+							<span>Оцінка за навчання</span><span class="ztu-orange" style="font-weight: bold; text-align:right;">5</span>
+							<span>Git</span><span class="ztu-orange" style="font-weight: bold; text-align:right;">4</span>
+							<span>Своєчасність</span><span class="ztu-orange" style="font-weight: bold; text-align:right;">1</span>
+						</div>
+					</div>
+
+					<div style="background: rgba(22, 163, 74, 0.08); padding: 8px 10px; border-radius: 8px;">
+						<p class="ztu-green" style="font-weight: bold; margin-bottom: 5px;">Захист</p>
+						<div style="display: grid; grid-template-columns: 1fr auto; gap: 3px 8px; align-items: baseline;">
+							<span>Час</span><span class="ztu-orange" style="font-weight: bold; text-align:right;">4</span>
+							<span>Доповідь з презентацією</span><span class="ztu-orange" style="font-weight: bold; text-align:right;">5</span>
+							<span>Демонстрація проєкту</span><span class="ztu-orange" style="font-weight: bold; text-align:right;">5</span>
+							<span>Запитання на захисті</span><span class="ztu-orange" style="font-weight: bold; text-align:right;">10</span>
+						</div>
+					</div>
+
+					<div style="background: rgba(234, 88, 12, 0.08); padding: 8px 10px; border-radius: 8px;">
+						<p class="ztu-orange" style="font-weight: bold; margin-bottom: 5px;">Письмова робота</p>
+						<div style="display: grid; grid-template-columns: 1fr auto; gap: 3px 8px; align-items: baseline;">
+							<span>Відповідність структурним критеріям МОН</span><span class="ztu-orange" style="font-weight: bold; text-align:right;">3</span>
+							<span>Аналіз предм. обл., аналоги</span><span class="ztu-orange" style="font-weight: bold; text-align:right;">6</span>
+							<span>Відповідність спеціальності 121</span><span class="ztu-orange" style="font-weight: bold; text-align:right;">6</span>
+						</div>
+					</div>
+
+					<div style="background: rgba(22, 163, 74, 0.06); padding: 8px 10px; border-radius: 8px; grid-column: 1 / -1;">
+						<p class="ztu-green" style="font-weight: bold; margin-bottom: 5px;">Технічна частина</p>
+						<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px 24px;">
+							<div style="display: grid; grid-template-columns: 1fr auto; gap: 3px 8px; align-items: baseline;">
+								<span>Проєктування та технол. стек</span><span class="ztu-orange" style="font-weight: bold; text-align:right;">5</span>
+								<span>Складність роботи</span><span class="ztu-orange" style="font-weight: bold; text-align:right;">5</span>
+								<span>Якість програмного коду</span><span class="ztu-orange" style="font-weight: bold; text-align:right;">10</span>
+							</div>
+							<div style="display: grid; grid-template-columns: 1fr auto; gap: 3px 8px; align-items: baseline;">
+								<span>Дотримання бізнес-вимог</span><span class="ztu-orange" style="font-weight: bold; text-align:right;">5</span>
+								<span>Архітектура та проєктування ПЗ</span><span class="ztu-orange" style="font-weight: bold; text-align:right;">5</span>
+								<span>Сховище даних</span><span class="ztu-orange" style="font-weight: bold; text-align:right;">5</span>
+							</div>
+							<div style="display: grid; grid-template-columns: 1fr auto; gap: 3px 8px; align-items: baseline;">
+								<span>CI/CD</span><span class="ztu-orange" style="font-weight: bold; text-align:right;">3</span>
+								<span>Дизайн UI/UX</span><span class="ztu-orange" style="font-weight: bold; text-align:right;">4</span>
+								<span>Забезпечення якості</span><span class="ztu-orange" style="font-weight: bold; text-align:right;">3</span>
+							</div>
+						</div>
+					</div>
+
+					<div style="background: rgba(220, 38, 38, 0.08); padding: 7px 10px; border-radius: 8px; grid-column: 1 / -1;">
+						<span class="ztu-red" style="font-weight: bold;">Бонус:</span> Публікація <span class="ztu-orange" style="font-weight: bold;">+10</span> &nbsp;&nbsp;·&nbsp;&nbsp; <span class="ztu-red" style="font-weight: bold;">Максимум: 110 балів</span>
+					</div>
+
+				</div>
+			</section>
+
+			<!-- 14. Q&A -->
+			<section>
+				<h1 class="ztu-blue">ДЯКУЮ ЗА УВАГУ!</h1>
+				<p class="ztu-orange" style="margin-top: 20px; font-size: 1.1em;">Запитання?</p>
+			</section>
+
+		</div>
+	</div>
+
+	<script src="reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		Reveal.initialize({
+			hash: true,
+			progress: true,
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
