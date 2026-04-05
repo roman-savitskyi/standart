@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="uk">
+<html lang="en">
 
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<title>ISO 9001. Системи управління якістю</title>
+	<title>ISO 9001. Quality Management Systems</title>
 
 	<link rel="stylesheet" href="dist/reveal.css">
 	<link rel="stylesheet" href="dist/theme/ztu.css">
@@ -16,669 +16,1365 @@
 <body>
 	<div class="reveal">
 		<div class="footer-ztu-logo"></div>
-		<div class="footer-conference-logo"></div>
-		<div class="footer-beerjs-logo"></div>
+		<div class="footer-isparta-logo"></div>
 		<div class="slides">
 
-			<!-- Title -->
+			<!-- ===== 1. TITLE ===== -->
 			<section>
-				<h1 class="ztu-blue">СЕРТИФІКАЦІЯ ТА СТАНДАРТИЗАЦІЯ ПЗ</h1>
-				<p class="ztu-orange">ISO 9001. Системи управління якістю</p>
+				<section>
+					<h1 class="ztu-blue">ISO 9001. Quality Management Systems</h1>
+					<p style="margin-top: 20px; font-size: 0.65em; color: #555;">
+						Erasmus+ Mobility &nbsp;·&nbsp; Isparta University of Applied Sciences &nbsp;·&nbsp; Isparta, Turkey
+						&nbsp;·&nbsp; 2026
+					</p>
+				</section>
+				<section>
+					<h1 class="ztu-blue">ISO 9001. Kalite Yönetim Sistemleri</h1>
+					<p style="margin-top: 20px; font-size: 0.65em; color: #555;">
+						Erasmus+ Hareketliliği &nbsp;·&nbsp; Isparta Uygulamalı Bilimler Üniversitesi &nbsp;·&nbsp; Isparta, Türkiye
+						&nbsp;·&nbsp; 2026
+					</p>
+				</section>
 			</section>
 
-			<!-- ===== ISO 9001 — ЗАГАЛЬНЕ ===== -->
-
+			<!-- ===== 2. ABOUT ME ===== -->
 			<section>
-				<h2 class="ztu-blue">ISO 9001 — ЩО ЦЕ?</h2>
-				<p style="font-size: 0.8em;">Міжнародний стандарт систем управління якістю (<span
-						class="ztu-orange">Quality Management System, QMS</span>). Визначає вимоги до організації, яка
-					хоче постійно надавати продукти та послуги, що задовольняють клієнтів і регуляторні вимоги.</p>
-				<ul class="ztu-list" style="font-size: 0.78em; margin-top: 15px;">
-					<li>Поточна версія: <span class="ztu-orange">ISO 9001:2015</span> (5-те видання)</li>
-					<li>Попередні: 2008, 2000, 1994, 1987</li>
-					<li>Використовують понад <span class="ztu-orange">1 млн організацій</span> у 170+ країнах</li>
-					<li>В Україні: <span class="ztu-orange">ДСТУ EN ISO 9001:2018</span> — ідентичний переклад</li>
-					<li>Сертифікація проводиться незалежними <span class="ztu-orange">органами з оцінки
-							відповідності</span></li>
-				</ul>
-				<p class="ztu-green" style="font-size: 0.65em; margin-top: 10px;">
-					https://www.iso.org/iso-9001-quality-management.html</p>
+				<section>
+					<h2 class="ztu-blue">ABOUT ME</h2>
+					<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 15px; align-items: center;">
+						<div style="font-size: 0.7em;">
+							<p class="ztu-orange" style="font-weight: bold; font-size: 1.3em; margin-bottom: 16px;">Roman Savitskyi</p>
+							<ul class="ztu-list">
+								<li>PhD student</li>
+								<li>Lecturer — Zhytomyr Polytechnic State University, Ukraine</li>
+								<li>Digital Experience Lead UA — Tieto</li>
+							</ul>
+						</div>
+						<div style="text-align: center;">
+							<img src="examples/assets/Савіцький.jpg"
+								style="max-height: 420px; max-width: 100%; border-radius: 12px; object-fit: cover;">
+						</div>
+					</div>
+				</section>
+				<section>
+					<h2 class="ztu-blue">HAKKIMDA</h2>
+					<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 15px; align-items: center;">
+						<div style="font-size: 0.7em;">
+							<p class="ztu-orange" style="font-weight: bold; font-size: 1.3em; margin-bottom: 16px;">Roman Savitskyi</p>
+							<ul class="ztu-list">
+								<li>Doktora öğrencisi</li>
+								<li>Öğretim Görevlisi — Jitomir Politeknik Devlet Üniversitesi, Ukrayna</li>
+								<li>Dijital Deneyim Lideri UA — Tieto</li>
+							</ul>
+						</div>
+						<div style="text-align: center;">
+							<img src="examples/assets/Савіцький.jpg"
+								style="max-height: 420px; max-width: 100%; border-radius: 12px; object-fit: cover;">
+						</div>
+					</div>
+				</section>
 			</section>
 
+			<!-- ===== 3. ISO ORGANIZATION ===== -->
 			<section>
-				<h2 class="ztu-blue">ISO 9001:2015 — СТРУКТУРА СТАНДАРТУ</h2>
-				<p style="font-size: 0.75em;">Стандарт складається з <span class="ztu-orange">10 розділів</span> (Annex
-					SL структура):</p>
-				<div
-					style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 15px; font-size: 0.68em;">
-					<div style="background: rgba(37, 99, 235, 0.08); padding: 12px; border-radius: 8px;">
-						<ul class="ztu-list">
-							<li><span class="ztu-orange">1–3</span> Scope, References, Terms</li>
-							<li><span class="ztu-orange">4</span> Context of the organization</li>
-							<li><span class="ztu-orange">5</span> Leadership</li>
-							<li><span class="ztu-orange">6</span> Planning (ризики і можливості)</li>
-							<li><span class="ztu-orange">7</span> Support (ресурси, компетенції)</li>
-						</ul>
+				<section>
+					<h2 class="ztu-blue">ISO — THE ORGANIZATION</h2>
+					<div
+						style="display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-top: 9px; font-size: 0.63em;">
+						<div style="background: rgba(37, 99, 235, 0.08); padding: 10px 12px; border-radius: 8px;">
+							<p class="ztu-blue" style="font-weight: bold;">Key Facts</p>
+							<ul class="ztu-list">
+								<li>Founded: <span class="ztu-orange">23 February 1947</span>, London</li>
+								<li>Headquarters: <span class="ztu-orange">Geneva, Switzerland</span></li>
+								<li><span class="ztu-orange">167</span> national member bodies</li>
+								<li><span class="ztu-orange">25,000+</span> published standards</li>
+								<li>Non-governmental, voluntary organization</li>
+								<li>One member body per country</li>
+							</ul>
+						</div>
+						<div style="background: rgba(22, 163, 74, 0.08); padding: 10px 12px; border-radius: 8px;">
+							<p class="ztu-green" style="font-weight: bold;">Governance Structure</p>
+							<ul class="ztu-list">
+								<li>General Assembly — supreme governing body</li>
+								<li>Council — strategic decisions</li>
+								<li>Technical Management Board (TMB)</li>
+								<li>250+ Technical Committees (TC)</li>
+								<li><span class="ztu-orange">TSE</span> — Turkish Standards Institution (Turkey)</li>
+								<li><span class="ztu-orange">UkrNDNC</span> — Ukrainian Research Center for Standardization (Ukraine)</li>
+							</ul>
+						</div>
 					</div>
-					<div style="background: rgba(22, 163, 74, 0.08); padding: 12px; border-radius: 8px;">
-						<ul class="ztu-list">
-							<li><span class="ztu-green">8</span> Operation (реалізація процесів)</li>
-							<li><span class="ztu-green">9</span> Performance evaluation</li>
-							<li><span class="ztu-green">10</span> Improvement</li>
-						</ul>
-						<p class="ztu-orange" style="margin-top: 10px; font-size: 0.95em;">Ключова новація ISO 9001:2015
-							— <strong>ризик-орієнтоване мислення</strong></p>
+					<div
+						style="background: rgba(234, 88, 12, 0.08); padding: 9px 12px; border-radius: 8px; margin-top: 9px; font-size: 0.63em;">
+						<p><span class="ztu-orange" style="font-weight: bold;">Important:</span> ISO does NOT certify
+							organizations — it only publishes standards. Certification is performed by accredited
+							third-party bodies</p>
 					</div>
-				</div>
-				<p class="ztu-green" style="font-size: 0.6em; margin-top: 10px;">
-					https://zakon.isu.net.ua/sites/default/files/normdocs/dstu_en_iso_9001_2018.pdf</p>
+				</section>
+				<section>
+					<h2 class="ztu-blue">ISO — ORGANİZASYON</h2>
+					<div
+						style="display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-top: 9px; font-size: 0.63em;">
+						<div style="background: rgba(37, 99, 235, 0.08); padding: 10px 12px; border-radius: 8px;">
+							<p class="ztu-blue" style="font-weight: bold;">Temel Bilgiler</p>
+							<ul class="ztu-list">
+								<li>Kuruluş: <span class="ztu-orange">23 Şubat 1947</span>, Londra</li>
+								<li>Genel Merkez: <span class="ztu-orange">Cenevre, İsviçre</span></li>
+								<li><span class="ztu-orange">167</span> ulusal üye kuruluş</li>
+								<li><span class="ztu-orange">25.000+</span> yayımlanmış standart</li>
+								<li>Hükümet dışı, gönüllü kuruluş</li>
+								<li>Ülke başına bir üye kuruluş</li>
+							</ul>
+						</div>
+						<div style="background: rgba(22, 163, 74, 0.08); padding: 10px 12px; border-radius: 8px;">
+							<p class="ztu-green" style="font-weight: bold;">Yönetim Yapısı</p>
+							<ul class="ztu-list">
+								<li>Genel Kurul — en yüksek yönetim organı</li>
+								<li>Konsey — stratejik kararlar</li>
+								<li>Teknik Yönetim Kurulu (TMB)</li>
+								<li>250+ Teknik Komite (TC)</li>
+								<li><span class="ztu-orange">TSE</span> — Türk Standartları Enstitüsü (Türkiye)</li>
+								<li><span class="ztu-orange">UkrNDNC</span> — Ukrayna Standardizasyon Araştırma Merkezi (Ukrayna)</li>
+							</ul>
+						</div>
+					</div>
+					<div
+						style="background: rgba(234, 88, 12, 0.08); padding: 9px 12px; border-radius: 8px; margin-top: 9px; font-size: 0.63em;">
+						<p><span class="ztu-orange" style="font-weight: bold;">Önemli:</span> ISO kuruluşları sertifikalandırmaz
+							— yalnızca standartlar yayımlar. Sertifikasyon, akredite üçüncü taraf kuruluşlar tarafından gerçekleştirilir</p>
+					</div>
+				</section>
 			</section>
 
-			<!-- ===== 7 ПРИНЦИПІВ ЯКОСТІ ===== -->
-
+			<!-- ===== 4. ISO/IEC ===== -->
 			<section>
-				<h1 class="ztu-blue">7 ПРИНЦИПІВ ЯКОСТІ</h1>
-				<p class="ztu-orange">Основа ISO 9001</p>
-				<p class="ztu-green" style="font-size: 0.7em; margin-top: 20px;">
-					https://www.dqsglobal.com/uk-ua/navchajtesya/centr-znan-dqs/sim-principiv-upravlinnya-yakistyu</p>
+				<section>
+					<h2 class="ztu-blue">ISO/IEC — STANDARDS DEVELOPMENT</h2>
+					<div
+						style="display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-top: 9px; font-size: 0.63em;">
+						<div style="background: rgba(37, 99, 235, 0.08); padding: 10px 12px; border-radius: 8px;">
+							<p class="ztu-blue" style="font-weight: bold;">ISO/IEC JTC 1</p>
+							<p style="margin-top: 4px;">Joint Technical Committee for <span class="ztu-orange">Information
+									Technology</span> (est. 1987)</p>
+							<ul class="ztu-list" style="margin-top: 6px;">
+								<li>AI &amp; Machine Learning — SC 42</li>
+								<li>Cybersecurity — SC 27</li>
+								<li>Cloud Computing &amp; IoT — SC 38, SC 41</li>
+								<li>Software Engineering — SC 7</li>
+							</ul>
+						</div>
+						<div style="background: rgba(22, 163, 74, 0.08); padding: 10px 12px; border-radius: 8px;">
+							<p class="ztu-green" style="font-weight: bold;">How Standards Are Born</p>
+							<ul class="ztu-list">
+								<li>Proposal (NP) → Working Draft (WD)</li>
+								<li>Committee Draft (CD) → DIS → FDIS</li>
+								<li>Publication as International Standard (IS)</li>
+								<li>Review cycle every <span class="ztu-orange">5 years</span></li>
+								<li>Approval: ≥ 2/3 of P-members vote yes</li>
+							</ul>
+						</div>
+					</div>
+					<div
+						style="background: rgba(234, 88, 12, 0.08); padding: 9px 12px; border-radius: 8px; margin-top: 9px; font-size: 0.63em;">
+						<p><span class="ztu-orange" style="font-weight: bold;">IEC</span> — International Electrotechnical
+							Commission. Partners with ISO for IT standards (JTC 1). Independently covers electrical,
+							electronic and related technologies</p>
+					</div>
+				</section>
+				<section>
+					<h2 class="ztu-blue">ISO/IEC — STANDART GELİŞTİRME</h2>
+					<div
+						style="display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-top: 9px; font-size: 0.63em;">
+						<div style="background: rgba(37, 99, 235, 0.08); padding: 10px 12px; border-radius: 8px;">
+							<p class="ztu-blue" style="font-weight: bold;">ISO/IEC JTC 1</p>
+							<p style="margin-top: 4px;"><span class="ztu-orange">Bilgi Teknolojisi</span> için Ortak Teknik Komite (k. 1987)</p>
+							<ul class="ztu-list" style="margin-top: 6px;">
+								<li>Yapay Zeka ve Makine Öğrenimi — SC 42</li>
+								<li>Siber Güvenlik — SC 27</li>
+								<li>Bulut Bilişim ve IoT — SC 38, SC 41</li>
+								<li>Yazılım Mühendisliği — SC 7</li>
+							</ul>
+						</div>
+						<div style="background: rgba(22, 163, 74, 0.08); padding: 10px 12px; border-radius: 8px;">
+							<p class="ztu-green" style="font-weight: bold;">Standartlar Nasıl Oluşur</p>
+							<ul class="ztu-list">
+								<li>Teklif (NP) → Çalışma Taslağı (WD)</li>
+								<li>Komite Taslağı (CD) → DIS → FDIS</li>
+								<li>Uluslararası Standart (IS) olarak yayım</li>
+								<li>Gözden geçirme döngüsü her <span class="ztu-orange">5 yılda bir</span></li>
+								<li>Onay: P-üyelerinin ≥ 2/3'ü evet oyu kullanır</li>
+							</ul>
+						</div>
+					</div>
+					<div
+						style="background: rgba(234, 88, 12, 0.08); padding: 9px 12px; border-radius: 8px; margin-top: 9px; font-size: 0.63em;">
+						<p><span class="ztu-orange" style="font-weight: bold;">IEC</span> — Uluslararası Elektroteknik Komisyonu.
+							BT standartları için ISO ile ortaklık yapar (JTC 1). Elektrik, elektronik ve ilgili teknolojileri bağımsız olarak kapsar</p>
+					</div>
+				</section>
 			</section>
 
+			<!-- ===== 5. ISO 9001 WHAT IS IT ===== -->
 			<section>
-				<h2 class="ztu-blue">7 ПРИНЦИПІВ ЯКОСТІ</h2>
-				<div
-					style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 10px; font-size: 0.62em;">
-					<div style="background: rgba(37, 99, 235, 0.1); padding: 8px 10px; border-radius: 8px;">
-						<p class="ztu-blue" style="font-weight: bold;">1. Орієнтація на клієнта</p>
-						<p>Розуміти і перевищувати очікування клієнтів — основний фокус QMS</p>
-					</div>
-					<div style="background: rgba(234, 88, 12, 0.1); padding: 8px 10px; border-radius: 8px;">
-						<p class="ztu-orange" style="font-weight: bold;">2. Лідерство</p>
-						<p>Керівники створюють єдність мети, напрямку і залучають людей</p>
-					</div>
-					<div style="background: rgba(22, 163, 74, 0.1); padding: 8px 10px; border-radius: 8px;">
-						<p class="ztu-green" style="font-weight: bold;">3. Прихильність людей</p>
-						<p>Компетентні, уповноважені і залучені люди на всіх рівнях</p>
-					</div>
-					<div style="background: rgba(37, 99, 235, 0.1); padding: 8px 10px; border-radius: 8px;">
-						<p class="ztu-blue" style="font-weight: bold;">4. Підхід, орієнтований на процес</p>
-						<p>Послідовні, передбачувані результати через управління процесами</p>
-					</div>
-					<div style="background: rgba(234, 88, 12, 0.1); padding: 8px 10px; border-radius: 8px;">
-						<p class="ztu-orange" style="font-weight: bold;">5. Удосконалення</p>
-						<p>Постійне поліпшення (continuous improvement) — обов'язковий фокус</p>
-					</div>
-					<div style="background: rgba(22, 163, 74, 0.1); padding: 8px 10px; border-radius: 8px;">
-						<p class="ztu-green" style="font-weight: bold;">6. Прийняття рішень на основі фактів</p>
-						<p>Рішення, засновані на аналізі і оцінці даних</p>
-					</div>
-					<div
-						style="background: rgba(220, 38, 38, 0.1); padding: 8px 10px; border-radius: 8px; grid-column: 1 / -1;">
-						<p class="ztu-red" style="font-weight: bold;">7. Управління відносинами</p>
-						<p>Взаємовигідні відносини із зовнішніми постачальниками та зацікавленими сторонами</p>
-					</div>
-				</div>
+				<section>
+					<h2 class="ztu-blue">ISO 9001 — WHAT IS IT?</h2>
+					<p style="font-size: 0.8em;">An international standard for Quality Management Systems (<span
+							class="ztu-orange">QMS</span>). Defines requirements for organizations that want to consistently
+						provide products and services satisfying customer and regulatory requirements.</p>
+					<ul class="ztu-list" style="font-size: 0.78em; margin-top: 15px;">
+						<li>Current version: <span class="ztu-orange">ISO 9001:2015</span> (5th edition)</li>
+						<li>Previous versions: 2008, 2000, 1994, 1987</li>
+						<li>Used by over <span class="ztu-orange">1 million organizations</span> in 170+ countries</li>
+						<li>In Turkey: <span class="ztu-orange">TS EN ISO 9001:2015</span> — identical adoption by TSE</li>
+						<li>Certification is conducted by independent <span class="ztu-orange">conformity assessment
+								bodies</span></li>
+					</ul>
+					<p class="ztu-green" style="font-size: 0.65em; margin-top: 10px;">
+						https://www.iso.org/iso-9001-quality-management.html</p>
+				</section>
+				<section>
+					<h2 class="ztu-blue">ISO 9001 — NEDİR?</h2>
+					<p style="font-size: 0.8em;">Kalite Yönetim Sistemleri (<span
+							class="ztu-orange">KYS</span>) için uluslararası bir standarttır. Müşteri ve yasal gereksinimleri karşılayan
+						ürün ve hizmetleri tutarlı biçimde sunmak isteyen kuruluşların gereksinimlerini tanımlar.</p>
+					<ul class="ztu-list" style="font-size: 0.78em; margin-top: 15px;">
+						<li>Güncel sürüm: <span class="ztu-orange">ISO 9001:2015</span> (5. baskı)</li>
+						<li>Önceki sürümler: 2008, 2000, 1994, 1987</li>
+						<li>170'ten fazla ülkede <span class="ztu-orange">1 milyondan fazla kuruluş</span> tarafından kullanılır</li>
+						<li>Türkiye'de: <span class="ztu-orange">TS EN ISO 9001:2015</span> — TSE tarafından özdeş olarak benimsendi</li>
+						<li>Sertifikasyon, bağımsız <span class="ztu-orange">uygunluk değerlendirme kuruluşları</span> tarafından yürütülür</li>
+					</ul>
+					<p class="ztu-green" style="font-size: 0.65em; margin-top: 10px;">
+						https://www.iso.org/iso-9001-quality-management.html</p>
+				</section>
 			</section>
 
-			<!-- ===== PDCA ===== -->
-
+			<!-- ===== 6. STANDARD STRUCTURE ===== -->
 			<section>
-				<h2 class="ztu-blue">ЦИКЛ ШУХАРТА-ДЕМІНГА (PDCA)</h2>
-				<p style="font-size: 0.78em;">Основа безперервного поліпшення в ISO 9001. Кожен процес проходить 4 фази:
-				</p>
-				<div
-					style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; margin-top: 20px; font-size: 0.73em;">
+				<section>
+					<h2 class="ztu-blue">ISO 9001:2015 — STANDARD STRUCTURE</h2>
+					<p style="font-size: 0.75em;">The standard consists of <span class="ztu-orange">10 clauses</span> (Annex
+						SL structure):</p>
 					<div
-						style="background: rgba(220, 38, 38, 0.15); padding: 20px 12px; border-radius: 12px; text-align: center;">
-						<p class="ztu-red" style="font-size: 1.4em; font-weight: bold; margin-bottom: 8px;">ПЛАНУЙ</p>
-						<p style="font-size: 0.88em;">Визначити цілі, процеси та ресурси для досягнення результату</p>
+						style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 15px; font-size: 0.68em;">
+						<div style="background: rgba(37, 99, 235, 0.08); padding: 12px; border-radius: 8px;">
+							<ul class="ztu-list">
+								<li><span class="ztu-orange">1–3</span> Scope, References, Terms</li>
+								<li><span class="ztu-orange">4</span> Context of the organization</li>
+								<li><span class="ztu-orange">5</span> Leadership</li>
+								<li><span class="ztu-orange">6</span> Planning (risks &amp; opportunities)</li>
+								<li><span class="ztu-orange">7</span> Support (resources, competence)</li>
+							</ul>
+						</div>
+						<div style="background: rgba(22, 163, 74, 0.08); padding: 12px; border-radius: 8px;">
+							<ul class="ztu-list">
+								<li><span class="ztu-green">8</span> Operation (process realization)</li>
+								<li><span class="ztu-green">9</span> Performance evaluation</li>
+								<li><span class="ztu-green">10</span> Improvement</li>
+							</ul>
+							<p class="ztu-orange" style="margin-top: 10px; font-size: 0.95em;">Key innovation of ISO
+								9001:2015
+								— <strong>risk-based thinking</strong></p>
+						</div>
 					</div>
+					<p class="ztu-green" style="font-size: 0.6em; margin-top: 10px;">
+						https://www.iso.org/iso-9001-quality-management.html</p>
+				</section>
+				<section>
+					<h2 class="ztu-blue">ISO 9001:2015 — STANDART YAPISI</h2>
+					<p style="font-size: 0.75em;">Standart, <span class="ztu-orange">10 maddeden</span> oluşur (Ek SL yapısı):</p>
 					<div
-						style="background: rgba(234, 88, 12, 0.15); padding: 20px 12px; border-radius: 12px; text-align: center;">
-						<p class="ztu-orange" style="font-size: 1.4em; font-weight: bold; margin-bottom: 8px;">РОБИ</p>
-						<p style="font-size: 0.88em;">Реалізувати заплановане, навчити персонал, виконати процеси</p>
+						style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 15px; font-size: 0.68em;">
+						<div style="background: rgba(37, 99, 235, 0.08); padding: 12px; border-radius: 8px;">
+							<ul class="ztu-list">
+								<li><span class="ztu-orange">1–3</span> Kapsam, Referanslar, Terimler</li>
+								<li><span class="ztu-orange">4</span> Kuruluşun bağlamı</li>
+								<li><span class="ztu-orange">5</span> Liderlik</li>
+								<li><span class="ztu-orange">6</span> Planlama (riskler ve fırsatlar)</li>
+								<li><span class="ztu-orange">7</span> Destek (kaynaklar, yeterlilik)</li>
+							</ul>
+						</div>
+						<div style="background: rgba(22, 163, 74, 0.08); padding: 12px; border-radius: 8px;">
+							<ul class="ztu-list">
+								<li><span class="ztu-green">8</span> Operasyon (süreç gerçekleştirme)</li>
+								<li><span class="ztu-green">9</span> Performans değerlendirmesi</li>
+								<li><span class="ztu-green">10</span> İyileştirme</li>
+							</ul>
+							<p class="ztu-orange" style="margin-top: 10px; font-size: 0.95em;">ISO 9001:2015'in temel yeniliği
+								— <strong>riske dayalı düşünce</strong></p>
+						</div>
 					</div>
-					<div
-						style="background: rgba(22, 163, 74, 0.15); padding: 20px 12px; border-radius: 12px; text-align: center;">
-						<p class="ztu-green" style="font-size: 1.4em; font-weight: bold; margin-bottom: 8px;">ПЕРЕВІРЯЙ
-						</p>
-						<p style="font-size: 0.88em;">Моніторинг, вимірювання та аналіз результатів відносно цілей</p>
-					</div>
-					<div
-						style="background: rgba(37, 99, 235, 0.15); padding: 20px 12px; border-radius: 12px; text-align: center;">
-						<p class="ztu-blue" style="font-size: 1.4em; font-weight: bold; margin-bottom: 8px;">ВПЛИВАЙ</p>
-						<p style="font-size: 0.88em;">Дії для усунення відхилень і постійного покращення процесів</p>
-					</div>
-				</div>
+					<p class="ztu-green" style="font-size: 0.6em; margin-top: 10px;">
+						https://www.iso.org/iso-9001-quality-management.html</p>
+				</section>
 			</section>
 
+			<!-- ===== 7. 7 QUALITY PRINCIPLES ===== -->
 			<section>
-				<h2 class="ztu-blue">PDCA У РОЗРОБЦІ ПЗ</h2>
-				<table style="font-size: 0.65em; width: 100%; margin-top: 15px;">
-					<thead>
-						<tr>
-							<th>Фаза</th>
-							<th>У виробництві</th>
-							<th>У розробці ПЗ</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td class="ztu-red"><strong>Plan</strong></td>
-							<td>Технічні вимоги, норми якості</td>
-							<td>Sprint planning, Definition of Done, SLA</td>
-						</tr>
-						<tr>
-							<td class="ztu-orange"><strong>Do</strong></td>
-							<td>Виробничий процес</td>
-							<td>Розробка, code review, CI/CD pipeline</td>
-						</tr>
-						<tr>
-							<td class="ztu-green"><strong>Check</strong></td>
-							<td>Контроль якості, вимірювання</td>
-							<td>Тестування, моніторинг метрик, Sprint Review</td>
-						</tr>
-						<tr>
-							<td class="ztu-blue"><strong>Act</strong></td>
-							<td>Коригувальні дії</td>
-							<td>Retrospective, bug fixes, process improvement</td>
-						</tr>
-					</tbody>
-				</table>
-				<p style="font-size: 0.75em; margin-top: 15px;"><span class="ztu-orange">Agile та Scrum</span> за своєю
-					природою є реалізацією PDCA у циклі спринтів.</p>
+				<section>
+					<h2 class="ztu-blue">7 QUALITY PRINCIPLES</h2>
+					<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; margin-top: 8px; font-size: 0.57em;">
+						<div style="background: rgba(37, 99, 235, 0.1); padding: 7px 9px; border-radius: 8px;">
+							<p class="ztu-blue" style="font-weight: bold;">1. Customer Focus</p>
+							<p>Meeting and exceeding customer expectations</p>
+						</div>
+						<div style="background: rgba(234, 88, 12, 0.1); padding: 7px 9px; border-radius: 8px;">
+							<p class="ztu-orange" style="font-weight: bold;">2. Leadership</p>
+							<p>Unity of purpose, direction and people engagement</p>
+						</div>
+						<div style="background: rgba(22, 163, 74, 0.1); padding: 7px 9px; border-radius: 8px;">
+							<p class="ztu-green" style="font-weight: bold;">3. Engagement of People</p>
+							<p>Competent and empowered people at all levels</p>
+						</div>
+						<div style="background: rgba(37, 99, 235, 0.1); padding: 7px 9px; border-radius: 8px;">
+							<p class="ztu-blue" style="font-weight: bold;">4. Process Approach</p>
+							<p>Consistent results through systematic process management</p>
+						</div>
+						<div style="background: rgba(234, 88, 12, 0.1); padding: 7px 9px; border-radius: 8px;">
+							<p class="ztu-orange" style="font-weight: bold;">5. Improvement</p>
+							<p>Continuous improvement as a permanent focus</p>
+						</div>
+						<div style="background: rgba(22, 163, 74, 0.1); padding: 7px 9px; border-radius: 8px;">
+							<p class="ztu-green" style="font-weight: bold;">6. Evidence-Based Decisions</p>
+							<p>Decisions based on data analysis and evaluation</p>
+						</div>
+						<div style="background: rgba(220, 38, 38, 0.1); padding: 7px 9px; border-radius: 8px; grid-column: 1 / -1;">
+							<p class="ztu-red" style="font-weight: bold;">7. Relationship Management</p>
+							<p>Mutually beneficial relationships with providers and interested parties</p>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h2 class="ztu-blue">7 KALİTE İLKESİ</h2>
+					<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; margin-top: 8px; font-size: 0.57em;">
+						<div style="background: rgba(37, 99, 235, 0.1); padding: 7px 9px; border-radius: 8px;">
+							<p class="ztu-blue" style="font-weight: bold;">1. Müşteri Odaklılık</p>
+							<p>Müşteri beklentilerini karşılamak ve aşmak</p>
+						</div>
+						<div style="background: rgba(234, 88, 12, 0.1); padding: 7px 9px; border-radius: 8px;">
+							<p class="ztu-orange" style="font-weight: bold;">2. Liderlik</p>
+							<p>Amaç, yön ve insan katılımında birlik</p>
+						</div>
+						<div style="background: rgba(22, 163, 74, 0.1); padding: 7px 9px; border-radius: 8px;">
+							<p class="ztu-green" style="font-weight: bold;">3. Kişilerin Katılımı</p>
+							<p>Her düzeyde yetkin ve yetkilendirilmiş kişiler</p>
+						</div>
+						<div style="background: rgba(37, 99, 235, 0.1); padding: 7px 9px; border-radius: 8px;">
+							<p class="ztu-blue" style="font-weight: bold;">4. Süreç Yaklaşımı</p>
+							<p>Sistematik süreç yönetimiyle tutarlı sonuçlar</p>
+						</div>
+						<div style="background: rgba(234, 88, 12, 0.1); padding: 7px 9px; border-radius: 8px;">
+							<p class="ztu-orange" style="font-weight: bold;">5. İyileştirme</p>
+							<p>Sürekli iyileştirmeyi kalıcı odak noktası olarak benimsemek</p>
+						</div>
+						<div style="background: rgba(22, 163, 74, 0.1); padding: 7px 9px; border-radius: 8px;">
+							<p class="ztu-green" style="font-weight: bold;">6. Kanıta Dayalı Kararlar</p>
+							<p>Veri analizi ve değerlendirmeye dayalı kararlar</p>
+						</div>
+						<div style="background: rgba(220, 38, 38, 0.1); padding: 7px 9px; border-radius: 8px; grid-column: 1 / -1;">
+							<p class="ztu-red" style="font-weight: bold;">7. İlişki Yönetimi</p>
+							<p>Tedarikçiler ve ilgili taraflarla karşılıklı yarara dayalı ilişkiler</p>
+						</div>
+					</div>
+				</section>
 			</section>
 
-			<!-- ===== СИСТЕМИ ===== -->
-
+			<!-- ===== 8. PDCA IMAGE ===== -->
 			<section>
-				<h2 class="ztu-blue">СИСТЕМИ ISO 9001</h2>
-				<p style="font-size: 0.72em;">ISO 9001 вимагає побудови та підтримки чотирьох взаємопов'язаних систем:
-				</p>
-				<div
-					style="display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-top: 9px; font-size: 0.63em;">
-					<div style="background: rgba(37, 99, 235, 0.1); padding: 10px 12px; border-radius: 8px;">
-						<h3 class="ztu-blue" style="font-size: 1em; margin-bottom: 6px;">Система документації</h3>
-						<ul class="ztu-list">
-							<li>Задокументована інформація (раніше — "процедури")</li>
-							<li>Настанова з якості, процедури, записи</li>
-							<li>Контроль версій і доступу до документів</li>
-						</ul>
+				<section>
+					<h2 class="ztu-blue">PDCA CYCLE (SHEWHART-DEMING)</h2>
+					<div style="text-align: center; margin-top: 10px;">
+						<img src="examples/assets/pdca.webp" style="max-height: 480px; max-width: 100%; object-fit: contain;">
 					</div>
-					<div style="background: rgba(22, 163, 74, 0.1); padding: 10px 12px; border-radius: 8px;">
-						<h3 class="ztu-green" style="font-size: 1em; margin-bottom: 6px;">Система моніторингу</h3>
-						<ul class="ztu-list">
-							<li>KPI процесів і продукту</li>
-							<li>Внутрішні аудити</li>
-							<li>Аналіз задоволеності клієнтів</li>
-						</ul>
+				</section>
+				<section>
+					<h2 class="ztu-blue">PDCA DÖNGÜSÜ (SHEWHART-DEMING)</h2>
+					<div style="text-align: center; margin-top: 10px;">
+						<img src="examples/assets/pdca.webp" style="max-height: 480px; max-width: 100%; object-fit: contain;">
 					</div>
-					<div style="background: rgba(234, 88, 12, 0.1); padding: 10px 12px; border-radius: 8px;">
-						<h3 class="ztu-orange" style="font-size: 1em; margin-bottom: 6px;">Система якості (QMS)</h3>
-						<ul class="ztu-list">
-							<li>Карта процесів організації</li>
-							<li>Відповідальність і повноваження</li>
-							<li>Управління невідповідностями</li>
-						</ul>
+					<div style="font-size: 0.65em; margin-top: 10px; display: grid; grid-template-columns: repeat(4,1fr); gap: 8px; text-align: center;">
+						<div style="background: rgba(220,38,38,0.1); padding: 6px; border-radius: 6px;"><strong class="ztu-red">Planla</strong> — hedefler ve süreçleri belirle</div>
+						<div style="background: rgba(234,88,12,0.1); padding: 6px; border-radius: 6px;"><strong class="ztu-orange">Uygula</strong> — planı hayata geçir</div>
+						<div style="background: rgba(22,163,74,0.1); padding: 6px; border-radius: 6px;"><strong class="ztu-green">Kontrol Et</strong> — sonuçları ölç ve izle</div>
+						<div style="background: rgba(37,99,235,0.1); padding: 6px; border-radius: 6px;"><strong class="ztu-blue">Önlem Al</strong> — iyileştir ve standartlaştır</div>
 					</div>
-					<div style="background: rgba(220, 38, 38, 0.1); padding: 10px 12px; border-radius: 8px;">
-						<h3 class="ztu-red" style="font-size: 1em; margin-bottom: 6px;">Система ведення проєктів</h3>
-						<ul class="ztu-list">
-							<li>Планування, ресурси, терміни</li>
-							<li>Контроль виконання</li>
-							<li>Закриття та оцінка результатів</li>
-						</ul>
-					</div>
-				</div>
+				</section>
 			</section>
 
-			<!-- ===== РИЗИКИ ===== -->
-
+			<!-- ===== 9. PDCA IN SOFTWARE ===== -->
 			<section>
-				<h2 class="ztu-blue">РИЗИКИ — ВНУТРІШНІ І ЗОВНІШНІ</h2>
-				<p style="font-size: 0.72em;">ISO 9001:2015 вимагає виявляти та керувати ризиками. Ризики поділяються на
-					<span class="ztu-orange">внутрішні</span> та <span class="ztu-blue">зовнішні</span>.</p>
-				<div
-					style="display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-top: 9px; font-size: 0.63em;">
-					<div style="background: rgba(220, 38, 38, 0.1); padding: 10px 12px; border-radius: 8px;">
-						<h3 class="ztu-red" style="font-size: 1em; margin-bottom: 6px;">Стратегічні</h3>
-						<ul class="ztu-list">
-							<li>Зміна ринку або конкурентного середовища</li>
-							<li>Нові регуляторні вимоги</li>
-							<li>Технологічні зміни (disruption)</li>
-						</ul>
-					</div>
-					<div style="background: rgba(234, 88, 12, 0.1); padding: 10px 12px; border-radius: 8px;">
-						<h3 class="ztu-orange" style="font-size: 1em; margin-bottom: 6px;">Операційні</h3>
-						<ul class="ztu-list">
-							<li>Збої у внутрішніх процесах</li>
-							<li>Технічні відмови, простої</li>
-							<li>Помилки персоналу</li>
-						</ul>
-					</div>
-					<div style="background: rgba(37, 99, 235, 0.1); padding: 10px 12px; border-radius: 8px;">
-						<h3 class="ztu-blue" style="font-size: 1em; margin-bottom: 6px;">Фінансові</h3>
-						<ul class="ztu-list">
-							<li>Перевищення бюджету</li>
-							<li>Проблеми з фінансуванням</li>
-							<li>Валютні та ринкові ризики</li>
-						</ul>
-					</div>
-					<div style="background: rgba(22, 163, 74, 0.1); padding: 10px 12px; border-radius: 8px;">
-						<h3 class="ztu-green" style="font-size: 1em; margin-bottom: 6px;">Небезпечні</h3>
-						<ul class="ztu-list">
-							<li>Безпека персоналу та користувачів</li>
-							<li>Кібератаки, витік даних</li>
-							<li>Форс-мажор, катастрофи</li>
-						</ul>
-					</div>
-				</div>
-			</section>
-
-			<section>
-				<h2 class="ztu-blue">ОЦІНКА РИЗИКУ — 5 КРОКІВ</h2>
-				<div
-					style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-top: 20px; font-size: 0.68em;">
-					<div
-						style="background: rgba(37, 99, 235, 0.15); padding: 12px; border-radius: 8px; text-align: center;">
-						<p style="font-size: 1.6em; font-weight: bold; color: #2563eb;">1</p>
-						<p class="ztu-blue" style="font-weight: bold;">Створення контексту</p>
-						<p style="margin-top: 6px;">Визначення меж, цілей та критеріїв оцінки</p>
-					</div>
-					<div
-						style="background: rgba(234, 88, 12, 0.15); padding: 12px; border-radius: 8px; text-align: center;">
-						<p style="font-size: 1.6em; font-weight: bold; color: #ea580c;">2</p>
-						<p class="ztu-orange" style="font-weight: bold;">Ідентифікація</p>
-						<p style="margin-top: 6px;">Виявлення всіх можливих ризиків та їх джерел</p>
-					</div>
-					<div
-						style="background: rgba(22, 163, 74, 0.15); padding: 12px; border-radius: 8px; text-align: center;">
-						<p style="font-size: 1.6em; font-weight: bold; color: #16a34a;">3</p>
-						<p class="ztu-green" style="font-weight: bold;">Аналіз</p>
-						<p style="margin-top: 6px;">Ймовірність × Наслідок = Рівень ризику</p>
-					</div>
-					<div
-						style="background: rgba(220, 38, 38, 0.15); padding: 12px; border-radius: 8px; text-align: center;">
-						<p style="font-size: 1.6em; font-weight: bold; color: #dc2626;">4</p>
-						<p class="ztu-red" style="font-weight: bold;">Оцінювання</p>
-						<p style="margin-top: 6px;">Пріоритизація: матриця ризиків (heat map)</p>
-					</div>
-					<div
-						style="background: rgba(37, 99, 235, 0.1); padding: 12px; border-radius: 8px; text-align: center;">
-						<p style="font-size: 1.6em; font-weight: bold; color: #2563eb;">5</p>
-						<p class="ztu-blue" style="font-weight: bold;">Обробка</p>
-						<p style="margin-top: 6px;">Mitigation / Transfer / Acceptance / Avoidance</p>
-					</div>
-				</div>
-				<p style="font-size: 0.72em; margin-top: 15px; text-align: center;">ISO 31000 — окремий стандарт
-					управління ризиками, сумісний з ISO 9001</p>
-			</section>
-
-			<section>
-				<h2 class="ztu-blue">МАТРИЦЯ РИЗИКІВ</h2>
-				<p style="font-size: 0.75em;">Пріоритизація ризиків за шкалою <span class="ztu-orange">Ймовірність ×
-						Наслідок</span> (від 1 до 5):</p>
-				<div style="margin-top: 12px; font-size: 0.58em;">
-					<table style="width: 100%; border-collapse: collapse; text-align: center;">
+				<section>
+					<h2 class="ztu-blue">PDCA IN SOFTWARE DEVELOPMENT</h2>
+					<table style="font-size: 0.65em; width: 100%; margin-top: 15px;">
 						<thead>
 							<tr>
-								<th style="padding: 6px; border: 1px solid #ccc; background: #f1f5f9;">Ймовірність ↓ /
-									Наслідок →</th>
-								<th style="padding: 6px; border: 1px solid #ccc;">1 Незначний</th>
-								<th style="padding: 6px; border: 1px solid #ccc;">2 Малий</th>
-								<th style="padding: 6px; border: 1px solid #ccc;">3 Помірний</th>
-								<th style="padding: 6px; border: 1px solid #ccc;">4 Суттєвий</th>
-								<th style="padding: 6px; border: 1px solid #ccc;">5 Критичний</th>
+								<th>Phase</th>
+								<th>In Manufacturing</th>
+								<th>In Software Development</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td
-									style="padding: 6px; border: 1px solid #ccc; font-weight: bold; background: #f1f5f9;">
-									5 Майже певно</td>
-								<td style="padding: 6px; border: 1px solid #ccc; background: #fef08a;">5</td>
-								<td style="padding: 6px; border: 1px solid #ccc; background: #fdba74;">10</td>
-								<td style="padding: 6px; border: 1px solid #ccc; background: #f87171;">15</td>
-								<td
-									style="padding: 6px; border: 1px solid #ccc; background: #f87171; font-weight: bold;">
-									20</td>
-								<td
-									style="padding: 6px; border: 1px solid #ccc; background: #dc2626; color: white; font-weight: bold;">
-									25</td>
+								<td class="ztu-red"><strong>Plan</strong></td>
+								<td>Technical requirements, quality norms</td>
+								<td>Sprint planning, Definition of Done, SLA</td>
 							</tr>
 							<tr>
-								<td
-									style="padding: 6px; border: 1px solid #ccc; font-weight: bold; background: #f1f5f9;">
-									4 Ймовірно</td>
-								<td style="padding: 6px; border: 1px solid #ccc; background: #bbf7d0;">4</td>
-								<td style="padding: 6px; border: 1px solid #ccc; background: #fef08a;">8</td>
-								<td style="padding: 6px; border: 1px solid #ccc; background: #fdba74;">12</td>
-								<td style="padding: 6px; border: 1px solid #ccc; background: #f87171;">16</td>
-								<td
-									style="padding: 6px; border: 1px solid #ccc; background: #f87171; font-weight: bold;">
-									20</td>
+								<td class="ztu-orange"><strong>Do</strong></td>
+								<td>Production process</td>
+								<td>Development, code review, CI/CD pipeline</td>
 							</tr>
 							<tr>
-								<td
-									style="padding: 6px; border: 1px solid #ccc; font-weight: bold; background: #f1f5f9;">
-									3 Можливо</td>
-								<td style="padding: 6px; border: 1px solid #ccc; background: #bbf7d0;">3</td>
-								<td style="padding: 6px; border: 1px solid #ccc; background: #bbf7d0;">6</td>
-								<td style="padding: 6px; border: 1px solid #ccc; background: #fef08a;">9</td>
-								<td style="padding: 6px; border: 1px solid #ccc; background: #fdba74;">12</td>
-								<td style="padding: 6px; border: 1px solid #ccc; background: #f87171;">15</td>
+								<td class="ztu-green"><strong>Check</strong></td>
+								<td>Quality control, measurement</td>
+								<td>Testing, metrics monitoring, Sprint Review</td>
 							</tr>
 							<tr>
-								<td
-									style="padding: 6px; border: 1px solid #ccc; font-weight: bold; background: #f1f5f9;">
-									2 Малоймовірно</td>
-								<td style="padding: 6px; border: 1px solid #ccc; background: #bbf7d0;">2</td>
-								<td style="padding: 6px; border: 1px solid #ccc; background: #bbf7d0;">4</td>
-								<td style="padding: 6px; border: 1px solid #ccc; background: #bbf7d0;">6</td>
-								<td style="padding: 6px; border: 1px solid #ccc; background: #fef08a;">8</td>
-								<td style="padding: 6px; border: 1px solid #ccc; background: #fdba74;">10</td>
-							</tr>
-							<tr>
-								<td
-									style="padding: 6px; border: 1px solid #ccc; font-weight: bold; background: #f1f5f9;">
-									1 Рідко</td>
-								<td style="padding: 6px; border: 1px solid #ccc; background: #bbf7d0;">1</td>
-								<td style="padding: 6px; border: 1px solid #ccc; background: #bbf7d0;">2</td>
-								<td style="padding: 6px; border: 1px solid #ccc; background: #bbf7d0;">3</td>
-								<td style="padding: 6px; border: 1px solid #ccc; background: #bbf7d0;">4</td>
-								<td style="padding: 6px; border: 1px solid #ccc; background: #fef08a;">5</td>
+								<td class="ztu-blue"><strong>Act</strong></td>
+								<td>Corrective actions</td>
+								<td>Retrospective, bug fixes, process improvement</td>
 							</tr>
 						</tbody>
 					</table>
-				</div>
-				<div
-					style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 10px; font-size: 0.6em; text-align: center;">
-					<div style="background: #bbf7d0; padding: 5px; border-radius: 4px;"><strong>1–4</strong> Низький
-					</div>
-					<div style="background: #fef08a; padding: 5px; border-radius: 4px;"><strong>5–9</strong> Середній
-					</div>
-					<div style="background: #fdba74; padding: 5px; border-radius: 4px;"><strong>10–14</strong> Високий
-					</div>
-					<div style="background: #f87171; padding: 5px; border-radius: 4px;"><strong>15–25</strong> Критичний
-					</div>
-				</div>
+					<p style="font-size: 0.75em; margin-top: 15px;"><span class="ztu-orange">Agile and Scrum</span> are by
+						nature an implementation of PDCA within sprint cycles.</p>
+				</section>
+				<section>
+					<h2 class="ztu-blue">YAZILIM GELİŞTİRMEDE PDCA</h2>
+					<table style="font-size: 0.65em; width: 100%; margin-top: 15px;">
+						<thead>
+							<tr>
+								<th>Aşama</th>
+								<th>Üretimde</th>
+								<th>Yazılım Geliştirmede</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="ztu-red"><strong>Planla</strong></td>
+								<td>Teknik gereksinimler, kalite normları</td>
+								<td>Sprint planlaması, Tamamlanma Tanımı, SLA</td>
+							</tr>
+							<tr>
+								<td class="ztu-orange"><strong>Uygula</strong></td>
+								<td>Üretim süreci</td>
+								<td>Geliştirme, kod incelemesi, CI/CD boru hattı</td>
+							</tr>
+							<tr>
+								<td class="ztu-green"><strong>Kontrol Et</strong></td>
+								<td>Kalite kontrol, ölçüm</td>
+								<td>Test, metrik izleme, Sprint İncelemesi</td>
+							</tr>
+							<tr>
+								<td class="ztu-blue"><strong>Önlem Al</strong></td>
+								<td>Düzeltici faaliyetler</td>
+								<td>Retrospektif, hata düzeltme, süreç iyileştirme</td>
+							</tr>
+						</tbody>
+					</table>
+					<p style="font-size: 0.75em; margin-top: 15px;"><span class="ztu-orange">Agile ve Scrum</span>, doğası gereği sprint döngüleri içindeki PDCA'nın bir uygulamasıdır.</p>
+				</section>
 			</section>
 
+			<!-- ===== 10. SYSTEMS ===== -->
 			<section>
-				<h2 class="ztu-blue">ALARP — ПРИНЦИП УПРАВЛІННЯ РИЗИКОМ</h2>
-				<p class="ztu-orange" style="font-size: 0.85em;">As Low As Reasonably Practicable</p>
-				<p style="font-size: 0.78em; margin-top: 10px;">Ризик слід знижувати до рівня, настільки низького,
-					наскільки це <strong>розумно практично можливо</strong>, зважаючи на витрати.</p>
-				<div
-					style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; margin-top: 15px; font-size: 0.72em;">
-					<div
-						style="background: rgba(220, 38, 38, 0.2); padding: 15px; border-radius: 8px; text-align: center; border: 2px solid #dc2626;">
-						<p class="ztu-red" style="font-weight: bold; font-size: 1.1em;">НЕПРИЙНЯТНИЙ</p>
-						<p style="margin-top: 8px;">Ризик надто високий. Діяльність <strong>заборонена</strong> або
-							потребує негайних заходів незалежно від витрат</p>
-					</div>
-					<div
-						style="background: rgba(234, 88, 12, 0.2); padding: 15px; border-radius: 8px; text-align: center; border: 2px solid #ea580c;">
-						<p class="ztu-orange" style="font-weight: bold; font-size: 1.1em;">ALARP</p>
-						<p style="margin-top: 8px;">Ризик прийнятний, якщо заходи зниження <strong>виправдані
-								витратами</strong>. Необхідно знижувати настільки, наскільки практично можливо</p>
-					</div>
-					<div
-						style="background: rgba(22, 163, 74, 0.2); padding: 15px; border-radius: 8px; text-align: center; border: 2px solid #16a34a;">
-						<p class="ztu-green" style="font-weight: bold; font-size: 1.1em;">ПРИЙНЯТНИЙ</p>
-						<p style="margin-top: 8px;">Ризик настільки низький, що <strong>подальші заходи не
-								потрібні</strong>. Моніторинг зберігається</p>
-					</div>
-				</div>
-			</section>
-
-			<section>
-				<h2 class="ztu-blue">НЕВІДПОВІДНОСТІ (NON-CONFORMITIES)</h2>
-				<p style="font-size: 0.72em;">Виявляються під час аудитів. Ключовий механізм покращення в ISO 9001.</p>
-				<div
-					style="display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-top: 9px; font-size: 0.63em;">
-					<div style="background: rgba(234, 88, 12, 0.1); padding: 10px 12px; border-radius: 8px;">
-						<h3 class="ztu-orange" style="font-size: 1em; margin-bottom: 6px;">Minor NC</h3>
-						<ul class="ztu-list">
-							<li>Поодинокий відступ від вимоги</li>
-							<li>Не загрожує системі загалом</li>
-							<li>Приклад: один запис без підпису, прострочений документ</li>
-							<li>Термін усунення: зазвичай до 90 днів</li>
-						</ul>
-					</div>
-					<div style="background: rgba(220, 38, 38, 0.1); padding: 10px 12px; border-radius: 8px;">
-						<h3 class="ztu-red" style="font-size: 1em; margin-bottom: 6px;">Major NC</h3>
-						<ul class="ztu-list">
-							<li>Системна відмова або відсутність вимоги</li>
-							<li>Загрожує здатності організації відповідати вимогам</li>
-							<li>Приклад: відсутній процес внутрішніх аудитів взагалі</li>
-							<li>Може призвести до <span class="ztu-red">призупинення сертифікату</span></li>
-						</ul>
-					</div>
-				</div>
-				<div
-					style="background: rgba(37, 99, 235, 0.08); padding: 9px 12px; border-radius: 8px; margin-top: 9px; font-size: 0.63em;">
-					<p class="ztu-blue" style="font-weight: bold; margin-bottom: 4px;">Процес обробки NCR</p>
-					<p>Виявлення → <span class="ztu-orange">Root Cause Analysis</span> (5 Why, Fishbone) → Corrective
-						Action Plan → Впровадження → Верифікація → Закриття NCR</p>
-				</div>
-			</section>
-
-			<!-- ===== ANNEX SL ===== -->
-
-			<section>
-				<h2 class="ztu-blue">ANNEX SL — УНІФІКОВАНА СТРУКТУРА</h2>
-				<p style="font-size: 0.72em;"><span class="ztu-orange">Annex SL</span> — додаток до директив ISO/IEC, що
-					визначає єдину структуру для всіх стандартів систем управління. Спрощує одночасне впровадження
-					кількох стандартів.</p>
-				<div
-					style="display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-top: 9px; font-size: 0.63em;">
-					<div style="background: rgba(37, 99, 235, 0.1); padding: 10px 12px; border-radius: 8px;">
-						<h3 class="ztu-blue" style="font-size: 1em; margin-bottom: 6px;">Уніфіковані стандарти</h3>
-						<ul class="ztu-list">
-							<li><strong>ISO 9001</strong> — управління якістю</li>
-							<li><strong>ISO 14001</strong> — екологічне управління</li>
-							<li><strong>ISO 27001</strong> — інформаційна безпека</li>
-							<li><strong>ISO 45001</strong> — охорона праці</li>
-						</ul>
-					</div>
-					<div style="background: rgba(22, 163, 74, 0.1); padding: 10px 12px; border-radius: 8px;">
-						<h3 class="ztu-green" style="font-size: 1em; margin-bottom: 6px;">Ключові особливості Annex SL
-						</h3>
-						<ul class="ztu-list">
-							<li><span class="ztu-orange">Термінологія</span> — уніфікована між стандартами</li>
-							<li><span class="ztu-orange">Доступність та "придатність"</span> — ресурсів та інформації
-							</li>
-							<li><span class="ztu-orange">Обов'язкові вимоги</span> — чітко визначені</li>
-							<li><span class="ztu-green">Обов'язкові процедури</span> — <strong>не вимагаються</strong> в
-								ISO 9001:2015</li>
-						</ul>
-					</div>
-				</div>
-			</section>
-
-			<section>
-				<h2 class="ztu-blue">ANNEX SL — КЛЮЧОВІ ПУНКТИ ISO 9001</h2>
-				<div
-					style="display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-top: 9px; font-size: 0.63em;">
-					<div style="background: rgba(220, 38, 38, 0.1); padding: 10px 12px; border-radius: 8px;">
-						<h3 class="ztu-red" style="font-size: 1em; margin-bottom: 6px;">5.1 — Лідерство і відданість
-							(Ризик)</h3>
-						<ul class="ztu-list">
-							<li>Керівництво особисто відповідальне за QMS</li>
-							<li>Ризик-орієнтоване мислення як частина культури</li>
-							<li>Не можна делегувати повністю на "відділ якості"</li>
-						</ul>
-					</div>
-					<div style="background: rgba(234, 88, 12, 0.1); padding: 10px 12px; border-radius: 8px;">
-						<h3 class="ztu-orange" style="font-size: 1em; margin-bottom: 6px;">4.2 — Зацікавлені сторони
-						</h3>
-						<ul class="ztu-list">
-							<li>Визначити <strong>хто</strong> є зацікавленою стороною</li>
-							<li>Фактори, що впливають на бізнес: ринок, регулятори, клієнти, постачальники</li>
-							<li>Їхні очікування — вхідні дані для планування QMS</li>
-						</ul>
-					</div>
-				</div>
-				<div
-					style="background: rgba(37, 99, 235, 0.08); padding: 9px 12px; border-radius: 8px; margin-top: 9px; font-size: 0.63em;">
-					<p class="ztu-blue" style="font-weight: bold; margin-bottom: 4px;">Важливо для ПЗ-компаній</p>
-					<p>ISO 9001 не прописує конкретні методології (Scrum, Kanban, Waterfall) — організація сама обирає
-						спосіб досягнення вимог стандарту.</p>
-				</div>
-			</section>
-
-			<!-- ===== ПРОЦЕС СЕРТИФІКАЦІЇ ===== -->
-
-			<section>
-				<h2 class="ztu-blue">ПРОЦЕС ОТРИМАННЯ СЕРТИФІКАТУ</h2>
-				<div
-					style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 9px; margin-top: 9px; font-size: 0.61em;">
-					<div
-						style="background: rgba(37, 99, 235, 0.1); padding: 9px; border-radius: 8px; text-align: center;">
-						<p style="font-size: 1.2em; font-weight: bold; color: #2563eb;">1</p>
-						<p class="ztu-blue" style="font-weight: bold;">Gap Analysis</p>
-						<p style="margin-top: 4px;">Аналіз відповідності поточних процесів вимогам ISO 9001. Виявляємо
-							прогалини.</p>
-					</div>
-					<div
-						style="background: rgba(234, 88, 12, 0.1); padding: 9px; border-radius: 8px; text-align: center;">
-						<p style="font-size: 1.2em; font-weight: bold; color: #ea580c;">2</p>
-						<p class="ztu-orange" style="font-weight: bold;">Впровадження QMS</p>
-						<p style="margin-top: 4px;">Розробка документації, навчання персоналу, налаштування процесів.
-							3–12 місяців.</p>
-					</div>
-					<div
-						style="background: rgba(22, 163, 74, 0.1); padding: 9px; border-radius: 8px; text-align: center;">
-						<p style="font-size: 1.2em; font-weight: bold; color: #16a34a;">3</p>
-						<p class="ztu-green" style="font-weight: bold;">Внутрішній аудит</p>
-						<p style="margin-top: 4px;">Перевірка власними аудиторами перед зовнішнім. Виявлення і усунення
-							NCR.</p>
-					</div>
-					<div
-						style="background: rgba(220, 38, 38, 0.1); padding: 9px; border-radius: 8px; text-align: center;">
-						<p style="font-size: 1.2em; font-weight: bold; color: #dc2626;">4</p>
-						<p class="ztu-red" style="font-weight: bold;">Stage 1 Audit</p>
-						<p style="margin-top: 4px;">Desk review — аудитор перевіряє документацію. Виявляє Major NC перед
-							виїздом.</p>
-					</div>
-					<div
-						style="background: rgba(220, 38, 38, 0.1); padding: 9px; border-radius: 8px; text-align: center;">
-						<p style="font-size: 1.2em; font-weight: bold; color: #dc2626;">5</p>
-						<p class="ztu-red" style="font-weight: bold;">Stage 2 Audit</p>
-						<p style="margin-top: 4px;">On-site аудит — перевірка реального функціонування QMS. Співбесіди з
-							персоналом.</p>
-					</div>
-					<div
-						style="background: rgba(22, 163, 74, 0.15); padding: 9px; border-radius: 8px; text-align: center;">
-						<p style="font-size: 1.2em; font-weight: bold; color: #16a34a;">6</p>
-						<p class="ztu-green" style="font-weight: bold;">Сертифікат (3 роки)</p>
-						<p style="margin-top: 4px;">Surveillance audit — щорічно. Recertification audit — раз на 3 роки.
-						</p>
-					</div>
-				</div>
-				<p style="font-size: 0.6em; margin-top: 8px; text-align: center;">Вартість сертифікації для ІТ-компанії:
-					орієнтовно <span class="ztu-orange">$5 000 – $30 000</span> залежно від розміру</p>
-			</section>
-
-			<!-- ===== ISO 9001 для розробника ===== -->
-
-			<section>
-				<h2 class="ztu-blue">ISO 9001 У ПЗ-КОМПАНІЇ</h2>
-				<p style="font-size: 0.72em;">Як ISO 9001 виглядає на практиці у команді розробки:</p>
-				<div
-					style="display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-top: 9px; font-size: 0.63em;">
-					<div style="background: rgba(37, 99, 235, 0.1); padding: 10px 12px; border-radius: 8px;">
-						<h3 class="ztu-blue" style="font-size: 1em; margin-bottom: 6px;">Документація</h3>
-						<ul class="ztu-list">
-							<li>Architecture Decision Records (ADR)</li>
-							<li>Definition of Done (DoD)</li>
-							<li>Runbooks, API-документація</li>
-						</ul>
-					</div>
-					<div style="background: rgba(22, 163, 74, 0.1); padding: 10px 12px; border-radius: 8px;">
-						<h3 class="ztu-green" style="font-size: 1em; margin-bottom: 6px;">Моніторинг</h3>
-						<ul class="ztu-list">
-							<li>Uptime SLA, error rate, MTTR</li>
-							<li>Code coverage, tech debt metrics</li>
-							<li>Retrospective — внутрішній аудит команди</li>
-						</ul>
-					</div>
-					<div style="background: rgba(234, 88, 12, 0.1); padding: 10px 12px; border-radius: 8px;">
-						<h3 class="ztu-orange" style="font-size: 1em; margin-bottom: 6px;">Управління якістю</h3>
-						<ul class="ztu-list">
-							<li>Code review як контроль якості</li>
-							<li>Bug tracking (невідповідності)</li>
-							<li>CI/CD як автоматизований контроль</li>
-						</ul>
-					</div>
-					<div style="background: rgba(220, 38, 38, 0.1); padding: 10px 12px; border-radius: 8px;">
-						<h3 class="ztu-red" style="font-size: 1em; margin-bottom: 6px;">Ризики у ПЗ</h3>
-						<ul class="ztu-list">
-							<li>Risk register у проєкті</li>
-							<li>Dependency risks (бібліотеки, API)</li>
-							<li>Security & compliance risks</li>
-						</ul>
-					</div>
-				</div>
-			</section>
-
-			<!-- ===== СТУДЕНТ НА РОБОТІ ===== -->
-
-			<section>
-				<h2 class="ztu-blue">ЩО СТУДЕНТ ЗУСТРІНЕ НА РОБОТІ</h2>
-				<div
-					style="display: grid; grid-template-columns: 1fr 1fr; gap: 7px; margin-top: 7px; font-size: 0.58em;">
-					<div style="background: rgba(37, 99, 235, 0.1); padding: 10px 12px; border-radius: 8px;">
-						<h3 class="ztu-blue" style="font-size: 1em; margin-bottom: 6px;">Документи</h3>
-						<ul class="ztu-list">
-							<li><strong>SOP</strong> — Standard Operating Procedure для процесів команди</li>
-							<li><strong>Work Instructions</strong> — детальні інструкції для задач</li>
-							<li><strong>Форми і шаблони</strong> — стандартизовані документи</li>
-							<li><strong>Quality Plan</strong> — план якості проєкту</li>
-						</ul>
-					</div>
-					<div style="background: rgba(22, 163, 74, 0.1); padding: 10px 12px; border-radius: 8px;">
-						<h3 class="ztu-green" style="font-size: 1em; margin-bottom: 6px;">Процеси і зустрічі</h3>
-						<ul class="ztu-list">
-							<li><strong>Internal audit</strong> — тебе можуть запитати про твої процеси</li>
-							<li><strong>NCR</strong> — якщо ти знайшов або спричинив відступ від процесу</li>
-							<li><strong>Management Review</strong> — квартальний перегляд QMS</li>
-							<li><strong>Corrective Action</strong> — участь у root cause analysis</li>
-						</ul>
-					</div>
-					<div style="background: rgba(234, 88, 12, 0.1); padding: 10px 12px; border-radius: 8px;">
-						<h3 class="ztu-orange" style="font-size: 1em; margin-bottom: 6px;">Інструменти</h3>
-						<ul class="ztu-list">
-							<li><strong>Jira / Azure DevOps</strong> — відстеження NCR і задач</li>
-							<li><strong>Confluence / SharePoint</strong> — система документації</li>
-							<li><strong>Дашборди метрик</strong> — KPI процесів і продукту</li>
-						</ul>
-					</div>
-					<div style="background: rgba(220, 38, 38, 0.1); padding: 10px 12px; border-radius: 8px;">
-						<h3 class="ztu-red" style="font-size: 1em; margin-bottom: 6px;">Що від тебе очікують</h3>
-						<ul class="ztu-list">
-							<li>Дотримуватись задокументованих процесів</li>
-							<li>Документувати свою роботу (records)</li>
-							<li>Повідомляти про відступи від процесу</li>
-							<li>Брати участь у покращенні процесів</li>
-						</ul>
-					</div>
-				</div>
-			</section>
-
-			<!-- ===== Q&A ===== -->
-
-			<section>
-				<h1 class="ztu-blue">ВАШІ ЗАПИТАННЯ?</h1>
-				<p class="ztu-orange" style="margin-top: 40px;">Що залишилось незрозумілим?</p>
-				<div style="margin-top: 30px; font-size: 0.6em;">
-					<p class="ztu-green">ISO 9001:2015: https://www.iso.org/iso-9001-quality-management.html</p>
-					<p class="ztu-green" style="margin-top: 5px;">ДСТУ EN ISO 9001:2018:
-						https://khoda.gov.ua/image/catalog/files/%209001.pdf</p>
-					<p class="ztu-green" style="margin-top: 5px;">7 принципів якості:
-						https://www.dqsglobal.com/uk-ua/navchajtesya/centr-znan-dqs/sim-principiv-upravlinnya-yakistyu
+				<section>
+					<h2 class="ztu-blue">ISO 9001 SYSTEMS</h2>
+					<p style="font-size: 0.72em;">ISO 9001 requires building and maintaining four interconnected systems:
 					</p>
-				</div>
+					<div
+						style="display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-top: 9px; font-size: 0.63em;">
+						<div style="background: rgba(37, 99, 235, 0.1); padding: 10px 12px; border-radius: 8px;">
+							<h3 class="ztu-blue" style="font-size: 1em; margin-bottom: 6px;">Documentation System</h3>
+							<ul class="ztu-list">
+								<li>Documented information (formerly "procedures")</li>
+								<li>Quality manual, procedures, records</li>
+								<li>Version control and document access management</li>
+							</ul>
+						</div>
+						<div style="background: rgba(22, 163, 74, 0.1); padding: 10px 12px; border-radius: 8px;">
+							<h3 class="ztu-green" style="font-size: 1em; margin-bottom: 6px;">Monitoring System</h3>
+							<ul class="ztu-list">
+								<li>Process and product KPIs</li>
+								<li>Internal audits</li>
+								<li>Customer satisfaction analysis</li>
+							</ul>
+						</div>
+						<div style="background: rgba(234, 88, 12, 0.1); padding: 10px 12px; border-radius: 8px;">
+							<h3 class="ztu-orange" style="font-size: 1em; margin-bottom: 6px;">Quality System (QMS)</h3>
+							<ul class="ztu-list">
+								<li>Organization process map</li>
+								<li>Responsibilities and authorities</li>
+								<li>Non-conformity management</li>
+							</ul>
+						</div>
+						<div style="background: rgba(220, 38, 38, 0.1); padding: 10px 12px; border-radius: 8px;">
+							<h3 class="ztu-red" style="font-size: 1em; margin-bottom: 6px;">Project Management System</h3>
+							<ul class="ztu-list">
+								<li>Planning, resources, timelines</li>
+								<li>Execution control</li>
+								<li>Closure and results evaluation</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h2 class="ztu-blue">ISO 9001 SİSTEMLERİ</h2>
+					<p style="font-size: 0.72em;">ISO 9001, birbiriyle bağlantılı dört sistemin kurulmasını ve sürdürülmesini gerektirir:</p>
+					<div
+						style="display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-top: 9px; font-size: 0.63em;">
+						<div style="background: rgba(37, 99, 235, 0.1); padding: 10px 12px; border-radius: 8px;">
+							<h3 class="ztu-blue" style="font-size: 1em; margin-bottom: 6px;">Dokümantasyon Sistemi</h3>
+							<ul class="ztu-list">
+								<li>Belgelenmiş bilgi (önceden "prosedürler")</li>
+								<li>Kalite kılavuzu, prosedürler, kayıtlar</li>
+								<li>Sürüm kontrolü ve belge erişim yönetimi</li>
+							</ul>
+						</div>
+						<div style="background: rgba(22, 163, 74, 0.1); padding: 10px 12px; border-radius: 8px;">
+							<h3 class="ztu-green" style="font-size: 1em; margin-bottom: 6px;">İzleme Sistemi</h3>
+							<ul class="ztu-list">
+								<li>Süreç ve ürün KPI'ları</li>
+								<li>İç denetimler</li>
+								<li>Müşteri memnuniyeti analizi</li>
+							</ul>
+						</div>
+						<div style="background: rgba(234, 88, 12, 0.1); padding: 10px 12px; border-radius: 8px;">
+							<h3 class="ztu-orange" style="font-size: 1em; margin-bottom: 6px;">Kalite Sistemi (KYS)</h3>
+							<ul class="ztu-list">
+								<li>Kuruluş süreç haritası</li>
+								<li>Sorumluluklar ve yetkiler</li>
+								<li>Uygunsuzluk yönetimi</li>
+							</ul>
+						</div>
+						<div style="background: rgba(220, 38, 38, 0.1); padding: 10px 12px; border-radius: 8px;">
+							<h3 class="ztu-red" style="font-size: 1em; margin-bottom: 6px;">Proje Yönetim Sistemi</h3>
+							<ul class="ztu-list">
+								<li>Planlama, kaynaklar, zaman çizelgeleri</li>
+								<li>Uygulama kontrolü</li>
+								<li>Kapanış ve sonuç değerlendirmesi</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+			</section>
+
+			<!-- ===== 11. RISKS ===== -->
+			<section>
+				<section>
+					<h2 class="ztu-blue">RISKS — INTERNAL &amp; EXTERNAL</h2>
+					<p style="font-size: 0.72em;">ISO 9001:2015 requires organizations to identify and manage risks. Risks
+						are classified as
+						<span class="ztu-orange">internal</span> or <span class="ztu-blue">external</span>.
+					</p>
+					<div
+						style="display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-top: 9px; font-size: 0.63em;">
+						<div style="background: rgba(220, 38, 38, 0.1); padding: 10px 12px; border-radius: 8px;">
+							<h3 class="ztu-red" style="font-size: 1em; margin-bottom: 6px;">Strategic</h3>
+							<ul class="ztu-list">
+								<li>Market or competitive environment changes</li>
+								<li>New regulatory requirements</li>
+								<li>Technological disruption</li>
+							</ul>
+						</div>
+						<div style="background: rgba(234, 88, 12, 0.1); padding: 10px 12px; border-radius: 8px;">
+							<h3 class="ztu-orange" style="font-size: 1em; margin-bottom: 6px;">Operational</h3>
+							<ul class="ztu-list">
+								<li>Internal process failures</li>
+								<li>Technical failures, downtime</li>
+								<li>Human errors</li>
+							</ul>
+						</div>
+						<div style="background: rgba(37, 99, 235, 0.1); padding: 10px 12px; border-radius: 8px;">
+							<h3 class="ztu-blue" style="font-size: 1em; margin-bottom: 6px;">Financial</h3>
+							<ul class="ztu-list">
+								<li>Budget overruns</li>
+								<li>Funding issues</li>
+								<li>Currency and market risks</li>
+							</ul>
+						</div>
+						<div style="background: rgba(22, 163, 74, 0.1); padding: 10px 12px; border-radius: 8px;">
+							<h3 class="ztu-green" style="font-size: 1em; margin-bottom: 6px;">Hazardous</h3>
+							<ul class="ztu-list">
+								<li>Staff and user safety</li>
+								<li>Cyber attacks, data breaches</li>
+								<li>Force majeure, disasters</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h2 class="ztu-blue">RİSKLER — İÇ VE DIŞ</h2>
+					<p style="font-size: 0.72em;">ISO 9001:2015, kuruluşların riskleri tanımlamasını ve yönetmesini gerektirir. Riskler
+						<span class="ztu-orange">iç</span> veya <span class="ztu-blue">dış</span> olarak sınıflandırılır.
+					</p>
+					<div
+						style="display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-top: 9px; font-size: 0.63em;">
+						<div style="background: rgba(220, 38, 38, 0.1); padding: 10px 12px; border-radius: 8px;">
+							<h3 class="ztu-red" style="font-size: 1em; margin-bottom: 6px;">Stratejik</h3>
+							<ul class="ztu-list">
+								<li>Pazar veya rekabet ortamı değişiklikleri</li>
+								<li>Yeni yasal gereksinimler</li>
+								<li>Teknolojik dönüşüm</li>
+							</ul>
+						</div>
+						<div style="background: rgba(234, 88, 12, 0.1); padding: 10px 12px; border-radius: 8px;">
+							<h3 class="ztu-orange" style="font-size: 1em; margin-bottom: 6px;">Operasyonel</h3>
+							<ul class="ztu-list">
+								<li>İç süreç hataları</li>
+								<li>Teknik arızalar, kesintiler</li>
+								<li>İnsan hataları</li>
+							</ul>
+						</div>
+						<div style="background: rgba(37, 99, 235, 0.1); padding: 10px 12px; border-radius: 8px;">
+							<h3 class="ztu-blue" style="font-size: 1em; margin-bottom: 6px;">Finansal</h3>
+							<ul class="ztu-list">
+								<li>Bütçe aşımları</li>
+								<li>Finansman sorunları</li>
+								<li>Kur ve piyasa riskleri</li>
+							</ul>
+						</div>
+						<div style="background: rgba(22, 163, 74, 0.1); padding: 10px 12px; border-radius: 8px;">
+							<h3 class="ztu-green" style="font-size: 1em; margin-bottom: 6px;">Tehlikeli</h3>
+							<ul class="ztu-list">
+								<li>Personel ve kullanıcı güvenliği</li>
+								<li>Siber saldırılar, veri ihlalleri</li>
+								<li>Mücbir sebep, afetler</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+			</section>
+
+			<!-- ===== 12. RISK ASSESSMENT 5 STEPS ===== -->
+			<section>
+				<section>
+					<h2 class="ztu-blue">RISK ASSESSMENT — 5 STEPS</h2>
+					<div
+						style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-top: 20px; font-size: 0.68em;">
+						<div
+							style="background: rgba(37, 99, 235, 0.15); padding: 12px; border-radius: 8px; text-align: center;">
+							<p style="font-size: 1.6em; font-weight: bold; color: #2563eb;">1</p>
+							<p class="ztu-blue" style="font-weight: bold;">Establish Context</p>
+							<p style="margin-top: 6px;">Define scope, objectives and assessment criteria</p>
+						</div>
+						<div
+							style="background: rgba(234, 88, 12, 0.15); padding: 12px; border-radius: 8px; text-align: center;">
+							<p style="font-size: 1.6em; font-weight: bold; color: #ea580c;">2</p>
+							<p class="ztu-orange" style="font-weight: bold;">Identification</p>
+							<p style="margin-top: 6px;">Identify all possible risks and their sources</p>
+						</div>
+						<div
+							style="background: rgba(22, 163, 74, 0.15); padding: 12px; border-radius: 8px; text-align: center;">
+							<p style="font-size: 1.6em; font-weight: bold; color: #16a34a;">3</p>
+							<p class="ztu-green" style="font-weight: bold;">Analysis</p>
+							<p style="margin-top: 6px;">Probability × Impact = Risk Level</p>
+						</div>
+						<div
+							style="background: rgba(220, 38, 38, 0.15); padding: 12px; border-radius: 8px; text-align: center;">
+							<p style="font-size: 1.6em; font-weight: bold; color: #dc2626;">4</p>
+							<p class="ztu-red" style="font-weight: bold;">Evaluation</p>
+							<p style="margin-top: 6px;">Prioritization: risk matrix (heat map)</p>
+						</div>
+						<div
+							style="background: rgba(37, 99, 235, 0.1); padding: 12px; border-radius: 8px; text-align: center;">
+							<p style="font-size: 1.6em; font-weight: bold; color: #2563eb;">5</p>
+							<p class="ztu-blue" style="font-weight: bold;">Treatment</p>
+							<p style="margin-top: 6px;">Mitigation / Transfer / Acceptance / Avoidance</p>
+						</div>
+					</div>
+					<p style="font-size: 0.72em; margin-top: 15px; text-align: center;">ISO 31000 — a dedicated risk
+						management standard, compatible with ISO 9001</p>
+				</section>
+				<section>
+					<h2 class="ztu-blue">RİSK DEĞERLENDİRME — 5 ADIM</h2>
+					<div
+						style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-top: 20px; font-size: 0.68em;">
+						<div
+							style="background: rgba(37, 99, 235, 0.15); padding: 12px; border-radius: 8px; text-align: center;">
+							<p style="font-size: 1.6em; font-weight: bold; color: #2563eb;">1</p>
+							<p class="ztu-blue" style="font-weight: bold;">Bağlamı Belirle</p>
+							<p style="margin-top: 6px;">Kapsam, hedefler ve değerlendirme kriterlerini tanımla</p>
+						</div>
+						<div
+							style="background: rgba(234, 88, 12, 0.15); padding: 12px; border-radius: 8px; text-align: center;">
+							<p style="font-size: 1.6em; font-weight: bold; color: #ea580c;">2</p>
+							<p class="ztu-orange" style="font-weight: bold;">Tanımlama</p>
+							<p style="margin-top: 6px;">Tüm olası riskleri ve kaynaklarını tanımla</p>
+						</div>
+						<div
+							style="background: rgba(22, 163, 74, 0.15); padding: 12px; border-radius: 8px; text-align: center;">
+							<p style="font-size: 1.6em; font-weight: bold; color: #16a34a;">3</p>
+							<p class="ztu-green" style="font-weight: bold;">Analiz</p>
+							<p style="margin-top: 6px;">Olasılık × Etki = Risk Düzeyi</p>
+						</div>
+						<div
+							style="background: rgba(220, 38, 38, 0.15); padding: 12px; border-radius: 8px; text-align: center;">
+							<p style="font-size: 1.6em; font-weight: bold; color: #dc2626;">4</p>
+							<p class="ztu-red" style="font-weight: bold;">Değerlendirme</p>
+							<p style="margin-top: 6px;">Önceliklendirme: risk matrisi (ısı haritası)</p>
+						</div>
+						<div
+							style="background: rgba(37, 99, 235, 0.1); padding: 12px; border-radius: 8px; text-align: center;">
+							<p style="font-size: 1.6em; font-weight: bold; color: #2563eb;">5</p>
+							<p class="ztu-blue" style="font-weight: bold;">Muamele</p>
+							<p style="margin-top: 6px;">Azaltma / Transfer / Kabul / Kaçınma</p>
+						</div>
+					</div>
+					<p style="font-size: 0.72em; margin-top: 15px; text-align: center;">ISO 31000 — ISO 9001 ile uyumlu, özel risk yönetimi standardı</p>
+				</section>
+			</section>
+
+			<!-- ===== 13. RISK MATRIX ===== -->
+			<section>
+				<section>
+					<h2 class="ztu-blue">RISK MATRIX</h2>
+					<p style="font-size: 0.75em;">Risk prioritization by <span class="ztu-orange">Probability ×
+							Impact</span> scale (1 to 5):</p>
+					<div style="margin-top: 12px; font-size: 0.58em;">
+						<table style="width: 100%; border-collapse: collapse; text-align: center;">
+							<thead>
+								<tr>
+									<th style="padding: 6px; border: 1px solid #ccc; background: #f1f5f9;">Probability ↓ /
+										Impact →</th>
+									<th style="padding: 6px; border: 1px solid #ccc;">1 Negligible</th>
+									<th style="padding: 6px; border: 1px solid #ccc;">2 Minor</th>
+									<th style="padding: 6px; border: 1px solid #ccc;">3 Moderate</th>
+									<th style="padding: 6px; border: 1px solid #ccc;">4 Major</th>
+									<th style="padding: 6px; border: 1px solid #ccc;">5 Critical</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td style="padding: 6px; border: 1px solid #ccc; font-weight: bold; background: #f1f5f9;">5 Almost Certain</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #fef08a;">5</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #fdba74;">10</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #f87171;">15</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #f87171; font-weight: bold;">20</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #dc2626; color: white; font-weight: bold;">25</td>
+								</tr>
+								<tr>
+									<td style="padding: 6px; border: 1px solid #ccc; font-weight: bold; background: #f1f5f9;">4 Likely</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #bbf7d0;">4</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #fef08a;">8</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #fdba74;">12</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #f87171;">16</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #f87171; font-weight: bold;">20</td>
+								</tr>
+								<tr>
+									<td style="padding: 6px; border: 1px solid #ccc; font-weight: bold; background: #f1f5f9;">3 Possible</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #bbf7d0;">3</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #bbf7d0;">6</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #fef08a;">9</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #fdba74;">12</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #f87171;">15</td>
+								</tr>
+								<tr>
+									<td style="padding: 6px; border: 1px solid #ccc; font-weight: bold; background: #f1f5f9;">2 Unlikely</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #bbf7d0;">2</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #bbf7d0;">4</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #bbf7d0;">6</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #fef08a;">8</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #fdba74;">10</td>
+								</tr>
+								<tr>
+									<td style="padding: 6px; border: 1px solid #ccc; font-weight: bold; background: #f1f5f9;">1 Rare</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #bbf7d0;">1</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #bbf7d0;">2</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #bbf7d0;">3</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #bbf7d0;">4</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #fef08a;">5</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div
+						style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 10px; font-size: 0.6em; text-align: center;">
+						<div style="background: #bbf7d0; padding: 5px; border-radius: 4px;"><strong>1–4</strong> Low</div>
+						<div style="background: #fef08a; padding: 5px; border-radius: 4px;"><strong>5–9</strong> Medium</div>
+						<div style="background: #fdba74; padding: 5px; border-radius: 4px;"><strong>10–14</strong> High</div>
+						<div style="background: #f87171; padding: 5px; border-radius: 4px;"><strong>15–25</strong> Critical</div>
+					</div>
+				</section>
+				<section>
+					<h2 class="ztu-blue">RİSK MATRİSİ</h2>
+					<p style="font-size: 0.75em;">Risk önceliklendirmesi <span class="ztu-orange">Olasılık ×
+							Etki</span> ölçeğiyle (1'den 5'e):</p>
+					<div style="margin-top: 12px; font-size: 0.58em;">
+						<table style="width: 100%; border-collapse: collapse; text-align: center;">
+							<thead>
+								<tr>
+									<th style="padding: 6px; border: 1px solid #ccc; background: #f1f5f9;">Olasılık ↓ / Etki →</th>
+									<th style="padding: 6px; border: 1px solid #ccc;">1 Önemsiz</th>
+									<th style="padding: 6px; border: 1px solid #ccc;">2 Küçük</th>
+									<th style="padding: 6px; border: 1px solid #ccc;">3 Orta</th>
+									<th style="padding: 6px; border: 1px solid #ccc;">4 Büyük</th>
+									<th style="padding: 6px; border: 1px solid #ccc;">5 Kritik</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td style="padding: 6px; border: 1px solid #ccc; font-weight: bold; background: #f1f5f9;">5 Neredeyse Kesin</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #fef08a;">5</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #fdba74;">10</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #f87171;">15</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #f87171; font-weight: bold;">20</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #dc2626; color: white; font-weight: bold;">25</td>
+								</tr>
+								<tr>
+									<td style="padding: 6px; border: 1px solid #ccc; font-weight: bold; background: #f1f5f9;">4 Muhtemel</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #bbf7d0;">4</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #fef08a;">8</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #fdba74;">12</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #f87171;">16</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #f87171; font-weight: bold;">20</td>
+								</tr>
+								<tr>
+									<td style="padding: 6px; border: 1px solid #ccc; font-weight: bold; background: #f1f5f9;">3 Mümkün</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #bbf7d0;">3</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #bbf7d0;">6</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #fef08a;">9</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #fdba74;">12</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #f87171;">15</td>
+								</tr>
+								<tr>
+									<td style="padding: 6px; border: 1px solid #ccc; font-weight: bold; background: #f1f5f9;">2 Düşük İhtimal</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #bbf7d0;">2</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #bbf7d0;">4</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #bbf7d0;">6</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #fef08a;">8</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #fdba74;">10</td>
+								</tr>
+								<tr>
+									<td style="padding: 6px; border: 1px solid #ccc; font-weight: bold; background: #f1f5f9;">1 Nadir</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #bbf7d0;">1</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #bbf7d0;">2</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #bbf7d0;">3</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #bbf7d0;">4</td>
+									<td style="padding: 6px; border: 1px solid #ccc; background: #fef08a;">5</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div
+						style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 10px; font-size: 0.6em; text-align: center;">
+						<div style="background: #bbf7d0; padding: 5px; border-radius: 4px;"><strong>1–4</strong> Düşük</div>
+						<div style="background: #fef08a; padding: 5px; border-radius: 4px;"><strong>5–9</strong> Orta</div>
+						<div style="background: #fdba74; padding: 5px; border-radius: 4px;"><strong>10–14</strong> Yüksek</div>
+						<div style="background: #f87171; padding: 5px; border-radius: 4px;"><strong>15–25</strong> Kritik</div>
+					</div>
+				</section>
+			</section>
+
+			<!-- ===== 14. ALARP ===== -->
+			<section>
+				<section>
+					<h2 class="ztu-blue">ALARP — RISK MANAGEMENT PRINCIPLE</h2>
+					<p class="ztu-orange" style="font-size: 0.85em;">As Low As Reasonably Practicable</p>
+					<p style="font-size: 0.78em; margin-top: 10px;">Risk should be reduced to a level as low as reasonably
+						practicable, taking costs and effort into account.</p>
+					<div
+						style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; margin-top: 15px; font-size: 0.72em;">
+						<div
+							style="background: rgba(220, 38, 38, 0.2); padding: 15px; border-radius: 8px; text-align: center; border: 2px solid #dc2626;">
+							<p class="ztu-red" style="font-weight: bold; font-size: 1.1em;">UNACCEPTABLE</p>
+							<p style="margin-top: 8px;">Risk is too high. Activity is <strong>prohibited</strong> or
+								requires immediate action regardless of cost</p>
+						</div>
+						<div
+							style="background: rgba(234, 88, 12, 0.2); padding: 15px; border-radius: 8px; text-align: center; border: 2px solid #ea580c;">
+							<p class="ztu-orange" style="font-weight: bold; font-size: 1.1em;">ALARP</p>
+							<p style="margin-top: 8px;">Risk is acceptable if reduction measures are
+								<strong>cost-justified</strong>. Must be reduced as far as reasonably practicable
+							</p>
+						</div>
+						<div
+							style="background: rgba(22, 163, 74, 0.2); padding: 15px; border-radius: 8px; text-align: center; border: 2px solid #16a34a;">
+							<p class="ztu-green" style="font-weight: bold; font-size: 1.1em;">ACCEPTABLE</p>
+							<p style="margin-top: 8px;">Risk is low enough that <strong>no further action is
+									required</strong>. Monitoring continues</p>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h2 class="ztu-blue">ALARP — RİSK YÖNETİMİ İLKESİ</h2>
+					<p class="ztu-orange" style="font-size: 0.85em;">Makul Ölçüde Uygulanabildiğince Düşük</p>
+					<p style="font-size: 0.78em; margin-top: 10px;">Risk, maliyet ve çabayı göz önünde bulundurarak makul ölçüde uygulanabilecek en düşük düzeye indirilmelidir.</p>
+					<div
+						style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; margin-top: 15px; font-size: 0.72em;">
+						<div
+							style="background: rgba(220, 38, 38, 0.2); padding: 15px; border-radius: 8px; text-align: center; border: 2px solid #dc2626;">
+							<p class="ztu-red" style="font-weight: bold; font-size: 1.1em;">KABUL EDİLEMEZ</p>
+							<p style="margin-top: 8px;">Risk çok yüksek. Faaliyet <strong>yasaktır</strong> veya maliyetten bağımsız olarak derhal eylem gerektirir</p>
+						</div>
+						<div
+							style="background: rgba(234, 88, 12, 0.2); padding: 15px; border-radius: 8px; text-align: center; border: 2px solid #ea580c;">
+							<p class="ztu-orange" style="font-weight: bold; font-size: 1.1em;">ALARP</p>
+							<p style="margin-top: 8px;">Azaltma önlemleri <strong>maliyet açısından haklıysa</strong> risk kabul edilebilir. Makul ölçüde mümkün olduğunca azaltılmalıdır</p>
+						</div>
+						<div
+							style="background: rgba(22, 163, 74, 0.2); padding: 15px; border-radius: 8px; text-align: center; border: 2px solid #16a34a;">
+							<p class="ztu-green" style="font-weight: bold; font-size: 1.1em;">KABUL EDİLEBİLİR</p>
+							<p style="margin-top: 8px;">Risk, <strong>başka eylem gerektirmeyecek</strong> kadar düşük. İzleme devam eder</p>
+						</div>
+					</div>
+				</section>
+			</section>
+
+			<!-- ===== 15. NON-CONFORMITIES ===== -->
+			<section>
+				<section>
+					<h2 class="ztu-blue">NON-CONFORMITIES (NC)</h2>
+					<p style="font-size: 0.72em;">Identified during audits. Key improvement mechanism in ISO 9001.</p>
+					<div
+						style="display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-top: 9px; font-size: 0.63em;">
+						<div style="background: rgba(234, 88, 12, 0.1); padding: 10px 12px; border-radius: 8px;">
+							<h3 class="ztu-orange" style="font-size: 1em; margin-bottom: 6px;">Minor NC</h3>
+							<ul class="ztu-list">
+								<li>Isolated departure from a requirement</li>
+								<li>Does not threaten the overall system</li>
+								<li>Example: one unsigned record, expired document</li>
+								<li>Correction deadline: typically within 90 days</li>
+							</ul>
+						</div>
+						<div style="background: rgba(220, 38, 38, 0.1); padding: 10px 12px; border-radius: 8px;">
+							<h3 class="ztu-red" style="font-size: 1em; margin-bottom: 6px;">Major NC</h3>
+							<ul class="ztu-list">
+								<li>Systemic failure or absence of a requirement</li>
+								<li>Threatens the organization's ability to meet requirements</li>
+								<li>Example: no internal audit process exists at all</li>
+								<li>May lead to <span class="ztu-red">certificate suspension</span></li>
+							</ul>
+						</div>
+					</div>
+					<div
+						style="background: rgba(37, 99, 235, 0.08); padding: 9px 12px; border-radius: 8px; margin-top: 9px; font-size: 0.63em;">
+						<p class="ztu-blue" style="font-weight: bold; margin-bottom: 4px;">NCR Process</p>
+						<p>Detection → <span class="ztu-orange">Root Cause Analysis</span> (5 Why, Fishbone) → Corrective
+							Action Plan → Implementation → Verification → NCR Closure</p>
+					</div>
+				</section>
+				<section>
+					<h2 class="ztu-blue">UYGUNSUZLUKLAR (UY)</h2>
+					<p style="font-size: 0.72em;">Denetimler sırasında tespit edilir. ISO 9001'deki temel iyileştirme mekanizması.</p>
+					<div
+						style="display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-top: 9px; font-size: 0.63em;">
+						<div style="background: rgba(234, 88, 12, 0.1); padding: 10px 12px; border-radius: 8px;">
+							<h3 class="ztu-orange" style="font-size: 1em; margin-bottom: 6px;">Minör UY</h3>
+							<ul class="ztu-list">
+								<li>Bir gereksinimden münferit sapma</li>
+								<li>Genel sistemi tehdit etmez</li>
+								<li>Örnek: imzasız kayıt, süresi dolmuş belge</li>
+								<li>Düzeltme süresi: genellikle 90 gün içinde</li>
+							</ul>
+						</div>
+						<div style="background: rgba(220, 38, 38, 0.1); padding: 10px 12px; border-radius: 8px;">
+							<h3 class="ztu-red" style="font-size: 1em; margin-bottom: 6px;">Majör UY</h3>
+							<ul class="ztu-list">
+								<li>Sistemik hata veya gereksinimin yokluğu</li>
+								<li>Kuruluşun gereksinimleri karşılama yeteneğini tehdit eder</li>
+								<li>Örnek: iç denetim süreci hiç yok</li>
+								<li><span class="ztu-red">Sertifikanın askıya alınmasına</span> yol açabilir</li>
+							</ul>
+						</div>
+					</div>
+					<div
+						style="background: rgba(37, 99, 235, 0.08); padding: 9px 12px; border-radius: 8px; margin-top: 9px; font-size: 0.63em;">
+						<p class="ztu-blue" style="font-weight: bold; margin-bottom: 4px;">UYR Süreci</p>
+						<p>Tespit → <span class="ztu-orange">Kök Neden Analizi</span> (5 Neden, Balık Kılçığı) → Düzeltici Faaliyet Planı → Uygulama → Doğrulama → UYR Kapanışı</p>
+					</div>
+				</section>
+			</section>
+
+			<!-- ===== 16. ANNEX SL ===== -->
+			<section>
+				<section>
+					<h2 class="ztu-blue">ANNEX SL — UNIFIED STRUCTURE</h2>
+					<p style="font-size: 0.72em;"><span class="ztu-orange">Annex SL</span> — an appendix to ISO/IEC
+						directives that defines a
+						common high-level structure for all management system standards. Simplifies simultaneous
+						implementation of multiple standards.</p>
+					<div
+						style="display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-top: 9px; font-size: 0.63em;">
+						<div style="background: rgba(37, 99, 235, 0.1); padding: 10px 12px; border-radius: 8px;">
+							<h3 class="ztu-blue" style="font-size: 1em; margin-bottom: 6px;">Unified Standards</h3>
+							<ul class="ztu-list">
+								<li><strong>ISO 9001</strong> — quality management</li>
+								<li><strong>ISO 14001</strong> — environmental management</li>
+								<li><strong>ISO 27001</strong> — information security</li>
+								<li><strong>ISO 45001</strong> — occupational health &amp; safety</li>
+							</ul>
+						</div>
+						<div style="background: rgba(22, 163, 74, 0.1); padding: 10px 12px; border-radius: 8px;">
+							<h3 class="ztu-green" style="font-size: 1em; margin-bottom: 6px;">Key Features of Annex SL</h3>
+							<ul class="ztu-list">
+								<li><span class="ztu-orange">Terminology</span> — unified across standards</li>
+								<li><span class="ztu-orange">Availability &amp; suitability</span> — of resources and
+									information</li>
+								<li><span class="ztu-orange">Mandatory requirements</span> — clearly defined</li>
+								<li><span class="ztu-green">Mandatory documented procedures</span> — <strong>not
+										required</strong> in ISO 9001:2015</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h2 class="ztu-blue">EK SL — BİRLEŞİK YAPI</h2>
+					<p style="font-size: 0.72em;"><span class="ztu-orange">Ek SL</span> — tüm yönetim sistemi standartları için
+						ortak yüksek düzeyli yapıyı tanımlayan ISO/IEC direktiflerine bir ektir. Birden fazla standardın eş zamanlı uygulanmasını kolaylaştırır.</p>
+					<div
+						style="display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-top: 9px; font-size: 0.63em;">
+						<div style="background: rgba(37, 99, 235, 0.1); padding: 10px 12px; border-radius: 8px;">
+							<h3 class="ztu-blue" style="font-size: 1em; margin-bottom: 6px;">Birleşik Standartlar</h3>
+							<ul class="ztu-list">
+								<li><strong>ISO 9001</strong> — kalite yönetimi</li>
+								<li><strong>ISO 14001</strong> — çevre yönetimi</li>
+								<li><strong>ISO 27001</strong> — bilgi güvenliği</li>
+								<li><strong>ISO 45001</strong> — iş sağlığı ve güvenliği</li>
+							</ul>
+						</div>
+						<div style="background: rgba(22, 163, 74, 0.1); padding: 10px 12px; border-radius: 8px;">
+							<h3 class="ztu-green" style="font-size: 1em; margin-bottom: 6px;">Ek SL'nin Temel Özellikleri</h3>
+							<ul class="ztu-list">
+								<li><span class="ztu-orange">Terminoloji</span> — standartlar arasında birleşik</li>
+								<li><span class="ztu-orange">Uygunluk ve erişilebilirlik</span> — kaynaklar ve bilgi için</li>
+								<li><span class="ztu-orange">Zorunlu gereksinimler</span> — açıkça tanımlanmış</li>
+								<li><span class="ztu-green">Zorunlu belgelenmiş prosedürler</span> — ISO 9001:2015'te <strong>gerekli değil</strong></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+			</section>
+
+			<!-- ===== 17. ANNEX SL KEY CLAUSES ===== -->
+			<section>
+				<section>
+					<h2 class="ztu-blue">ANNEX SL — KEY CLAUSES OF ISO 9001</h2>
+					<div
+						style="display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-top: 9px; font-size: 0.63em;">
+						<div style="background: rgba(220, 38, 38, 0.1); padding: 10px 12px; border-radius: 8px;">
+							<h3 class="ztu-red" style="font-size: 1em; margin-bottom: 6px;">5.1 — Leadership &amp; Commitment</h3>
+							<ul class="ztu-list">
+								<li>Top management is personally accountable for the QMS</li>
+								<li>Risk-based thinking as part of organizational culture</li>
+								<li>Cannot be fully delegated to the "quality department"</li>
+							</ul>
+						</div>
+						<div style="background: rgba(234, 88, 12, 0.1); padding: 10px 12px; border-radius: 8px;">
+							<h3 class="ztu-orange" style="font-size: 1em; margin-bottom: 6px;">4.2 — Interested Parties</h3>
+							<ul class="ztu-list">
+								<li>Identify <strong>who</strong> the interested parties are</li>
+								<li>Factors affecting business: market, regulators, customers, suppliers</li>
+								<li>Their expectations — inputs for QMS planning</li>
+							</ul>
+						</div>
+					</div>
+					<div
+						style="background: rgba(37, 99, 235, 0.08); padding: 9px 12px; border-radius: 8px; margin-top: 9px; font-size: 0.63em;">
+						<p class="ztu-blue" style="font-weight: bold; margin-bottom: 4px;">Important for Software Companies</p>
+						<p>ISO 9001 does not prescribe specific methodologies (Scrum, Kanban, Waterfall) — the organization
+							chooses how to meet the standard's requirements.</p>
+					</div>
+				</section>
+				<section>
+					<h2 class="ztu-blue">EK SL — ISO 9001'İN TEMEL MADDELERİ</h2>
+					<div
+						style="display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-top: 9px; font-size: 0.63em;">
+						<div style="background: rgba(220, 38, 38, 0.1); padding: 10px 12px; border-radius: 8px;">
+							<h3 class="ztu-red" style="font-size: 1em; margin-bottom: 6px;">5.1 — Liderlik ve Taahhüt</h3>
+							<ul class="ztu-list">
+								<li>Üst yönetim, KYS'den kişisel olarak sorumludur</li>
+								<li>Riske dayalı düşünce, kurumsal kültürün bir parçası olarak</li>
+								<li>"Kalite departmanı"na tamamen devredilemez</li>
+							</ul>
+						</div>
+						<div style="background: rgba(234, 88, 12, 0.1); padding: 10px 12px; border-radius: 8px;">
+							<h3 class="ztu-orange" style="font-size: 1em; margin-bottom: 6px;">4.2 — İlgili Taraflar</h3>
+							<ul class="ztu-list">
+								<li>İlgili tarafların <strong>kimler</strong> olduğunu belirle</li>
+								<li>İşletmeyi etkileyen faktörler: pazar, düzenleyiciler, müşteriler, tedarikçiler</li>
+								<li>Beklentileri — KYS planlaması için girdiler</li>
+							</ul>
+						</div>
+					</div>
+					<div
+						style="background: rgba(37, 99, 235, 0.08); padding: 9px 12px; border-radius: 8px; margin-top: 9px; font-size: 0.63em;">
+						<p class="ztu-blue" style="font-weight: bold; margin-bottom: 4px;">Yazılım Şirketleri için Önemli</p>
+						<p>ISO 9001, belirli metodolojiler (Scrum, Kanban, Şelale) öngörmez — kuruluş, standardın gereksinimlerini nasıl karşılayacağını kendisi seçer.</p>
+					</div>
+				</section>
+			</section>
+
+			<!-- ===== 18. CERTIFICATION PROCESS ===== -->
+			<section>
+				<section>
+					<h2 class="ztu-blue">CERTIFICATION PROCESS</h2>
+					<div
+						style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 9px; margin-top: 9px; font-size: 0.61em;">
+						<div style="background: rgba(37, 99, 235, 0.1); padding: 9px; border-radius: 8px; text-align: center;">
+							<p style="font-size: 1.2em; font-weight: bold; color: #2563eb;">1</p>
+							<p class="ztu-blue" style="font-weight: bold;">Gap Analysis</p>
+							<p style="margin-top: 4px;">Analyze current processes against ISO 9001 requirements. Identify gaps.</p>
+						</div>
+						<div style="background: rgba(234, 88, 12, 0.1); padding: 9px; border-radius: 8px; text-align: center;">
+							<p style="font-size: 1.2em; font-weight: bold; color: #ea580c;">2</p>
+							<p class="ztu-orange" style="font-weight: bold;">QMS Implementation</p>
+							<p style="margin-top: 4px;">Develop documentation, train staff, set up processes. 3–12 months.</p>
+						</div>
+						<div style="background: rgba(22, 163, 74, 0.1); padding: 9px; border-radius: 8px; text-align: center;">
+							<p style="font-size: 1.2em; font-weight: bold; color: #16a34a;">3</p>
+							<p class="ztu-green" style="font-weight: bold;">Internal Audit</p>
+							<p style="margin-top: 4px;">Review by internal auditors before external audit. Identify and resolve NCRs.</p>
+						</div>
+						<div style="background: rgba(220, 38, 38, 0.1); padding: 9px; border-radius: 8px; text-align: center;">
+							<p style="font-size: 1.2em; font-weight: bold; color: #dc2626;">4</p>
+							<p class="ztu-red" style="font-weight: bold;">Stage 1 Audit</p>
+							<p style="margin-top: 4px;">Desk review — auditor checks documentation. Identifies Major NCs before site visit.</p>
+						</div>
+						<div style="background: rgba(220, 38, 38, 0.1); padding: 9px; border-radius: 8px; text-align: center;">
+							<p style="font-size: 1.2em; font-weight: bold; color: #dc2626;">5</p>
+							<p class="ztu-red" style="font-weight: bold;">Stage 2 Audit</p>
+							<p style="margin-top: 4px;">On-site audit — verifying QMS operation in practice. Interviews with staff.</p>
+						</div>
+						<div style="background: rgba(22, 163, 74, 0.15); padding: 9px; border-radius: 8px; text-align: center;">
+							<p style="font-size: 1.2em; font-weight: bold; color: #16a34a;">6</p>
+							<p class="ztu-green" style="font-weight: bold;">Certificate (3 years)</p>
+							<p style="margin-top: 4px;">Surveillance audit — annually. Recertification audit — every 3 years.</p>
+						</div>
+					</div>
+					<p style="font-size: 0.6em; margin-top: 8px; text-align: center;">Certification cost for an IT company:
+						approx. <span class="ztu-orange">$5,000 – $30,000</span> depending on size</p>
+				</section>
+				<section>
+					<h2 class="ztu-blue">BELGELENDİRME SÜRECİ</h2>
+					<div
+						style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 9px; margin-top: 9px; font-size: 0.61em;">
+						<div style="background: rgba(37, 99, 235, 0.1); padding: 9px; border-radius: 8px; text-align: center;">
+							<p style="font-size: 1.2em; font-weight: bold; color: #2563eb;">1</p>
+							<p class="ztu-blue" style="font-weight: bold;">Boşluk Analizi</p>
+							<p style="margin-top: 4px;">Mevcut süreçleri ISO 9001 gereksinimleriyle karşılaştır. Boşlukları tespit et.</p>
+						</div>
+						<div style="background: rgba(234, 88, 12, 0.1); padding: 9px; border-radius: 8px; text-align: center;">
+							<p style="font-size: 1.2em; font-weight: bold; color: #ea580c;">2</p>
+							<p class="ztu-orange" style="font-weight: bold;">KYS Uygulaması</p>
+							<p style="margin-top: 4px;">Dokümantasyon hazırla, personel eğit, süreçleri kur. 3–12 ay.</p>
+						</div>
+						<div style="background: rgba(22, 163, 74, 0.1); padding: 9px; border-radius: 8px; text-align: center;">
+							<p style="font-size: 1.2em; font-weight: bold; color: #16a34a;">3</p>
+							<p class="ztu-green" style="font-weight: bold;">İç Denetim</p>
+							<p style="margin-top: 4px;">Dış denetimden önce iç denetçiler tarafından gözden geçirme. UY'leri tespit et ve çöz.</p>
+						</div>
+						<div style="background: rgba(220, 38, 38, 0.1); padding: 9px; border-radius: 8px; text-align: center;">
+							<p style="font-size: 1.2em; font-weight: bold; color: #dc2626;">4</p>
+							<p class="ztu-red" style="font-weight: bold;">1. Aşama Denetimi</p>
+							<p style="margin-top: 4px;">Belge incelemesi — denetçi dokümantasyonu kontrol eder. Saha ziyaretinden önce Majör UY'leri tanımlar.</p>
+						</div>
+						<div style="background: rgba(220, 38, 38, 0.1); padding: 9px; border-radius: 8px; text-align: center;">
+							<p style="font-size: 1.2em; font-weight: bold; color: #dc2626;">5</p>
+							<p class="ztu-red" style="font-weight: bold;">2. Aşama Denetimi</p>
+							<p style="margin-top: 4px;">Yerinde denetim — KYS'nin pratikte işleyişini doğrulama. Personel görüşmeleri.</p>
+						</div>
+						<div style="background: rgba(22, 163, 74, 0.15); padding: 9px; border-radius: 8px; text-align: center;">
+							<p style="font-size: 1.2em; font-weight: bold; color: #16a34a;">6</p>
+							<p class="ztu-green" style="font-weight: bold;">Sertifika (3 yıl)</p>
+							<p style="margin-top: 4px;">Gözetim denetimi — yıllık. Yeniden belgelendirme denetimi — her 3 yılda bir.</p>
+						</div>
+					</div>
+					<p style="font-size: 0.6em; margin-top: 8px; text-align: center;">Bir BT şirketi için belgelendirme maliyeti:
+						yaklaşık <span class="ztu-orange">5.000 – 30.000 $</span> boyuta göre değişir</p>
+				</section>
+			</section>
+
+			<!-- ===== 19. ISO 9001 IN SOFTWARE ===== -->
+			<section>
+				<section>
+					<h2 class="ztu-blue">ISO 9001 IN A SOFTWARE COMPANY</h2>
+					<p style="font-size: 0.72em;">How ISO 9001 looks in practice in a development team:</p>
+					<div
+						style="display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-top: 9px; font-size: 0.63em;">
+						<div style="background: rgba(37, 99, 235, 0.1); padding: 10px 12px; border-radius: 8px;">
+							<h3 class="ztu-blue" style="font-size: 1em; margin-bottom: 6px;">Documentation</h3>
+							<ul class="ztu-list">
+								<li>Architecture Decision Records (ADR)</li>
+								<li>Definition of Done (DoD)</li>
+								<li>Runbooks, API documentation</li>
+							</ul>
+						</div>
+						<div style="background: rgba(22, 163, 74, 0.1); padding: 10px 12px; border-radius: 8px;">
+							<h3 class="ztu-green" style="font-size: 1em; margin-bottom: 6px;">Monitoring</h3>
+							<ul class="ztu-list">
+								<li>Uptime SLA, error rate, MTTR</li>
+								<li>Code coverage, tech debt metrics</li>
+								<li>Retrospective — team's internal audit</li>
+							</ul>
+						</div>
+						<div style="background: rgba(234, 88, 12, 0.1); padding: 10px 12px; border-radius: 8px;">
+							<h3 class="ztu-orange" style="font-size: 1em; margin-bottom: 6px;">Quality Management</h3>
+							<ul class="ztu-list">
+								<li>Code review as quality control</li>
+								<li>Bug tracking (non-conformities)</li>
+								<li>CI/CD as automated quality control</li>
+							</ul>
+						</div>
+						<div style="background: rgba(220, 38, 38, 0.1); padding: 10px 12px; border-radius: 8px;">
+							<h3 class="ztu-red" style="font-size: 1em; margin-bottom: 6px;">Risks in Software</h3>
+							<ul class="ztu-list">
+								<li>Risk register in the project</li>
+								<li>Dependency risks (libraries, APIs)</li>
+								<li>Security &amp; compliance risks</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h2 class="ztu-blue">ISO 9001 BİR YAZILIM ŞİRKETİNDE</h2>
+					<p style="font-size: 0.72em;">ISO 9001, geliştirme ekibinde pratikte nasıl görünür:</p>
+					<div
+						style="display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-top: 9px; font-size: 0.63em;">
+						<div style="background: rgba(37, 99, 235, 0.1); padding: 10px 12px; border-radius: 8px;">
+							<h3 class="ztu-blue" style="font-size: 1em; margin-bottom: 6px;">Dokümantasyon</h3>
+							<ul class="ztu-list">
+								<li>Mimari Karar Kayıtları (ADR)</li>
+								<li>Tamamlanma Tanımı (DoD)</li>
+								<li>Çalıştırma kılavuzları, API belgeleri</li>
+							</ul>
+						</div>
+						<div style="background: rgba(22, 163, 74, 0.1); padding: 10px 12px; border-radius: 8px;">
+							<h3 class="ztu-green" style="font-size: 1em; margin-bottom: 6px;">İzleme</h3>
+							<ul class="ztu-list">
+								<li>Çalışma süresi SLA, hata oranı, MTTR</li>
+								<li>Kod kapsama, teknik borç metrikleri</li>
+								<li>Retrospektif — ekibin iç denetimi</li>
+							</ul>
+						</div>
+						<div style="background: rgba(234, 88, 12, 0.1); padding: 10px 12px; border-radius: 8px;">
+							<h3 class="ztu-orange" style="font-size: 1em; margin-bottom: 6px;">Kalite Yönetimi</h3>
+							<ul class="ztu-list">
+								<li>Kalite kontrolü olarak kod incelemesi</li>
+								<li>Hata takibi (uygunsuzluklar)</li>
+								<li>CI/CD olarak otomatik kalite kontrolü</li>
+							</ul>
+						</div>
+						<div style="background: rgba(220, 38, 38, 0.1); padding: 10px 12px; border-radius: 8px;">
+							<h3 class="ztu-red" style="font-size: 1em; margin-bottom: 6px;">Yazılımdaki Riskler</h3>
+							<ul class="ztu-list">
+								<li>Projede risk kaydı</li>
+								<li>Bağımlılık riskleri (kütüphaneler, API'lar)</li>
+								<li>Güvenlik ve uyumluluk riskleri</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+			</section>
+
+			<!-- ===== 20. WHAT YOU WILL ENCOUNTER ===== -->
+			<section>
+				<section>
+					<h2 class="ztu-blue">WHAT YOU WILL ENCOUNTER AT WORK</h2>
+					<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-top: 6px; font-size: 0.53em;">
+						<div style="background: rgba(37, 99, 235, 0.1); padding: 8px 10px; border-radius: 8px;">
+							<h3 class="ztu-blue" style="font-size: 1em; margin-bottom: 4px;">Documents</h3>
+							<ul class="ztu-list">
+								<li><strong>SOP</strong> — Standard Operating Procedure for team processes</li>
+								<li><strong>Work Instructions</strong> — detailed task instructions</li>
+								<li><strong>Forms &amp; Templates</strong> — standardized documents</li>
+								<li><strong>Quality Plan</strong> — project quality plan</li>
+							</ul>
+						</div>
+						<div style="background: rgba(22, 163, 74, 0.1); padding: 8px 10px; border-radius: 8px;">
+							<h3 class="ztu-green" style="font-size: 1em; margin-bottom: 4px;">Processes &amp; Meetings</h3>
+							<ul class="ztu-list">
+								<li><strong>Internal audit</strong> — you may be asked about your processes</li>
+								<li><strong>NCR</strong> — if you found or caused a process deviation</li>
+								<li><strong>Management Review</strong> — quarterly QMS review</li>
+								<li><strong>Corrective Action</strong> — root cause analysis participation</li>
+							</ul>
+						</div>
+						<div style="background: rgba(234, 88, 12, 0.1); padding: 8px 10px; border-radius: 8px;">
+							<h3 class="ztu-orange" style="font-size: 1em; margin-bottom: 4px;">Tools</h3>
+							<ul class="ztu-list">
+								<li><strong>Jira / Azure DevOps</strong> — NCR and task tracking</li>
+								<li><strong>Confluence / SharePoint</strong> — documentation system</li>
+								<li><strong>Metrics dashboards</strong> — process and product KPIs</li>
+							</ul>
+						</div>
+						<div style="background: rgba(220, 38, 38, 0.1); padding: 8px 10px; border-radius: 8px;">
+							<h3 class="ztu-red" style="font-size: 1em; margin-bottom: 4px;">What's Expected of You</h3>
+							<ul class="ztu-list">
+								<li>Follow documented processes</li>
+								<li>Document your work (records)</li>
+								<li>Report process deviations</li>
+								<li>Participate in process improvement</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h2 class="ztu-blue">İŞTE KARŞILAŞACAKLARINIZ</h2>
+					<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-top: 6px; font-size: 0.53em;">
+						<div style="background: rgba(37, 99, 235, 0.1); padding: 8px 10px; border-radius: 8px;">
+							<h3 class="ztu-blue" style="font-size: 1em; margin-bottom: 4px;">Belgeler</h3>
+							<ul class="ztu-list">
+								<li><strong>SOP</strong> — Standart İşletme Prosedürü, ekip süreçleri için</li>
+								<li><strong>İş Talimatları</strong> — ayrıntılı görev talimatları</li>
+								<li><strong>Formlar ve Şablonlar</strong> — standartlaştırılmış belgeler</li>
+								<li><strong>Kalite Planı</strong> — proje kalite planı</li>
+							</ul>
+						</div>
+						<div style="background: rgba(22, 163, 74, 0.1); padding: 8px 10px; border-radius: 8px;">
+							<h3 class="ztu-green" style="font-size: 1em; margin-bottom: 4px;">Süreçler ve Toplantılar</h3>
+							<ul class="ztu-list">
+								<li><strong>İç denetim</strong> — süreçleriniz hakkında sorulabilirsiniz</li>
+								<li><strong>UYR</strong> — bir süreç sapması buldunuz veya neden oldunuz</li>
+								<li><strong>Yönetim Gözden Geçirmesi</strong> — üç aylık KYS incelemesi</li>
+								<li><strong>Düzeltici Faaliyet</strong> — kök neden analizine katılım</li>
+							</ul>
+						</div>
+						<div style="background: rgba(234, 88, 12, 0.1); padding: 8px 10px; border-radius: 8px;">
+							<h3 class="ztu-orange" style="font-size: 1em; margin-bottom: 4px;">Araçlar</h3>
+							<ul class="ztu-list">
+								<li><strong>Jira / Azure DevOps</strong> — UYR ve görev takibi</li>
+								<li><strong>Confluence / SharePoint</strong> — dokümantasyon sistemi</li>
+								<li><strong>Metrik panoları</strong> — süreç ve ürün KPI'ları</li>
+							</ul>
+						</div>
+						<div style="background: rgba(220, 38, 38, 0.1); padding: 8px 10px; border-radius: 8px;">
+							<h3 class="ztu-red" style="font-size: 1em; margin-bottom: 4px;">Sizden Beklenenler</h3>
+							<ul class="ztu-list">
+								<li>Belgelenmiş süreçlere uyun</li>
+								<li>Çalışmanızı belgeleyin (kayıtlar)</li>
+								<li>Süreç sapmalarını bildirin</li>
+								<li>Süreç iyileştirmesine katılın</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+			</section>
+
+			<!-- ===== 21. Q&A ===== -->
+			<section>
+				<section>
+					<h1 class="ztu-blue">ANY QUESTIONS?</h1>
+					<p class="ztu-orange" style="margin-top: 40px;">What would you like to clarify?</p>
+					<div style="margin-top: 30px; font-size: 0.6em;">
+						<p class="ztu-green">ISO 9001:2015: https://www.iso.org/iso-9001-quality-management.html</p>
+						<p class="ztu-green" style="margin-top: 5px;">TSE (Turkish Standards Institution):
+							https://www.tse.org.tr/</p>
+						<p class="ztu-green" style="margin-top: 5px;">ISO 31000 Risk Management:
+							https://www.iso.org/iso-31000-risk-management.html</p>
+					</div>
+				</section>
+				<section>
+					<h1 class="ztu-blue">SORULARINIZ VAR MI?</h1>
+					<p class="ztu-orange" style="margin-top: 40px;">Neyi netleştirmek istersiniz?</p>
+					<div style="margin-top: 30px; font-size: 0.6em;">
+						<p class="ztu-green">ISO 9001:2015: https://www.iso.org/iso-9001-quality-management.html</p>
+						<p class="ztu-green" style="margin-top: 5px;">TSE (Türk Standartları Enstitüsü):
+							https://www.tse.org.tr/</p>
+						<p class="ztu-green" style="margin-top: 5px;">ISO 31000 Risk Yönetimi:
+							https://www.iso.org/iso-31000-risk-management.html</p>
+					</div>
+				</section>
 			</section>
 
 		</div>
