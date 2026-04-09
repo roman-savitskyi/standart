@@ -1411,29 +1411,49 @@
 				<section>
 					<h2 class="ztu-blue">LICENSE COMPATIBILITY</h2>
 					<p class="ztu-orange">Can they be mixed?</p>
-					<ul class="ztu-list" style="margin-top: 20px;">
-						<li><span class="ztu-green">MIT + Apache</span> = OK</li>
-						<li><span class="ztu-green">MIT + BSD</span> = OK</li>
-						<li><span class="ztu-green">MIT + GPL-3.0</span> = OK (result will be GPL-3.0)</li>
-						<li><span class="ztu-green">Apache-2.0 + GPL-3.0</span> = OK</li>
-						<li><span class="ztu-red">Apache-2.0 + GPL-2.0-only</span> = incompatible!</li>
-						<li><span class="ztu-red">GPL-2.0-only + GPL-3.0</span> = incompatible!</li>
-						<li><span class="ztu-orange">GPL-2.0-or-later + GPL-3.0</span> = OK</li>
-					</ul>
+					<div style="display:flex;gap:16px;margin-top:22px;">
+						<div style="flex:1;border:2px solid #27ae60;border-radius:8px;padding:14px;">
+							<div style="color:#27ae60;font-weight:bold;font-size:0.75em;text-align:center;margin-bottom:10px;">✅ COMPATIBLE</div>
+							<div style="font-size:0.62em;">
+								<div style="background:rgba(39,174,96,0.12);border-radius:4px;padding:5px 8px;margin-bottom:5px;">MIT + Apache-2.0</div>
+								<div style="background:rgba(39,174,96,0.12);border-radius:4px;padding:5px 8px;margin-bottom:5px;">MIT + BSD-3</div>
+								<div style="background:rgba(39,174,96,0.12);border-radius:4px;padding:5px 8px;margin-bottom:5px;">MIT + GPL-3.0 <span style="opacity:0.6;">(result → GPL-3)</span></div>
+								<div style="background:rgba(39,174,96,0.12);border-radius:4px;padding:5px 8px;margin-bottom:5px;">Apache-2.0 + GPL-3.0</div>
+								<div style="background:rgba(39,174,96,0.12);border-radius:4px;padding:5px 8px;">GPL-2.0-or-later + GPL-3.0</div>
+							</div>
+						</div>
+						<div style="flex:1;border:2px solid #e74c3c;border-radius:8px;padding:14px;">
+							<div style="color:#e74c3c;font-weight:bold;font-size:0.75em;text-align:center;margin-bottom:10px;">❌ INCOMPATIBLE</div>
+							<div style="font-size:0.62em;">
+								<div style="background:rgba(231,76,60,0.12);border-radius:4px;padding:5px 8px;margin-bottom:5px;">Apache-2.0 + GPL-2.0-only</div>
+								<div style="background:rgba(231,76,60,0.12);border-radius:4px;padding:5px 8px;">GPL-2.0-only + GPL-3.0</div>
+							</div>
+						</div>
+					</div>
 				<aside class="notes">MIT + Apache = OK. Apache + GPL-2.0-only = несумісні! Важливо перевіряти перед поєднанням залежностей у проекті.</aside>
 				</section>
 				<section>
 					<h2 class="ztu-blue">LİSANS UYUMLULUĞU</h2>
 					<p class="ztu-orange">Karıştırılabilir mi?</p>
-					<ul class="ztu-list" style="margin-top: 20px;">
-						<li><span class="ztu-green">MIT + Apache</span> = Tamam</li>
-						<li><span class="ztu-green">MIT + BSD</span> = Tamam</li>
-						<li><span class="ztu-green">MIT + GPL-3.0</span> = Tamam (sonuç GPL-3.0 olur)</li>
-						<li><span class="ztu-green">Apache-2.0 + GPL-3.0</span> = Tamam</li>
-						<li><span class="ztu-red">Apache-2.0 + GPL-2.0-only</span> = uyumsuz!</li>
-						<li><span class="ztu-red">GPL-2.0-only + GPL-3.0</span> = uyumsuz!</li>
-						<li><span class="ztu-orange">GPL-2.0-or-later + GPL-3.0</span> = Tamam</li>
-					</ul>
+					<div style="display:flex;gap:16px;margin-top:22px;">
+						<div style="flex:1;border:2px solid #27ae60;border-radius:8px;padding:14px;">
+							<div style="color:#27ae60;font-weight:bold;font-size:0.75em;text-align:center;margin-bottom:10px;">✅ UYUMLU</div>
+							<div style="font-size:0.62em;">
+								<div style="background:rgba(39,174,96,0.12);border-radius:4px;padding:5px 8px;margin-bottom:5px;">MIT + Apache-2.0</div>
+								<div style="background:rgba(39,174,96,0.12);border-radius:4px;padding:5px 8px;margin-bottom:5px;">MIT + BSD-3</div>
+								<div style="background:rgba(39,174,96,0.12);border-radius:4px;padding:5px 8px;margin-bottom:5px;">MIT + GPL-3.0 <span style="opacity:0.6;">(sonuç → GPL-3)</span></div>
+								<div style="background:rgba(39,174,96,0.12);border-radius:4px;padding:5px 8px;margin-bottom:5px;">Apache-2.0 + GPL-3.0</div>
+								<div style="background:rgba(39,174,96,0.12);border-radius:4px;padding:5px 8px;">GPL-2.0-or-later + GPL-3.0</div>
+							</div>
+						</div>
+						<div style="flex:1;border:2px solid #e74c3c;border-radius:8px;padding:14px;">
+							<div style="color:#e74c3c;font-weight:bold;font-size:0.75em;text-align:center;margin-bottom:10px;">❌ UYUMSUZ</div>
+							<div style="font-size:0.62em;">
+								<div style="background:rgba(231,76,60,0.12);border-radius:4px;padding:5px 8px;margin-bottom:5px;">Apache-2.0 + GPL-2.0-only</div>
+								<div style="background:rgba(231,76,60,0.12);border-radius:4px;padding:5px 8px;">GPL-2.0-only + GPL-3.0</div>
+							</div>
+						</div>
+					</div>
 				<aside class="notes">MIT + Apache = OK. Apache + GPL-2.0-only = несумісні! Важливо перевіряти перед поєднанням залежностей у проекті.</aside>
 				</section>
 			</section>
@@ -1443,21 +1463,77 @@
 				<section>
 					<h2 class="ztu-blue">COMPATIBILITY RULE</h2>
 					<p style="font-size: 0.9em;">Resulting license = most restrictive one</p>
-					<div style="margin-top: 30px; font-size: 0.8em;">
-						<p>Public Domain → Permissive → Copyleft</p>
-						<p class="ztu-orange" style="margin-top: 20px;">CC0 → MIT/BSD → Apache → LGPL → GPL → AGPL</p>
+					<div style="display:flex;align-items:stretch;gap:4px;margin-top:28px;">
+						<div style="flex:1;background:rgba(0,0,0,0.25);border:2px solid #27ae60;border-radius:6px;padding:10px 6px;text-align:center;">
+							<div style="color:#27ae60;font-weight:bold;font-size:0.65em;">CC0</div>
+							<div style="font-size:0.5em;opacity:0.65;margin-top:4px;">Public Domain</div>
+						</div>
+						<div style="align-self:center;color:#888;padding:0 2px;">→</div>
+						<div style="flex:1;background:rgba(0,0,0,0.25);border:2px solid #2ecc71;border-radius:6px;padding:10px 6px;text-align:center;">
+							<div style="color:#2ecc71;font-weight:bold;font-size:0.65em;">MIT / BSD</div>
+							<div style="font-size:0.5em;opacity:0.65;margin-top:4px;">Permissive</div>
+						</div>
+						<div style="align-self:center;color:#888;padding:0 2px;">→</div>
+						<div style="flex:1;background:rgba(0,0,0,0.25);border:2px solid #f39c12;border-radius:6px;padding:10px 6px;text-align:center;">
+							<div style="color:#f39c12;font-weight:bold;font-size:0.65em;">Apache-2.0</div>
+							<div style="font-size:0.5em;opacity:0.65;margin-top:4px;">Permissive+</div>
+						</div>
+						<div style="align-self:center;color:#888;padding:0 2px;">→</div>
+						<div style="flex:1;background:rgba(0,0,0,0.25);border:2px solid #e67e22;border-radius:6px;padding:10px 6px;text-align:center;">
+							<div style="color:#e67e22;font-weight:bold;font-size:0.65em;">LGPL</div>
+							<div style="font-size:0.5em;opacity:0.65;margin-top:4px;">Weak Copyleft</div>
+						</div>
+						<div style="align-self:center;color:#888;padding:0 2px;">→</div>
+						<div style="flex:1;background:rgba(0,0,0,0.25);border:2px solid #e74c3c;border-radius:6px;padding:10px 6px;text-align:center;">
+							<div style="color:#e74c3c;font-weight:bold;font-size:0.65em;">GPL</div>
+							<div style="font-size:0.5em;opacity:0.65;margin-top:4px;">Copyleft</div>
+						</div>
+						<div style="align-self:center;color:#888;padding:0 2px;">→</div>
+						<div style="flex:1;background:rgba(0,0,0,0.25);border:2px solid #c0392b;border-radius:6px;padding:10px 6px;text-align:center;">
+							<div style="color:#c0392b;font-weight:bold;font-size:0.65em;">AGPL</div>
+							<div style="font-size:0.5em;opacity:0.65;margin-top:4px;">Strong Copyleft</div>
+						</div>
 					</div>
-					<p style="margin-top: 30px;">Simplified rule: what matters is whether it is a <span class="ztu-orange">derivative work</span> and whether you <span class="ztu-orange">distribute</span> it</p>
+					<p style="margin-top:14px;font-size:0.65em;text-align:center;opacity:0.55;">← more permissive &nbsp;&nbsp;&nbsp;&nbsp; more restrictive →</p>
+					<p style="margin-top:14px;font-size:0.7em;">Key question: is it a <span class="ztu-orange">derivative work</span>? Do you <span class="ztu-orange">distribute</span> it?</p>
 				<aside class="notes">Результат = найобмежувальніша ліцензія. Шкала: Public Domain → Permissive → Copyleft. Ключове: чи є похідним і чи поширюється.</aside>
 				</section>
 				<section>
 					<h2 class="ztu-blue">UYUMLULUK KURALI</h2>
 					<p style="font-size: 0.9em;">Sonuçtaki lisans = en kısıtlayıcı olanı</p>
-					<div style="margin-top: 30px; font-size: 0.8em;">
-						<p>Kamuya Açık → Permissive → Copyleft</p>
-						<p class="ztu-orange" style="margin-top: 20px;">CC0 → MIT/BSD → Apache → LGPL → GPL → AGPL</p>
+					<div style="display:flex;align-items:stretch;gap:4px;margin-top:28px;">
+						<div style="flex:1;background:rgba(0,0,0,0.25);border:2px solid #27ae60;border-radius:6px;padding:10px 6px;text-align:center;">
+							<div style="color:#27ae60;font-weight:bold;font-size:0.65em;">CC0</div>
+							<div style="font-size:0.5em;opacity:0.65;margin-top:4px;">Kamu Malı</div>
+						</div>
+						<div style="align-self:center;color:#888;padding:0 2px;">→</div>
+						<div style="flex:1;background:rgba(0,0,0,0.25);border:2px solid #2ecc71;border-radius:6px;padding:10px 6px;text-align:center;">
+							<div style="color:#2ecc71;font-weight:bold;font-size:0.65em;">MIT / BSD</div>
+							<div style="font-size:0.5em;opacity:0.65;margin-top:4px;">İzin verici</div>
+						</div>
+						<div style="align-self:center;color:#888;padding:0 2px;">→</div>
+						<div style="flex:1;background:rgba(0,0,0,0.25);border:2px solid #f39c12;border-radius:6px;padding:10px 6px;text-align:center;">
+							<div style="color:#f39c12;font-weight:bold;font-size:0.65em;">Apache-2.0</div>
+							<div style="font-size:0.5em;opacity:0.65;margin-top:4px;">İzin verici+</div>
+						</div>
+						<div style="align-self:center;color:#888;padding:0 2px;">→</div>
+						<div style="flex:1;background:rgba(0,0,0,0.25);border:2px solid #e67e22;border-radius:6px;padding:10px 6px;text-align:center;">
+							<div style="color:#e67e22;font-weight:bold;font-size:0.65em;">LGPL</div>
+							<div style="font-size:0.5em;opacity:0.65;margin-top:4px;">Zayıf Copyleft</div>
+						</div>
+						<div style="align-self:center;color:#888;padding:0 2px;">→</div>
+						<div style="flex:1;background:rgba(0,0,0,0.25);border:2px solid #e74c3c;border-radius:6px;padding:10px 6px;text-align:center;">
+							<div style="color:#e74c3c;font-weight:bold;font-size:0.65em;">GPL</div>
+							<div style="font-size:0.5em;opacity:0.65;margin-top:4px;">Copyleft</div>
+						</div>
+						<div style="align-self:center;color:#888;padding:0 2px;">→</div>
+						<div style="flex:1;background:rgba(0,0,0,0.25);border:2px solid #c0392b;border-radius:6px;padding:10px 6px;text-align:center;">
+							<div style="color:#c0392b;font-weight:bold;font-size:0.65em;">AGPL</div>
+							<div style="font-size:0.5em;opacity:0.65;margin-top:4px;">Güçlü Copyleft</div>
+						</div>
 					</div>
-					<p style="margin-top: 30px;">Basitleştirilmiş kural: önemli olan, bunun bir <span class="ztu-orange">türev çalışma</span> olup olmadığı ve onu <span class="ztu-orange">dağıtıp dağıtmadığınız</span></p>
+					<p style="margin-top:14px;font-size:0.65em;text-align:center;opacity:0.55;">← more permissive &nbsp;&nbsp;&nbsp;&nbsp; more restrictive →</p>
+					<p style="margin-top:14px;font-size:0.7em;">Temel soru: bu bir <span class="ztu-orange">türev çalışma</span> mı? Onu <span class="ztu-orange">dağıtıyor</span> musunuz?</p>
 				<aside class="notes">Результат = найобмежувальніша ліцензія. Шкала: Public Domain → Permissive → Copyleft. Ключове: чи є похідним і чи поширюється.</aside>
 				</section>
 			</section>
@@ -1681,7 +1757,10 @@
 			<!-- 55. LICENSE-CHECKER -->
 			<section>
 				<section>
-					<h2 class="ztu-blue">LICENSE-CHECKER (NPM)</h2>
+					<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;">
+						<h2 class="ztu-blue">LICENSE-CHECKER (NPM)</h2>
+						<img src="assets/logos/npm.svg" style="height:44px;filter:brightness(0) invert(1);opacity:0.88;">
+					</div>
 					<pre><code class="bash" data-line-numbers="|1|2|3">npm install -g license-checker
 license-checker --summary
 license-checker --onlyAllow "MIT;Apache-2.0;BSD-3-Clause"</code></pre>
@@ -1689,7 +1768,10 @@ license-checker --onlyAllow "MIT;Apache-2.0;BSD-3-Clause"</code></pre>
 				<aside class="notes">NPM-інструмент для аудиту ліцензій всіх залежностей. Можна заблокувати заборонені ліцензії прямо в CI/CD пайплайні.</aside>
 				</section>
 				<section>
-					<h2 class="ztu-blue">LICENSE-CHECKER (NPM)</h2>
+					<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;">
+						<h2 class="ztu-blue">LICENSE-CHECKER (NPM)</h2>
+						<img src="assets/logos/npm.svg" style="height:44px;filter:brightness(0) invert(1);opacity:0.88;">
+					</div>
 					<pre><code class="bash" data-line-numbers="|1|2|3">npm install -g license-checker
 license-checker --summary
 license-checker --onlyAllow "MIT;Apache-2.0;BSD-3-Clause"</code></pre>
@@ -1701,7 +1783,10 @@ license-checker --onlyAllow "MIT;Apache-2.0;BSD-3-Clause"</code></pre>
 			<!-- 56. SNYK -->
 			<section>
 				<section>
-					<h2 class="ztu-blue">SNYK</h2>
+					<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;">
+						<h2 class="ztu-blue">SNYK</h2>
+						<img src="assets/logos/snyk.svg" style="height:52px;filter:brightness(0) invert(1);opacity:0.88;">
+					</div>
 					<ul class="ztu-list">
 						<li>Vulnerability + license checking</li>
 						<li>CI/CD integration</li>
@@ -1712,7 +1797,10 @@ license-checker --onlyAllow "MIT;Apache-2.0;BSD-3-Clause"</code></pre>
 				<aside class="notes">Перевіряє вразливості та ліцензії одночасно. Інтегрується з GitHub, GitLab. Безкоштовний для Open Source проектів.</aside>
 				</section>
 				<section>
-					<h2 class="ztu-blue">SNYK</h2>
+					<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;">
+						<h2 class="ztu-blue">SNYK</h2>
+						<img src="assets/logos/snyk.svg" style="height:52px;filter:brightness(0) invert(1);opacity:0.88;">
+					</div>
 					<ul class="ztu-list">
 						<li>Güvenlik açığı + lisans kontrolü</li>
 						<li>CI/CD entegrasyonu</li>
@@ -1748,191 +1836,533 @@ license-checker --onlyAllow "MIT;Apache-2.0;BSD-3-Clause"</code></pre>
 				</section>
 			</section>
 
-			<!-- 58. LICENSE COMPARISON TABLE -->
+
+			<!-- 58. SBOM — WHAT IS IT -->
 			<section>
 				<section>
-					<h2 class="ztu-blue">LICENSE COMPARISON</h2>
-					<table style="font-size: 0.45em; width: 100%;">
+					<h2 class="ztu-blue">SBOM — SOFTWARE BILL OF MATERIALS</h2>
+					<p class="ztu-orange">An ingredient list for your software</p>
+					<p style="font-size:0.75em;margin-top:10px;">An ingredient list for your software — all components, versions &amp; licenses in one file</p>
+					<div style="display:flex;align-items:stretch;gap:6px;margin-top:28px;">
+						<div style="flex:1;border:2px solid #3498db;border-radius:8px;padding:12px 8px;text-align:center;min-width:0;">
+							<div style="font-size:1.6em;margin-bottom:4px;">📦</div>
+							<div style="color:#3498db;font-weight:bold;font-size:0.6em;">Source Code</div>
+							<div style="font-size:0.5em;opacity:0.65;margin-top:3px;">packages / containers</div>
+						</div>
+						<div style="align-self:center;color:#f39c12;font-size:1.3em;padding:0 4px;">→</div>
+						<div style="flex:1;border:2px solid #f39c12;border-radius:8px;padding:12px 8px;text-align:center;min-width:0;">
+							<div style="font-size:1.6em;margin-bottom:4px;">⚙️</div>
+							<div style="color:#f39c12;font-weight:bold;font-size:0.6em;">SBOM Generator</div>
+							<div style="font-size:0.5em;opacity:0.65;margin-top:3px;">syft / trivy / cdxgen</div>
+						</div>
+						<div style="align-self:center;color:#f39c12;font-size:1.3em;padding:0 4px;">→</div>
+						<div style="flex:1;border:2px solid #27ae60;border-radius:8px;padding:12px 8px;text-align:center;min-width:0;">
+							<div style="font-size:1.6em;margin-bottom:4px;">📄</div>
+							<div style="color:#27ae60;font-weight:bold;font-size:0.6em;">sbom.json</div>
+							<div style="font-size:0.5em;opacity:0.65;margin-top:3px;">SPDX / CycloneDX</div>
+						</div>
+						<div style="align-self:center;color:#f39c12;font-size:1.3em;padding:0 4px;">→</div>
+						<div style="flex:1;border:2px solid #9b59b6;border-radius:8px;padding:12px 8px;text-align:center;min-width:0;">
+							<div style="font-size:1.6em;margin-bottom:4px;">🔍</div>
+							<div style="color:#9b59b6;font-weight:bold;font-size:0.6em;">Analysis</div>
+							<div style="font-size:0.5em;opacity:0.65;margin-top:3px;">Dep-Track / Snyk</div>
+						</div>
+						<div style="align-self:center;color:#f39c12;font-size:1.3em;padding:0 4px;">→</div>
+						<div style="flex:1;border:2px solid #e74c3c;border-radius:8px;padding:12px 8px;text-align:center;min-width:0;">
+							<div style="font-size:1.6em;margin-bottom:4px;">📊</div>
+							<div style="color:#e74c3c;font-weight:bold;font-size:0.6em;">Dashboard</div>
+							<div style="font-size:0.5em;opacity:0.65;margin-top:3px;">vulns + licenses</div>
+						</div>
+					</div>
+					<p style="font-size:0.6em;margin-top:12px;opacity:0.65;">Required by US Executive Order on Cybersecurity (2021) · Formats: SPDX (ISO/IEC 5962), CycloneDX</p>
+					<aside class="notes">SBOM — перелік всіх компонентів, версій і ліцензій у проекті. Аналог списку інгредієнтів. Стандарти: SPDX та CycloneDX.</aside>
+				</section>
+				<section>
+					<h2 class="ztu-blue">SBOM — YAZILIM MALZEME LİSTESİ</h2>
+					<p class="ztu-orange">Yazılımınız için bir içerik listesi</p>
+					<p style="font-size:0.75em;margin-top:10px;">Yazılımınız için içerik listesi — tüm bileşenler, sürümler ve lisanslar tek dosyada</p>
+					<div style="display:flex;align-items:stretch;gap:6px;margin-top:28px;">
+						<div style="flex:1;border:2px solid #3498db;border-radius:8px;padding:12px 8px;text-align:center;min-width:0;">
+							<div style="font-size:1.6em;margin-bottom:4px;">📦</div>
+							<div style="color:#3498db;font-weight:bold;font-size:0.6em;">Kaynak Kodu</div>
+							<div style="font-size:0.5em;opacity:0.65;margin-top:3px;">paketler / konteyner</div>
+						</div>
+						<div style="align-self:center;color:#f39c12;font-size:1.3em;padding:0 4px;">→</div>
+						<div style="flex:1;border:2px solid #f39c12;border-radius:8px;padding:12px 8px;text-align:center;min-width:0;">
+							<div style="font-size:1.6em;margin-bottom:4px;">⚙️</div>
+							<div style="color:#f39c12;font-weight:bold;font-size:0.6em;">SBOM Üretici</div>
+							<div style="font-size:0.5em;opacity:0.65;margin-top:3px;">syft / trivy / cdxgen</div>
+						</div>
+						<div style="align-self:center;color:#f39c12;font-size:1.3em;padding:0 4px;">→</div>
+						<div style="flex:1;border:2px solid #27ae60;border-radius:8px;padding:12px 8px;text-align:center;min-width:0;">
+							<div style="font-size:1.6em;margin-bottom:4px;">📄</div>
+							<div style="color:#27ae60;font-weight:bold;font-size:0.6em;">sbom.json</div>
+							<div style="font-size:0.5em;opacity:0.65;margin-top:3px;">SPDX / CycloneDX</div>
+						</div>
+						<div style="align-self:center;color:#f39c12;font-size:1.3em;padding:0 4px;">→</div>
+						<div style="flex:1;border:2px solid #9b59b6;border-radius:8px;padding:12px 8px;text-align:center;min-width:0;">
+							<div style="font-size:1.6em;margin-bottom:4px;">🔍</div>
+							<div style="color:#9b59b6;font-weight:bold;font-size:0.6em;">Analiz</div>
+							<div style="font-size:0.5em;opacity:0.65;margin-top:3px;">Dep-Track / Snyk</div>
+						</div>
+						<div style="align-self:center;color:#f39c12;font-size:1.3em;padding:0 4px;">→</div>
+						<div style="flex:1;border:2px solid #e74c3c;border-radius:8px;padding:12px 8px;text-align:center;min-width:0;">
+							<div style="font-size:1.6em;margin-bottom:4px;">📊</div>
+							<div style="color:#e74c3c;font-weight:bold;font-size:0.6em;">Dashboard</div>
+							<div style="font-size:0.5em;opacity:0.65;margin-top:3px;">açıklar + lisanslar</div>
+						</div>
+					</div>
+					<p style="font-size:0.6em;margin-top:12px;opacity:0.65;">ABD Siber Güvenlik Yürütme Emri (2021) ile zorunlu · Formatlar: SPDX (ISO/IEC 5962), CycloneDX</p>
+					<aside class="notes">SBOM — projedeki tüm bileşenlerin, sürümlerin ve lisansların listesi. İçindekiler listesi gibi. Standartlar: SPDX ve CycloneDX.</aside>
+				</section>
+			</section>
+
+			<!-- 59. SBOM GENERATION TOOLS -->
+			<section>
+				<section>
+					<h2 class="ztu-blue">SBOM GENERATION TOOLS</h2>
+					<ul class="ztu-list" style="margin-top: 15px;">
+						<li><span class="ztu-orange">syft</span> (Anchore) — generates SBOM from containers, filesystems, packages</li>
+						<li><span class="ztu-orange">trivy</span> (Aqua) — SBOM + vulnerability scan in one tool</li>
+						<li><span class="ztu-orange">CycloneDX CLI</span> — generates from npm, Maven, pip manifests</li>
+						<li><span class="ztu-orange">cdxgen</span> — auto-detects project type, 20+ ecosystems</li>
+					</ul>
+					<pre><code class="bash"># Generate SBOM with syft
+syft . -o cyclonedx-json > sbom.json
+# Scan with trivy
+trivy fs --format cyclonedx . > sbom.json</code></pre>
+					<aside class="notes">syft, trivy, CycloneDX CLI, cdxgen — інструменти генерації SBOM. syft і trivy найпопулярніші в CI/CD.</aside>
+				</section>
+				<section>
+					<h2 class="ztu-blue">SBOM OLUŞTURMA ARAÇLARI</h2>
+					<ul class="ztu-list" style="margin-top: 15px;">
+						<li><span class="ztu-orange">syft</span> (Anchore) — container, dosya sistemi, paketlerden SBOM üretir</li>
+						<li><span class="ztu-orange">trivy</span> (Aqua) — SBOM + güvenlik açığı taraması tek araçta</li>
+						<li><span class="ztu-orange">CycloneDX CLI</span> — npm, Maven, pip manifestlerinden üretir</li>
+						<li><span class="ztu-orange">cdxgen</span> — proje türünü otomatik algılar, 20+ ekosistem</li>
+					</ul>
+					<pre><code class="bash"># syft ile SBOM üret
+syft . -o cyclonedx-json > sbom.json
+# trivy ile tara
+trivy fs --format cyclonedx . > sbom.json</code></pre>
+					<aside class="notes">syft, trivy, CycloneDX CLI, cdxgen — SBOM oluşturma araçları. syft ve trivy CI/CD'de en popüler olanlardır.</aside>
+				</section>
+			</section>
+
+			<!-- 60. DEPENDENCY-TRACK -->
+			<section>
+				<section>
+					<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;">
+						<h2 class="ztu-blue">DEPENDENCY-TRACK</h2>
+						<img src="assets/logos/owasp.svg" style="height:52px;filter:brightness(0) invert(1);opacity:0.88;">
+					</div>
+					<p class="ztu-orange">Continuous SBOM analysis platform (OWASP)</p>
+					<ul class="ztu-list" style="margin-top: 20px;">
+						<li>Upload SBOM → automatic vulnerability + license tracking</li>
+						<li>Dashboard: component inventory across all projects</li>
+						<li>Integrates with NVD, OSV, GitHub Advisories</li>
+						<li>Policy engine — block releases with non-compliant licenses</li>
+						<li>REST API + CI/CD integration</li>
+					</ul>
+					<p class="ztu-green" style="margin-top: 15px; font-size: 0.8em;">https://dependencytrack.org/ — open source, self-hosted</p>
+					<aside class="notes">Dependency-Track — OWASP платформа для безперервного аналізу SBOM. Завантажуєш SBOM → отримуєш вразливості + порушення ліцензій по всіх проектах.</aside>
+				</section>
+				<section>
+					<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;">
+						<h2 class="ztu-blue">DEPENDENCY-TRACK</h2>
+						<img src="assets/logos/owasp.svg" style="height:52px;filter:brightness(0) invert(1);opacity:0.88;">
+					</div>
+					<p class="ztu-orange">Sürekli SBOM analiz platformu (OWASP)</p>
+					<ul class="ztu-list" style="margin-top: 20px;">
+						<li>SBOM yükle → otomatik güvenlik açığı + lisans takibi</li>
+						<li>Dashboard: tüm projelerde bileşen envanteri</li>
+						<li>NVD, OSV, GitHub Advisories ile entegrasyon</li>
+						<li>Politika motoru — uyumsuz lisanslarla sürümü engelle</li>
+						<li>REST API + CI/CD entegrasyonu</li>
+					</ul>
+					<p class="ztu-green" style="margin-top: 15px; font-size: 0.8em;">https://dependencytrack.org/ — açık kaynak, kendi sunucunda</p>
+					<aside class="notes">Dependency-Track — OWASP'ın sürekli SBOM analiz platformu. SBOM yükle → tüm projelerde güvenlik açıkları + lisans ihlallerini al.</aside>
+				</section>
+			</section>
+
+			<!-- 61. CI/CD FOR LICENSE COMPLIANCE -->
+			<section>
+				<section>
+					<h2 class="ztu-blue">CI/CD — LICENSE COMPLIANCE AUTOMATION</h2>
+					<p class="ztu-orange" style="font-size: 0.85em;">Block a PR if a forbidden license is detected</p>
+					<pre><code class="yaml">name: License Check
+on: [pull_request]
+jobs:
+  license-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+      - run: npm install
+      - name: Check licenses
+        run: |
+          npx license-checker             --onlyAllow "MIT;Apache-2.0;BSD-3-Clause;ISC"             --excludePrivatePackages</code></pre>
+					<aside class="notes">Автоматизація перевірки ліцензій у CI/CD. PR блокується якщо знайдено заборонену ліцензію. Приклад для GitHub Actions.</aside>
+				</section>
+				<section>
+					<h2 class="ztu-blue">CI/CD — LİSANS UYUMLULUK OTOMASYONU</h2>
+					<p class="ztu-orange" style="font-size: 0.85em;">Yasak lisans tespit edilirse PR'ı engelle</p>
+					<pre><code class="yaml">name: License Check
+on: [pull_request]
+jobs:
+  license-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+      - run: npm install
+      - name: Check licenses
+        run: |
+          npx license-checker             --onlyAllow "MIT;Apache-2.0;BSD-3-Clause;ISC"             --excludePrivatePackages</code></pre>
+					<aside class="notes">CI/CD'de lisans kontrolü otomasyonu. Yasak lisans bulunursa PR engellenir. GitHub Actions örneği.</aside>
+				</section>
+			</section>
+
+
+			<!-- 65. SAST — WHAT IS IT -->
+			<section>
+				<section>
+					<h2 class="ztu-blue">SAST — STATIC APPLICATION SECURITY TESTING</h2>
+					<p class="ztu-orange">Analyze source code without executing it</p>
+					<p style="font-size:0.75em;margin-top:8px;">Analyze source code without executing it · Part of <span style="color:#f39c12;">Shift Left</span> approach</p>
+					<div style="display:flex;gap:16px;margin-top:20px;height:310px;">
+						<div style="flex:1;border:2px solid #27ae60;border-radius:10px;padding:16px 12px;display:flex;flex-direction:column;align-items:center;">
+							<div style="background:#27ae60;color:white;font-weight:bold;font-size:0.85em;padding:5px 14px;border-radius:5px;margin-bottom:10px;">SAST</div>
+							<div style="font-size:0.58em;opacity:0.7;margin-bottom:10px;">Your Source Code</div>
+							<div style="font-size:0.55em;text-align:left;flex:1;">
+								<div style="padding:3px 0;">✓ SQL Injection</div>
+								<div style="padding:3px 0;">✓ XSS</div>
+								<div style="padding:3px 0;">✓ Hardcoded secrets</div>
+								<div style="padding:3px 0;">✓ Insecure APIs</div>
+							</div>
+							<div style="margin-top:10px;font-size:0.58em;color:#27ae60;font-weight:bold;">Build time</div>
+						</div>
+						<div style="flex:1;border:2px solid #f39c12;border-radius:10px;padding:16px 12px;display:flex;flex-direction:column;align-items:center;">
+							<div style="background:#f39c12;color:white;font-weight:bold;font-size:0.85em;padding:5px 14px;border-radius:5px;margin-bottom:10px;">SCA</div>
+							<div style="font-size:0.58em;opacity:0.7;margin-bottom:10px;">Dependencies</div>
+							<div style="font-size:0.55em;text-align:left;flex:1;">
+								<div style="padding:3px 0;">✓ Known CVEs</div>
+								<div style="padding:3px 0;">✓ License violations</div>
+								<div style="padding:3px 0;">✓ Outdated packages</div>
+								<div style="padding:3px 0;">✓ Transitive deps</div>
+							</div>
+							<div style="margin-top:10px;font-size:0.58em;color:#f39c12;font-weight:bold;">Build time</div>
+						</div>
+						<div style="flex:1;border:2px solid #3498db;border-radius:10px;padding:16px 12px;display:flex;flex-direction:column;align-items:center;">
+							<div style="background:#3498db;color:white;font-weight:bold;font-size:0.85em;padding:5px 14px;border-radius:5px;margin-bottom:10px;">DAST</div>
+							<div style="font-size:0.58em;opacity:0.7;margin-bottom:10px;">Running App</div>
+							<div style="font-size:0.55em;text-align:left;flex:1;">
+								<div style="padding:3px 0;">✓ Auth bypass</div>
+								<div style="padding:3px 0;">✓ Session issues</div>
+								<div style="padding:3px 0;">✓ CORS misconfig</div>
+								<div style="padding:3px 0;">✓ Runtime behavior</div>
+							</div>
+							<div style="margin-top:10px;font-size:0.58em;color:#3498db;font-weight:bold;">Deploy time</div>
+						</div>
+					</div>
+					<aside class="notes">SAST — статичний аналіз коду без запуску. Знаходить SQL-ін'єкції, XSS, hardcoded secrets. Частина Shift Left. Відрізняється від SCA (залежності) і DAST (запущений додаток).</aside>
+				</section>
+				<section>
+					<h2 class="ztu-blue">SAST — STATİK UYGULAMA GÜVENLİK TESTİ</h2>
+					<p class="ztu-orange">Kaynak kodu çalıştırmadan analiz et</p>
+					<p style="font-size:0.75em;margin-top:8px;">Kaynak kodu çalıştırmadan analiz et · <span style="color:#f39c12;">Shift Left</span> yaklaşımının parçası</p>
+					<div style="display:flex;gap:16px;margin-top:20px;height:310px;">
+						<div style="flex:1;border:2px solid #27ae60;border-radius:10px;padding:16px 12px;display:flex;flex-direction:column;align-items:center;">
+							<div style="background:#27ae60;color:white;font-weight:bold;font-size:0.85em;padding:5px 14px;border-radius:5px;margin-bottom:10px;">SAST</div>
+							<div style="font-size:0.58em;opacity:0.7;margin-bottom:10px;">Kaynak Kodunuz</div>
+							<div style="font-size:0.55em;text-align:left;flex:1;">
+								<div style="padding:3px 0;">✓ SQL Injection</div>
+								<div style="padding:3px 0;">✓ XSS</div>
+								<div style="padding:3px 0;">✓ Hardcoded secrets</div>
+								<div style="padding:3px 0;">✓ Güvensiz API'ler</div>
+							</div>
+							<div style="margin-top:10px;font-size:0.58em;color:#27ae60;font-weight:bold;">Derleme zamanı</div>
+						</div>
+						<div style="flex:1;border:2px solid #f39c12;border-radius:10px;padding:16px 12px;display:flex;flex-direction:column;align-items:center;">
+							<div style="background:#f39c12;color:white;font-weight:bold;font-size:0.85em;padding:5px 14px;border-radius:5px;margin-bottom:10px;">SCA</div>
+							<div style="font-size:0.58em;opacity:0.7;margin-bottom:10px;">Bağımlılıklar</div>
+							<div style="font-size:0.55em;text-align:left;flex:1;">
+								<div style="padding:3px 0;">✓ Bilinen CVE'ler</div>
+								<div style="padding:3px 0;">✓ Lisans ihlalleri</div>
+								<div style="padding:3px 0;">✓ Eski paketler</div>
+								<div style="padding:3px 0;">✓ Geçişli bağımlılıklar</div>
+							</div>
+							<div style="margin-top:10px;font-size:0.58em;color:#f39c12;font-weight:bold;">Derleme zamanı</div>
+						</div>
+						<div style="flex:1;border:2px solid #3498db;border-radius:10px;padding:16px 12px;display:flex;flex-direction:column;align-items:center;">
+							<div style="background:#3498db;color:white;font-weight:bold;font-size:0.85em;padding:5px 14px;border-radius:5px;margin-bottom:10px;">DAST</div>
+							<div style="font-size:0.58em;opacity:0.7;margin-bottom:10px;">Çalışan Uygulama</div>
+							<div style="font-size:0.55em;text-align:left;flex:1;">
+								<div style="padding:3px 0;">✓ Auth bypass</div>
+								<div style="padding:3px 0;">✓ Oturum sorunları</div>
+								<div style="padding:3px 0;">✓ CORS yanlış yapılandırma</div>
+								<div style="padding:3px 0;">✓ Çalışma zamanı davranışı</div>
+							</div>
+							<div style="margin-top:10px;font-size:0.58em;color:#3498db;font-weight:bold;">Dağıtım zamanı</div>
+						</div>
+					</div>
+					<aside class="notes">SAST — kodu çalıştırmadan statik analiz. SQL injection, XSS, hardcoded secrets bulur. Shift Left'in parçası. SCA ve DAST'tan farklıdır.</aside>
+				</section>
+			</section>
+
+			<!-- 66. SONARQUBE -->
+			<section>
+				<section>
+					<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;">
+						<h2 class="ztu-blue">SONARQUBE</h2>
+						<img src="assets/logos/sonarqube.svg" style="height:52px;filter:brightness(0) invert(1);opacity:0.88;">
+					</div>
+					<p class="ztu-orange">Most popular code quality &amp; security platform</p>
+					<ul class="ztu-list" style="margin-top: 15px;">
+						<li>Self-hosted (SonarQube) or SaaS (SonarCloud)</li>
+						<li>30+ languages: Java, JS/TS, Python, C#, Go…</li>
+						<li><span class="ztu-orange">Quality Gate</span> — blocks PR if metrics fail</li>
+						<li>Detects: bugs, vulnerabilities, code smells, duplications</li>
+						<li>Free Community Edition for open source</li>
+					</ul>
+					<p class="ztu-green" style="margin-top: 15px; font-size: 0.8em;">https://www.sonarsource.com/</p>
+					<aside class="notes">SonarQube — найпопулярніша платформа аналізу коду. Quality Gate блокує злиття PR якщо метрики не пройшли. 30+ мов. Є безкоштовна Community Edition.</aside>
+				</section>
+				<section>
+					<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;">
+						<h2 class="ztu-blue">SONARQUBE</h2>
+						<img src="assets/logos/sonarqube.svg" style="height:52px;filter:brightness(0) invert(1);opacity:0.88;">
+					</div>
+					<p class="ztu-orange">En popüler kod kalitesi ve güvenlik platformu</p>
+					<ul class="ztu-list" style="margin-top: 15px;">
+						<li>Kendi sunucunda (SonarQube) veya SaaS (SonarCloud)</li>
+						<li>30+ dil: Java, JS/TS, Python, C#, Go…</li>
+						<li><span class="ztu-orange">Quality Gate</span> — metrikler başarısız olursa PR'ı engeller</li>
+						<li>Tespit eder: hata, güvenlik açığı, kod kokusu, tekrarlar</li>
+						<li>Açık kaynak için ücretsiz Community Edition</li>
+					</ul>
+					<p class="ztu-green" style="margin-top: 15px; font-size: 0.8em;">https://www.sonarsource.com/</p>
+					<aside class="notes">SonarQube — en popüler kod analiz platformu. Quality Gate, metrikler geçilmezse PR birleştirmeyi engeller. 30+ dil. Ücretsiz Community Edition mevcuttur.</aside>
+				</section>
+			</section>
+
+			<!-- 67. SEMGREP -->
+			<section>
+				<section>
+					<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;">
+						<h2 class="ztu-blue">SEMGREP</h2>
+						<div style="background:#0d7356;border-radius:6px;padding:7px 18px;font-size:0.75em;font-weight:bold;color:white;letter-spacing:0.06em;font-family:monospace;">semgrep</div>
+					</div>
+					<p class="ztu-orange">Lightweight, fast, multi-language SAST</p>
+					<ul class="ztu-list" style="margin-top: 20px;">
+						<li>Custom rules in YAML — pattern matches your codebase</li>
+						<li>1000+ ready rules: OWASP Top 10, secrets detection</li>
+						<li>Used by: Dropbox, Figma, Trail of Bits</li>
+						<li>Open source core + commercial Semgrep Code</li>
+						<li>Runs in seconds — ideal for CI/CD</li>
+					</ul>
+					<p class="ztu-green" style="margin-top: 15px; font-size: 0.8em;">https://semgrep.dev/</p>
+					<aside class="notes">Semgrep — легкий і швидкий SAST. Кастомні правила на YAML. 1000+ готових правил (OWASP, секрети). Використовують Dropbox, Figma. Ідеальний для CI/CD.</aside>
+				</section>
+				<section>
+					<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;">
+						<h2 class="ztu-blue">SEMGREP</h2>
+						<div style="background:#0d7356;border-radius:6px;padding:7px 18px;font-size:0.75em;font-weight:bold;color:white;letter-spacing:0.06em;font-family:monospace;">semgrep</div>
+					</div>
+					<p class="ztu-orange">Hafif, hızlı, çok dilli SAST</p>
+					<ul class="ztu-list" style="margin-top: 20px;">
+						<li>YAML'da özel kurallar — kod tabanınıza özgü desenler</li>
+						<li>1000+ hazır kural: OWASP Top 10, gizli bilgi tespiti</li>
+						<li>Kullananlar: Dropbox, Figma, Trail of Bits</li>
+						<li>Açık kaynak çekirdek + ticari Semgrep Code</li>
+						<li>Saniyeler içinde çalışır — CI/CD için ideal</li>
+					</ul>
+					<p class="ztu-green" style="margin-top: 15px; font-size: 0.8em;">https://semgrep.dev/</p>
+					<aside class="notes">Semgrep — hafif ve hızlı SAST. YAML'da özel kurallar. 1000+ hazır kural (OWASP, sırlar). Dropbox ve Figma kullanıyor. CI/CD için idealdir.</aside>
+				</section>
+			</section>
+
+			<!-- 68. GITHUB CODEQL -->
+			<section>
+				<section>
+					<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;">
+						<h2 class="ztu-blue">GITHUB CODEQL</h2>
+						<img src="assets/logos/github.svg" style="height:52px;filter:brightness(0) invert(1);opacity:0.88;">
+					</div>
+					<p class="ztu-orange">Security-focused static analysis by GitHub</p>
+					<ul class="ztu-list" style="margin-top: 20px;">
+						<li>Built into GitHub — free for public repositories</li>
+						<li>Finds CVEs: injection, broken auth, insecure deserialization</li>
+						<li>CodeQL queries — SQL-like language for code pattern search</li>
+						<li>Supports: C/C++, C#, Java, JS/TS, Python, Go, Ruby, Swift</li>
+						<li>Results in Security tab → automatic alerts on PRs</li>
+					</ul>
+					<aside class="notes">CodeQL — вбудований у GitHub безкоштовний аналізатор безпеки. Знаходить CVE. Мова запитів CodeQL — як SQL для пошуку патернів у коді. Результати у вкладці Security.</aside>
+				</section>
+				<section>
+					<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;">
+						<h2 class="ztu-blue">GITHUB CODEQL</h2>
+						<img src="assets/logos/github.svg" style="height:52px;filter:brightness(0) invert(1);opacity:0.88;">
+					</div>
+					<p class="ztu-orange">GitHub'ın güvenlik odaklı statik analizi</p>
+					<ul class="ztu-list" style="margin-top: 20px;">
+						<li>GitHub'a yerleşik — genel depolar için ücretsiz</li>
+						<li>CVE bulur: injection, kimlik doğrulama sorunları, güvensiz serileştirme</li>
+						<li>CodeQL sorguları — kod desen araması için SQL benzeri dil</li>
+						<li>Destekler: C/C++, C#, Java, JS/TS, Python, Go, Ruby, Swift</li>
+						<li>Sonuçlar Security sekmesinde → PR'larda otomatik uyarılar</li>
+					</ul>
+					<aside class="notes">CodeQL — GitHub'a yerleşik ücretsiz güvenlik analizörü. CVE bulur. CodeQL sorgu dili — kod arama için SQL benzeri. Sonuçlar Security sekmesinde görünür.</aside>
+				</section>
+			</section>
+
+			<!-- 69. SONARCLOUD vs CODECLIMATE -->
+			<section>
+				<section>
+					<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;">
+						<h2 class="ztu-blue">SONARCLOUD vs CODECLIMATE</h2>
+						<div style="display:flex;gap:10px;align-items:center;">
+							<img src="assets/logos/sonarcloud.svg" style="height:44px;filter:brightness(0) invert(1);opacity:0.88;">
+							<img src="assets/logos/codeclimate.svg" style="height:44px;filter:brightness(0) invert(1);opacity:0.88;">
+						</div>
+					</div>
+					<table style="font-size: 0.6em; width: 100%; margin-top: 15px;">
 						<thead>
 							<tr>
-								<th>License</th>
-								<th>Commercial</th>
-								<th>Modify</th>
-								<th>Distribute</th>
-								<th>Close Source</th>
-								<th>Copyleft</th>
+								<th>Feature</th>
+								<th>SonarCloud</th>
+								<th>CodeClimate</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td>MIT</td>
-								<td class="ztu-green">+</td>
-								<td class="ztu-green">+</td>
-								<td class="ztu-green">+</td>
-								<td class="ztu-green">+</td>
-								<td class="ztu-red">−</td>
+								<td>Type</td>
+								<td>Security + Quality</td>
+								<td>Quality + Coverage</td>
 							</tr>
 							<tr>
-								<td>Apache-2.0</td>
-								<td class="ztu-green">+</td>
-								<td class="ztu-green">+</td>
-								<td class="ztu-green">+</td>
-								<td class="ztu-green">+</td>
-								<td class="ztu-red">−</td>
+								<td>Languages</td>
+								<td class="ztu-green">30+</td>
+								<td class="ztu-orange">10+</td>
 							</tr>
 							<tr>
-								<td>BSD-3</td>
-								<td class="ztu-green">+</td>
-								<td class="ztu-green">+</td>
-								<td class="ztu-green">+</td>
-								<td class="ztu-green">+</td>
-								<td class="ztu-red">−</td>
+								<td>SAST</td>
+								<td class="ztu-green">Yes</td>
+								<td class="ztu-red">Limited</td>
 							</tr>
 							<tr>
-								<td>LGPL-3.0</td>
-								<td class="ztu-green">+</td>
-								<td class="ztu-green">+</td>
-								<td class="ztu-green">+</td>
-								<td class="ztu-orange">+/−</td>
-								<td class="ztu-orange">Weak</td>
+								<td>Test Coverage</td>
+								<td class="ztu-orange">Via CI</td>
+								<td class="ztu-green">Built-in</td>
 							</tr>
 							<tr>
-								<td>GPL-3.0</td>
-								<td class="ztu-green">+</td>
-								<td class="ztu-green">+</td>
-								<td class="ztu-green">+</td>
-								<td class="ztu-red">−</td>
-								<td class="ztu-green">Strong</td>
+								<td>Free for OSS</td>
+								<td class="ztu-green">Yes</td>
+								<td class="ztu-green">Yes</td>
 							</tr>
 							<tr>
-								<td>AGPL-3.0</td>
-								<td class="ztu-green">+</td>
-								<td class="ztu-green">+</td>
-								<td class="ztu-green">+</td>
-								<td class="ztu-red">−</td>
-								<td class="ztu-red">Network</td>
+								<td>GitHub integration</td>
+								<td class="ztu-green">Native</td>
+								<td class="ztu-green">Native</td>
 							</tr>
 						</tbody>
 					</table>
-				<aside class="notes">Зведена таблиця: MIT/Apache/BSD — permissive; LGPL — weak copyleft; GPL — strong copyleft; AGPL — network copyleft.</aside>
+					<aside class="notes">SonarCloud — більше безпеки і SAST, 30+ мов. CodeClimate — більше про якість і coverage. Обидва безкоштовні для OSS проектів.</aside>
 				</section>
 				<section>
-					<h2 class="ztu-blue">LİSANS KARŞILAŞTIRMASI</h2>
-					<table style="font-size: 0.45em; width: 100%;">
+					<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;">
+						<h2 class="ztu-blue">SONARCLOUD ve CODECLIMATE</h2>
+						<div style="display:flex;gap:10px;align-items:center;">
+							<img src="assets/logos/sonarcloud.svg" style="height:44px;filter:brightness(0) invert(1);opacity:0.88;">
+							<img src="assets/logos/codeclimate.svg" style="height:44px;filter:brightness(0) invert(1);opacity:0.88;">
+						</div>
+					</div>
+					<table style="font-size: 0.6em; width: 100%; margin-top: 15px;">
 						<thead>
 							<tr>
-								<th>Lisans</th>
-								<th>Ticari</th>
-								<th>Değiştirme</th>
-								<th>Dağıtım</th>
-								<th>Kodu Kapat</th>
-								<th>Copyleft</th>
+								<th>Özellik</th>
+								<th>SonarCloud</th>
+								<th>CodeClimate</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td>MIT</td>
-								<td class="ztu-green">+</td>
-								<td class="ztu-green">+</td>
-								<td class="ztu-green">+</td>
-								<td class="ztu-green">+</td>
-								<td class="ztu-red">−</td>
+								<td>Tür</td>
+								<td>Güvenlik + Kalite</td>
+								<td>Kalite + Kapsam</td>
 							</tr>
 							<tr>
-								<td>Apache-2.0</td>
-								<td class="ztu-green">+</td>
-								<td class="ztu-green">+</td>
-								<td class="ztu-green">+</td>
-								<td class="ztu-green">+</td>
-								<td class="ztu-red">−</td>
+								<td>Diller</td>
+								<td class="ztu-green">30+</td>
+								<td class="ztu-orange">10+</td>
 							</tr>
 							<tr>
-								<td>BSD-3</td>
-								<td class="ztu-green">+</td>
-								<td class="ztu-green">+</td>
-								<td class="ztu-green">+</td>
-								<td class="ztu-green">+</td>
-								<td class="ztu-red">−</td>
+								<td>SAST</td>
+								<td class="ztu-green">Evet</td>
+								<td class="ztu-red">Sınırlı</td>
 							</tr>
 							<tr>
-								<td>LGPL-3.0</td>
-								<td class="ztu-green">+</td>
-								<td class="ztu-green">+</td>
-								<td class="ztu-green">+</td>
-								<td class="ztu-orange">+/−</td>
-								<td class="ztu-orange">Zayıf</td>
+								<td>Test Kapsamı</td>
+								<td class="ztu-orange">CI üzerinden</td>
+								<td class="ztu-green">Yerleşik</td>
 							</tr>
 							<tr>
-								<td>GPL-3.0</td>
-								<td class="ztu-green">+</td>
-								<td class="ztu-green">+</td>
-								<td class="ztu-green">+</td>
-								<td class="ztu-red">−</td>
-								<td class="ztu-green">Güçlü</td>
+								<td>OSS için Ücretsiz</td>
+								<td class="ztu-green">Evet</td>
+								<td class="ztu-green">Evet</td>
 							</tr>
 							<tr>
-								<td>AGPL-3.0</td>
-								<td class="ztu-green">+</td>
-								<td class="ztu-green">+</td>
-								<td class="ztu-green">+</td>
-								<td class="ztu-red">−</td>
-								<td class="ztu-red">Ağ</td>
+								<td>GitHub entegrasyonu</td>
+								<td class="ztu-green">Doğal</td>
+								<td class="ztu-green">Doğal</td>
 							</tr>
 						</tbody>
 					</table>
-				<aside class="notes">Зведена таблиця: MIT/Apache/BSD — permissive; LGPL — weak copyleft; GPL — strong copyleft; AGPL — network copyleft.</aside>
+					<aside class="notes">SonarCloud — daha fazla güvenlik ve SAST, 30+ dil. CodeClimate — kalite ve kapsam odaklı. İkisi de OSS projeleri için ücretsiz.</aside>
 				</section>
 			</section>
 
-			<!-- 59. WHICH LICENSE TO CHOOSE -->
+			<!-- 70. CI/CD FULL PIPELINE -->
 			<section>
 				<section>
-					<h2 class="ztu-blue">WHICH LICENSE TO CHOOSE?</h2>
-					<ul class="ztu-list">
-						<li><span class="ztu-green">MIT</span> — maximum freedom, popularity</li>
-						<li><span class="ztu-green">Apache-2.0</span> — when patents matter</li>
-						<li><span class="ztu-blue">GPL</span> — if you want the code to stay open</li>
-						<li><span class="ztu-orange">LGPL</span> — for libraries with commercial use possibility</li>
-					</ul>
-					<p class="ztu-orange" style="margin-top: 20px;">https://choosealicense.com/</p>
-				<aside class="notes">MIT — максимальна свобода. Apache-2.0 — якщо є патенти. GPL — щоб код лишався відкритим. LGPL — для бібліотек з комерційним використанням.</aside>
+					<h2 class="ztu-blue">CI/CD — FULL COMPLIANCE PIPELINE</h2>
+					<p class="ztu-orange" style="font-size: 0.8em;">License check + SAST in one GitHub Actions workflow</p>
+					<pre><code class="yaml">name: Compliance Pipeline
+on: [pull_request]
+jobs:
+  compliance:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+      - run: npm install
+      - name: License Check
+        run: npx license-checker --onlyAllow "MIT;Apache-2.0;BSD-3-Clause"
+      - name: SAST — Semgrep
+        uses: semgrep/semgrep-action@v1
+        with:
+          config: p/owasp-top-ten</code></pre>
+					<aside class="notes">Повний CI/CD пайплайн: перевірка ліцензій + SAST Semgrep в одному workflow. PR не зливається якщо є заборонена ліцензія або OWASP-вразливість.</aside>
 				</section>
 				<section>
-					<h2 class="ztu-blue">HANGİ LİSANSI SEÇMELİ?</h2>
-					<ul class="ztu-list">
-						<li><span class="ztu-green">MIT</span> — maksimum özgürlük, popülerlik</li>
-						<li><span class="ztu-green">Apache-2.0</span> — patentler önemliyse</li>
-						<li><span class="ztu-blue">GPL</span> — kodun açık kalmasını istiyorsanız</li>
-						<li><span class="ztu-orange">LGPL</span> — ticari kullanım imkânı olan kütüphaneler için</li>
-					</ul>
-					<p class="ztu-orange" style="margin-top: 20px;">https://choosealicense.com/</p>
-				<aside class="notes">MIT — максимальна свобода. Apache-2.0 — якщо є патенти. GPL — щоб код лишався відкритим. LGPL — для бібліотек з комерційним використанням.</aside>
-				</section>
-			</section>
-
-			<!-- 60. RESOURCES -->
-			<section>
-				<section>
-					<h2 class="ztu-blue">COPYRIGHT IN IT — RESOURCES</h2>
-					<ul class="ztu-list" style="font-size: 0.8em;">
-						<li>https://opensource.org/licenses/</li>
-						<li>https://choosealicense.com/</li>
-						<li>https://tldrlegal.com/</li>
-						<li>https://spdx.org/licenses/</li>
-						<li>https://creativecommons.org/choose/</li>
-					</ul>
-				<aside class="notes">Корисні посилання для глибшого вивчення: opensource.org, choosealicense.com, tldrlegal.com, spdx.org, creativecommons.org.</aside>
-				</section>
-				<section>
-					<h2 class="ztu-blue">BT'DE TELİF HAKKI — KAYNAKLAR</h2>
-					<ul class="ztu-list" style="font-size: 0.8em;">
-						<li>https://opensource.org/licenses/</li>
-						<li>https://choosealicense.com/</li>
-						<li>https://tldrlegal.com/</li>
-						<li>https://spdx.org/licenses/</li>
-						<li>https://creativecommons.org/choose/</li>
-					</ul>
-				<aside class="notes">Корисні посилання для глибшого вивчення: opensource.org, choosealicense.com, tldrlegal.com, spdx.org, creativecommons.org.</aside>
+					<h2 class="ztu-blue">CI/CD — TAM UYUMLULUK PIPELINE'I</h2>
+					<p class="ztu-orange" style="font-size: 0.8em;">Tek GitHub Actions iş akışında lisans kontrolü + SAST</p>
+					<pre><code class="yaml">name: Compliance Pipeline
+on: [pull_request]
+jobs:
+  compliance:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+      - run: npm install
+      - name: License Check
+        run: npx license-checker --onlyAllow "MIT;Apache-2.0;BSD-3-Clause"
+      - name: SAST — Semgrep
+        uses: semgrep/semgrep-action@v1
+        with:
+          config: p/owasp-top-ten</code></pre>
+					<aside class="notes">Tam CI/CD pipeline: lisans kontrolü + SAST Semgrep tek workflow'da. Yasak lisans veya OWASP güvenlik açığı varsa PR birleştirilmez.</aside>
 				</section>
 			</section>
 
