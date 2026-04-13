@@ -98,6 +98,18 @@
 						<li><span class="ztu-orange">Technical debt</span>: undocumented code = code no one dares touch</li>
 						<li><span class="ztu-orange">Compliance & audits</span>: ISO, contracts, legal requirements</li>
 					</ul>
+				<aside class="notes">Починаємо з базового питання: навіщо писати документацію? Ключова ідея — документація це інфраструктура, не "приємно мати". Техборг без доків = чорна скринька. Питання залу: хто вважає документацію опціональною?</aside>
+				</section>
+				<section>
+					<h2 class="ztu-blue">NEDEN DOKÜMANTASYON ÖNEMLİDİR</h2>
+					<p class="ztu-orange" style="font-size:1em;margin-top:6px;">"Opsiyonel değil — altyapının bir parçası"</p>
+					<ul class="ztu-list" style="margin-top:22px;">
+						<li><span class="ztu-orange">İşe alım</span>: dökümansız haftalar → dökümanlı günler</li>
+						<li><span class="ztu-orange">Bilgi koruma</span>: geliştiriciler gider, dökümanlar kalır</li>
+						<li><span class="ztu-orange">Teknik borç</span>: dökümansız kod = kimsenin dokunmaya cesaret edemediği kod</li>
+						<li><span class="ztu-orange">Uyumluluk ve denetimler</span>: ISO, sözleşmeler, yasal gereksinimler</li>
+					</ul>
+				<aside class="notes">Türkçe slayt — aynı notlar geçerli.</aside>
 				</section>
 			</section>
 
@@ -118,6 +130,24 @@
 						<div style="flex:1;border:2px solid #9b59b6;border-radius:7px;padding:10px 6px;text-align:center;"><div style="color:#9b59b6;font-weight:bold;font-size:0.65em;">AI-generated</div></div>
 					</div>
 					<p style="font-size:0.6em;opacity:0.5;margin-top:12px;text-align:center;">each step reduced friction — AI removes it almost entirely</p>
+				<aside class="notes">Покажіть еволюцію як прогрес у зменшенні тертя. Comments — тільки для автора. JSDoc — перший крок до формату. Swagger — перший стандарт для API. Docs as Code — документація стає громадянином першого класу. AI — тертя майже зникає, але якість залежить від вашого контексту.</aside>
+				</section>
+				<section>
+					<h2 class="ztu-blue">DOKÜMANTASYONUN EVRİMİ</h2>
+					<p class="ztu-orange" style="font-size:1em;margin-top:6px;">Satır içi yorumlardan AI destekli üretime</p>
+					<div style="display:flex;align-items:stretch;gap:4px;margin-top:25px;">
+						<div style="flex:1;border:2px solid #27ae60;border-radius:7px;padding:10px 6px;text-align:center;"><div style="color:#27ae60;font-weight:bold;font-size:0.65em;">Yorumlar</div></div>
+						<div style="align-self:center;color:#888;padding:0 3px;">→</div>
+						<div style="flex:1;border:2px solid #2ecc71;border-radius:7px;padding:10px 6px;text-align:center;"><div style="color:#2ecc71;font-weight:bold;font-size:0.65em;">Javadoc / JSDoc</div></div>
+						<div style="align-self:center;color:#888;padding:0 3px;">→</div>
+						<div style="flex:1;border:2px solid #f39c12;border-radius:7px;padding:10px 6px;text-align:center;"><div style="color:#f39c12;font-weight:bold;font-size:0.65em;">Swagger / OpenAPI</div></div>
+						<div style="align-self:center;color:#888;padding:0 3px;">→</div>
+						<div style="flex:1;border:2px solid #e67e22;border-radius:7px;padding:10px 6px;text-align:center;"><div style="color:#e67e22;font-weight:bold;font-size:0.65em;">Kod Olarak Döküman</div></div>
+						<div style="align-self:center;color:#888;padding:0 3px;">→</div>
+						<div style="flex:1;border:2px solid #9b59b6;border-radius:7px;padding:10px 6px;text-align:center;"><div style="color:#9b59b6;font-weight:bold;font-size:0.65em;">AI üretimi</div></div>
+					</div>
+					<p style="font-size:0.6em;opacity:0.5;margin-top:12px;text-align:center;">her adım sürtünmeyi azalttı — AI neredeyse tamamen kaldırıyor</p>
+				<aside class="notes">Türkçe slayt — aynı notlar geçerli.</aside>
 				</section>
 			</section>
 
@@ -129,6 +159,15 @@
 						<h2 class="ztu-orange" style="font-size:1.1em;">Who wrote documentation for their code in the last month?</h2>
 						<p style="font-size:0.7em;opacity:0.6;margin-top:16px;">Be honest — raise your hand</p>
 					</div>
+				<aside class="notes">Пауза для взаємодії. Підніміть руки — чесно. Очікуйте мало рук. Це нормально — ми тут саме для цього. Додаткове питання: а хто читає документацію, коли онбордиться на новий проект?</aside>
+				</section>
+				<section>
+					<div style="text-align:center;margin-top:30px;">
+						<div style="font-size:3em;margin-bottom:20px;">✋</div>
+						<h2 class="ztu-orange" style="font-size:1.1em;">Son bir ayda kodunuz için dokümantasyon yazan oldu mu?</h2>
+						<p style="font-size:0.7em;opacity:0.6;margin-top:16px;">Dürüst olun — elinizi kaldırın</p>
+					</div>
+				<aside class="notes">Türkçe slayt — aynı notlar geçerli.</aside>
 				</section>
 			</section>
 
@@ -144,6 +183,19 @@
 						<li>Built and deployed via <span class="ztu-orange">CI/CD</span></li>
 						<li>Versioned and released <span class="ztu-orange">with the product</span></li>
 					</ul>
+				<aside class="notes">Docs as Code = документація живе поруч з кодом у git. Якщо код ревʼюється, тестується, версіонується — чому документація ні? Інструменти: MkDocs, Docusaurus, Sphinx. Docs в тому ж PR що й код — ніхто не забуде оновити.</aside>
+				</section>
+				<section>
+					<h2 class="ztu-blue">KOD OLARAK DOKÜMANTASYON</h2>
+					<p class="ztu-orange" style="font-size:1em;margin-top:6px;">Dökümanlara kaynak kod gibi davranın</p>
+					<ul class="ztu-list" style="margin-top:20px;">
+						<li><span class="ztu-orange">git</span>'te kodun yanında saklanır</li>
+						<li>Düz metin — <span class="ztu-orange">Markdown</span>, AsciiDoc</li>
+						<li><span class="ztu-orange">Pull request</span>'ler ile incelenir</li>
+						<li><span class="ztu-orange">CI/CD</span> ile derlenir ve yayınlanır</li>
+						<li>Ürünle birlikte <span class="ztu-orange">versiyonlanır ve yayınlanır</span></li>
+					</ul>
+				<aside class="notes">Türkçe slayt — aynı notlar geçerli.</aside>
 				</section>
 			</section>
 
@@ -165,6 +217,25 @@
 						<div style="align-self:center;color:#888;padding:0 3px;">→</div>
 						<div style="flex:1;border:2px solid #27ae60;border-radius:7px;padding:10px 6px;text-align:center;"><div style="color:#27ae60;font-weight:bold;font-size:0.65em;">📄 Live Docs</div></div>
 					</div>
+				<aside class="notes">Workflow ідентичний до CI/CD для коду. Write MD → commit → PR (ревʼю, коментарі) → CI (лінтер посилань, орфографія) → Deploy → живий сайт. Документацію можна тестувати автоматично — так само як unit тести.</aside>
+				</section>
+				<section>
+					<h2 class="ztu-blue">DÖKÜMANLAR PİPELINE'I</h2>
+					<p class="ztu-orange" style="font-size:1em;margin-top:6px;">Kodla aynı iş akışı — otomatik, incelenebilir, versiyonlanmış</p>
+					<div style="display:flex;align-items:stretch;gap:4px;margin-top:25px;">
+						<div style="flex:1;border:2px solid #3498db;border-radius:7px;padding:10px 6px;text-align:center;"><div style="color:#3498db;font-weight:bold;font-size:0.65em;">Yaz (MD)</div></div>
+						<div style="align-self:center;color:#888;padding:0 3px;">→</div>
+						<div style="flex:1;border:2px solid #2ecc71;border-radius:7px;padding:10px 6px;text-align:center;"><div style="color:#2ecc71;font-weight:bold;font-size:0.65em;">git commit</div></div>
+						<div style="align-self:center;color:#888;padding:0 3px;">→</div>
+						<div style="flex:1;border:2px solid #f39c12;border-radius:7px;padding:10px 6px;text-align:center;"><div style="color:#f39c12;font-weight:bold;font-size:0.65em;">PR / İnceleme</div></div>
+						<div style="align-self:center;color:#888;padding:0 3px;">→</div>
+						<div style="flex:1;border:2px solid #e67e22;border-radius:7px;padding:10px 6px;text-align:center;"><div style="color:#e67e22;font-weight:bold;font-size:0.65em;">CI Derle</div></div>
+						<div style="align-self:center;color:#888;padding:0 3px;">→</div>
+						<div style="flex:1;border:2px solid #9b59b6;border-radius:7px;padding:10px 6px;text-align:center;"><div style="color:#9b59b6;font-weight:bold;font-size:0.65em;">Yayınla</div></div>
+						<div style="align-self:center;color:#888;padding:0 3px;">→</div>
+						<div style="flex:1;border:2px solid #27ae60;border-radius:7px;padding:10px 6px;text-align:center;"><div style="color:#27ae60;font-weight:bold;font-size:0.65em;">📄 Canlı Döküman</div></div>
+					</div>
+				<aside class="notes">Türkçe slayt — aynı notlar geçerli.</aside>
 				</section>
 			</section>
 
@@ -181,6 +252,20 @@
 						<li><span class="ztu-green">Translation</span> and simplification of existing docs</li>
 						<li><span class="ztu-green">Diagrams</span> from text descriptions (Mermaid)</li>
 					</ul>
+				<aside class="notes">AI справляється з механічними завданнями документування. Докстрінги з сигнатур — майже ідеально. Changelog з git history — дуже практично для релізів. Mermaid: можна попросити AI намалювати архітектуру по тексту. Переклад + спрощення — корисно для технічного письма.</aside>
+				</section>
+				<section>
+					<h2 class="ztu-blue">AI'NIN İYİ YAPTIĞI ŞEYLER</h2>
+					<p class="ztu-orange" style="font-size:1em;margin-top:6px;">AI'nın güvenilir şekilde yaptığı dokümantasyon görevleri</p>
+					<ul class="ztu-list" style="margin-top:18px;">
+						<li><span class="ztu-green">Docstring</span>'ler fonksiyon imzaları ve türlerden</li>
+						<li><span class="ztu-green">README</span> kod tabanı yapısı analizinden</li>
+						<li><span class="ztu-green">API dökümanları</span> kod / OpenAPI şemasından</li>
+						<li><span class="ztu-green">Değişiklik günlükleri</span> git geçmişinden</li>
+						<li><span class="ztu-green">Çeviri</span> ve mevcut dökümanların basitleştirilmesi</li>
+						<li><span class="ztu-green">Diyagramlar</span> metin açıklamalarından (Mermaid)</li>
+					</ul>
+				<aside class="notes">Türkçe slayt — aynı notlar geçerli.</aside>
 				</section>
 			</section>
 
@@ -211,6 +296,34 @@
 						</div>
 					</div>
 					<p style="font-size:0.62em;opacity:0.6;margin-top:16px;text-align:center;">All of them work better with good input — your code and your docs</p>
+				<aside class="notes">Copilot — вбудований в IDE, добре для docstrings inline. Cursor — бачить весь проект, може генерувати README для всього репо. Claude — краще для аналізу великих документів і рефакторингу. Mintlify — спеціалізована платформа з автогенерацією API docs. Всі вони кращі з якісним контекстом.</aside>
+				</section>
+				<section>
+					<h2 class="ztu-blue">AI DOKÜMANTASYON ARAÇLARI</h2>
+					<div style="display:flex;gap:12px;margin-top:25px;">
+						<div style="flex:1;border:2px solid #27ae60;border-radius:8px;padding:14px 10px;text-align:center;">
+							<div style="font-size:1.5em;margin-bottom:5px;">🤖</div>
+							<div style="color:#27ae60;font-weight:bold;font-size:0.65em;">GitHub Copilot</div>
+							<div style="font-size:0.52em;opacity:0.7;margin-top:4px;">satır içi öneriler, docstring'ler</div>
+						</div>
+						<div style="flex:1;border:2px solid #3498db;border-radius:8px;padding:14px 10px;text-align:center;">
+							<div style="font-size:1.5em;margin-bottom:5px;">⚡</div>
+							<div style="color:#3498db;font-weight:bold;font-size:0.65em;">Cursor</div>
+							<div style="font-size:0.52em;opacity:0.7;margin-top:4px;">tam bağlam: kod + dökümanlar</div>
+						</div>
+						<div style="flex:1;border:2px solid #f39c12;border-radius:8px;padding:14px 10px;text-align:center;">
+							<div style="font-size:1.5em;margin-bottom:5px;">🧠</div>
+							<div style="color:#f39c12;font-weight:bold;font-size:0.65em;">Claude</div>
+							<div style="font-size:0.52em;opacity:0.7;margin-top:4px;">analiz, üretim, yeniden düzenleme</div>
+						</div>
+						<div style="flex:1;border:2px solid #9b59b6;border-radius:8px;padding:14px 10px;text-align:center;">
+							<div style="font-size:1.5em;margin-bottom:5px;">📘</div>
+							<div style="color:#9b59b6;font-weight:bold;font-size:0.65em;">Mintlify</div>
+							<div style="font-size:0.52em;opacity:0.7;margin-top:4px;">AI destekli döküman platformu</div>
+						</div>
+					</div>
+					<p style="font-size:0.62em;opacity:0.6;margin-top:16px;text-align:center;">Hepsi iyi girdiyle daha iyi çalışır — kodunuz ve dökümanlarınız</p>
+				<aside class="notes">Türkçe slayt — aynı notlar geçerli.</aside>
 				</section>
 			</section>
 
@@ -222,6 +335,15 @@
 						<h2 class="ztu-orange" style="font-size:1.1em;">Do you trust AI-generated documentation without reviewing it?</h2>
 						<p style="font-size:0.7em;opacity:0.6;margin-top:16px;">Think about it — would you ship it without reading?</p>
 					</div>
+				<aside class="notes">Ключове питання. Хто довіряє AI без перевірки? AI може впевнено написати хибну інформацію — hallucination. Завжди human-in-the-loop. AI = чернетка, не кінцевий продукт.</aside>
+				</section>
+				<section>
+					<div style="text-align:center;margin-top:30px;">
+						<div style="font-size:3em;margin-bottom:20px;">🤔</div>
+						<h2 class="ztu-orange" style="font-size:1.1em;">AI tarafından oluşturulan dokümantasyona incelemeden güveniyor musunuz?</h2>
+						<p style="font-size:0.7em;opacity:0.6;margin-top:16px;">Düşünün — okumadan yayınlar mıydınız?</p>
+					</div>
+				<aside class="notes">Türkçe slayt — aynı notlar geçerli.</aside>
 				</section>
 			</section>
 
@@ -235,6 +357,17 @@
 						<div style="background:rgba(255,255,255,0.05);border-left:3px solid #e74c3c;border-radius:4px;padding:8px 12px;margin-bottom:8px;font-size:0.65em;">Is AI-generated code a derivative work?</div>
 						<div style="background:rgba(255,255,255,0.05);border-left:3px solid #e74c3c;border-radius:4px;padding:8px 12px;margin-bottom:8px;font-size:0.65em;">Can you use it commercially without restrictions?</div>
 						<div style="background:rgba(255,255,255,0.05);border-left:3px solid #e74c3c;border-radius:4px;padding:8px 12px;margin-bottom:8px;font-size:0.65em;">What does your SBOM say about AI-generated dependencies?</div>
+				<aside class="notes">Місток до лекції про ліцензії. AI тренується на GitHub, Stack Overflow, публічних репозиторіях — всі мають ліцензії. GPL-ний код у комерційному продукті = юридичний ризик. SBOM (Software Bill of Materials) допомагає відстежити. Наступна лекція розкриє це детально.</aside>
+				</section>
+				<section>
+					<h2 class="ztu-blue">DURUN — AI KODU KİMİN?</h2>
+					<p class="ztu-orange" style="font-size:1em;margin-top:6px;">Bu iş akışının hemen ortaya çıkardığı soru</p>
+					<p style="color:#e74c3c;font-weight:bold;font-size:0.7em;margin-bottom:16px;">→ Sonraki: Yazılım Lisansları &amp; Uyumluluk</p>
+					<div style="background:rgba(255,255,255,0.05);border-left:3px solid #e74c3c;border-radius:4px;padding:8px 12px;margin-bottom:8px;font-size:0.65em;">AI açık kaynak kod üzerinde eğitildi — hangi lisanslar altında?</div>
+					<div style="background:rgba(255,255,255,0.05);border-left:3px solid #e74c3c;border-radius:4px;padding:8px 12px;margin-bottom:8px;font-size:0.65em;">AI tarafından oluşturulan kod türev bir çalışma mı?</div>
+					<div style="background:rgba(255,255,255,0.05);border-left:3px solid #e74c3c;border-radius:4px;padding:8px 12px;margin-bottom:8px;font-size:0.65em;">Kısıtlama olmadan ticari olarak kullanabilir misiniz?</div>
+					<div style="background:rgba(255,255,255,0.05);border-left:3px solid #e74c3c;border-radius:4px;padding:8px 12px;margin-bottom:8px;font-size:0.65em;">SBOM'unuz AI bağımlılıkları hakkında ne söylüyor?</div>
+				<aside class="notes">Türkçe slayt — aynı notlar geçerli.</aside>
 				</section>
 			</section>
 
@@ -247,6 +380,16 @@
 						<li>Forces you to design the <span class="ztu-orange">interface before implementation</span></li>
 						<li>AI reads your README and generates a working skeleton</li>
 					</ul>
+				<aside class="notes">Зворотній підхід до розробки: спочатку README, потім код. Описуємо інтерфейс, поведінку, очікуваний результат — і лише тоді даємо AI генерувати скелет. Це змушує думати про дизайн перед реалізацією. Бонус: README вже готовий до релізу.</aside>
+				</section>
+				<section>
+					<h2 class="ztu-blue">ÖNCE DOKÜMANTASYON</h2>
+					<p class="ztu-orange" style="font-size:1em;margin-top:6px;">Kodu yazmadan önce README'yi yazın</p>
+					<ul class="ztu-list" style="margin-top:28px;">
+						<li>Uygulamadan önce <span class="ztu-orange">arayüzü tasarlamaya</span> zorlar</li>
+						<li>AI README'nizi okur ve çalışan bir iskelet oluşturur</li>
+					</ul>
+				<aside class="notes">Türkçe slayt — aynı notlar geçerli.</aside>
 				</section>
 			</section>
 
@@ -272,6 +415,29 @@ function validateEmail(email: string): boolean {}</pre>
 							<p style="font-size:0.52em;opacity:0.6;margin-top:6px;">AI output: correct, typed, edge-cases handled</p>
 						</div>
 					</div>
+				<aside class="notes">Найважливіший слайд: якість вхідних даних = якість AI-коду. Перший приклад — function process(data): AI нічого не розуміє. Другий: JSDoc з типами і винятками — AI генерує правильний, типізований код з обробкою помилок.</aside>
+				</section>
+				<section>
+					<h2 class="ztu-blue">GİRDİ KALİTESİ = ÇIKTI KALİTESİ</h2>
+					<p class="ztu-orange" style="font-size:1em;margin-top:6px;">Dökümanlarınızın kalitesi = AI'nın ürettiği kodun kalitesi</p>
+					<div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:18px;">
+						<div>
+							<p class="ztu-red" style="font-size:0.6em;margin-bottom:6px;">❌ Belirsiz girdi</p>
+							<pre style="font-size:0.5em;background:rgba(0,0,0,0.3);padding:10px;border-radius:6px;">// bir şeyler yapan fonksiyon
+function process(data) {}</pre>
+							<p style="font-size:0.52em;opacity:0.6;margin-top:6px;">AI çıktısı: genel, muhtemelen yanlış</p>
+						</div>
+						<div>
+							<p class="ztu-green" style="font-size:0.6em;margin-bottom:6px;">✅ Kesin girdi</p>
+							<pre style="font-size:0.5em;background:rgba(0,0,0,0.3);padding:10px;border-radius:6px;">/**
+ * RFC 5322'ye göre e-posta doğrular.
+ * @throws {ValidationError} geçersizse
+ */
+function validateEmail(email: string): boolean {}</pre>
+							<p style="font-size:0.52em;opacity:0.6;margin-top:6px;">AI çıktısı: doğru, yazılmış, kenar durumlar ele alınmış</p>
+						</div>
+					</div>
+				<aside class="notes">Türkçe slayt — aynı notlar geçerli.</aside>
 				</section>
 			</section>
 
@@ -290,6 +456,22 @@ function validateEmail(email: string): boolean {}</pre>
 						<div style="border:1px solid #555;border-radius:6px;padding:8px 16px;font-size:0.6em;">All of the above</div>
 					</div>
 				</div>
+				<aside class="notes">Дискусійне питання без єдиної відповіді. Розробник: використав без перевірки. Компанія: дозволила без обовʼязкового ревʼю. AI вендор: захищений у ToS. Висновок: відповідальність завжди на людях.</aside>
+				</section>
+				<section>
+					<div style="text-align:center;margin-top:20px;">
+						<div style="font-size:2.5em;margin-bottom:16px;">⚠️</div>
+						<h2 class="ztu-orange" style="font-size:1em;">AI veri kaybına neden olan bir hata içeren kod üretti.</h2>
+						<h2 class="ztu-orange" style="font-size:1em;margin-top:10px;">Geliştirici incelemeden kullandı.</h2>
+						<p class="ztu-blue" style="margin-top:20px;font-size:0.85em;font-weight:bold;">Kim sorumlu?</p>
+					<div style="display:flex;gap:12px;justify-content:center;margin-top:16px;">
+						<div style="border:1px solid #555;border-radius:6px;padding:8px 16px;font-size:0.6em;">Geliştirici</div>
+						<div style="border:1px solid #555;border-radius:6px;padding:8px 16px;font-size:0.6em;">AI satıcısı</div>
+						<div style="border:1px solid #555;border-radius:6px;padding:8px 16px;font-size:0.6em;">Şirket</div>
+						<div style="border:1px solid #555;border-radius:6px;padding:8px 16px;font-size:0.6em;">Hepsi</div>
+					</div>
+				</div>
+				<aside class="notes">Türkçe slayt — aynı notlar geçerli.</aside>
 				</section>
 			</section>
 
@@ -315,6 +497,29 @@ function validateEmail(email: string): boolean {}</pre>
 							<div style="background:rgba(52,152,219,0.08);border-radius:4px;padding:6px 10px;font-size:0.58em;font-family:monospace;">.github/copilot-instructions.md</div>
 						</div>
 					</div>
+				<aside class="notes">ADR — документуємо не ЩО зробили, а ЧОМУ: бізнес-контекст для AI. Rules файли — конфігурація AI-асистента. Приклад: "ніколи не використовуй any в TypeScript, завжди кидай помилки". AI читає CLAUDE.md перед кожним завданням.</aside>
+				</section>
+				<section>
+					<h2 class="ztu-blue">AI İÇİN BELGELEME</h2>
+					<p class="ztu-orange" style="font-size:1em;margin-top:6px;">AI'ya doğru kod üretmesi için ihtiyaç duyduğu bağlamı verin</p>
+					<div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:20px;">
+						<div style="border:2px solid #f39c12;border-radius:10px;padding:18px 16px;">
+							<p style="color:#f39c12;font-weight:bold;font-size:0.7em;margin-bottom:4px;">ADR</p>
+							<p style="font-size:0.55em;opacity:0.65;margin-bottom:14px;">Mimari Karar Kayıtları</p>
+							<div style="background:rgba(243,156,18,0.08);border-radius:4px;padding:6px 10px;margin-bottom:6px;font-size:0.58em;">Kararın NEDEN alındığı</div>
+							<div style="background:rgba(243,156,18,0.08);border-radius:4px;padding:6px 10px;margin-bottom:6px;font-size:0.58em;">Dikkate alınan alternatifler</div>
+							<div style="background:rgba(243,156,18,0.08);border-radius:4px;padding:6px 10px;margin-bottom:6px;font-size:0.58em;">Kabul edilen sonuçlar</div>
+							<div style="background:rgba(243,156,18,0.08);border-radius:4px;padding:6px 10px;font-size:0.58em;">Tutarlı AI çıktısı için bağlam</div>
+						</div>
+						<div style="border:2px solid #3498db;border-radius:10px;padding:18px 16px;">
+							<p style="color:#3498db;font-weight:bold;font-size:0.7em;margin-bottom:4px;">Kurallar dosyaları</p>
+							<p style="font-size:0.55em;opacity:0.65;margin-bottom:14px;">Proje kuralları, stil, yasaklı kalıplar</p>
+							<div style="background:rgba(52,152,219,0.08);border-radius:4px;padding:6px 10px;margin-bottom:6px;font-size:0.58em;font-family:monospace;">CLAUDE.md</div>
+							<div style="background:rgba(52,152,219,0.08);border-radius:4px;padding:6px 10px;margin-bottom:6px;font-size:0.58em;font-family:monospace;">.cursorrules</div>
+							<div style="background:rgba(52,152,219,0.08);border-radius:4px;padding:6px 10px;font-size:0.58em;font-family:monospace;">.github/copilot-instructions.md</div>
+						</div>
+					</div>
+				<aside class="notes">ADR — документуємо не ЩО зробили, а ЧОМУ: бізнес-контекст для AI. Rules файли — конфігурація AI-асистента. Приклад: "ніколи не використовуй any в TypeScript, завжди кидай помилки". AI читає CLAUDE.md перед кожним завданням.</aside>
 				</section>
 			</section>
 
@@ -340,6 +545,29 @@ function validateEmail(email: string): boolean {}</pre>
 						</div>
 					</div>
 					<p class="ztu-orange" style="margin-top:22px;font-size:0.75em;text-align:center;">Documentation IS the configuration of your AI assistant</p>
+				<aside class="notes">Slash commands — автоматизація повторюваних завдань: /commit, /review, /test. MCP Servers — AI може читати вашу БД, Jira, Confluence, GitHub напряму без копіювання. System Prompts — контекст постійно присутній у кожній розмові. Ключовий висновок: документація IS конфігурація AI.</aside>
+				</section>
+				<section>
+					<h2 class="ztu-blue">AI'Yİ YETENEKLERle GENİŞLETMEK</h2>
+					<div style="display:flex;gap:12px;margin-top:28px;">
+						<div style="flex:1;border:2px solid #3498db;border-radius:8px;padding:14px 10px;text-align:center;">
+							<div style="font-size:1.5em;margin-bottom:5px;">⌨️</div>
+							<div style="color:#3498db;font-weight:bold;font-size:0.65em;">Slash Komutları</div>
+							<div style="font-size:0.52em;opacity:0.7;margin-top:4px;">tekrarlanabilir iş akışları tek komut olarak</div>
+						</div>
+						<div style="flex:1;border:2px solid #f39c12;border-radius:8px;padding:14px 10px;text-align:center;">
+							<div style="font-size:1.5em;margin-bottom:5px;">🔌</div>
+							<div style="color:#f39c12;font-weight:bold;font-size:0.65em;">MCP Sunucuları</div>
+							<div style="font-size:0.52em;opacity:0.7;margin-top:4px;">AI veritabanlarınıza, API'larınıza erişir</div>
+						</div>
+						<div style="flex:1;border:2px solid #27ae60;border-radius:8px;padding:14px 10px;text-align:center;">
+							<div style="font-size:1.5em;margin-bottom:5px;">📋</div>
+							<div style="color:#27ae60;font-weight:bold;font-size:0.65em;">Sistem Promptları</div>
+							<div style="font-size:0.52em;opacity:0.7;margin-top:4px;">her konuşma için kalıcı bağlam</div>
+						</div>
+					</div>
+					<p class="ztu-orange" style="margin-top:22px;font-size:0.75em;text-align:center;">Dokümantasyon, AI asistanınızın yapılandırmasıdır</p>
+				<aside class="notes">Türkçe slayt — aynı notlar geçerli.</aside>
 				</section>
 			</section>
 
@@ -362,6 +590,26 @@ function validateEmail(email: string): boolean {}</pre>
 						</div>
 					</div>
 					<p style="color:#9b59b6;font-size:0.7em;margin-top:22px;text-align:center;">→ How do you define what "correct" looks like? That's what <strong>standards and certifications</strong> are for.</p>
+				<aside class="notes">Місток до лекції про сертифікації. AI генерує — але 10 розробників отримують 10 різних результатів. Як визначити що "правильно"? ISO/IEC 25010 (якість ПЗ), ISO/IEC 27001 (безпека) дають цей фреймворк. Сертифікація = підтверджений доказ відповідності стандарту.</aside>
+				</section>
+				<section>
+					<h2 class="ztu-blue">AI ÜRETİYOR — AMA NASIL HİZALANIR?</h2>
+					<p class="ztu-orange" style="font-size:1em;margin-top:6px;">AI kod ve döküman yazabilir — ama 10 geliştirici 10 farklı sonuç alır</p>
+					<div style="display:flex;gap:16px;margin-top:24px;">
+						<div style="flex:1;border:2px solid #27ae60;border-radius:8px;padding:14px 12px;text-align:center;">
+							<div style="font-size:1.6em;margin-bottom:8px;">🤖</div>
+							<div style="color:#27ae60;font-size:0.65em;font-weight:bold;">AI üretiyor</div>
+							<div style="font-size:0.55em;opacity:0.65;margin-top:6px;">kod, dökümanlar, testler — hızlı</div>
+						</div>
+						<div style="align-self:center;font-size:1.4em;color:#e74c3c;">≠</div>
+						<div style="flex:1;border:2px solid #e74c3c;border-radius:8px;padding:14px 12px;text-align:center;">
+							<div style="font-size:1.6em;margin-bottom:8px;">🧩</div>
+							<div style="color:#e74c3c;font-size:0.65em;font-weight:bold;">Tutarlılık</div>
+							<div style="font-size:0.55em;opacity:0.65;margin-top:6px;">yapı, isimlendirme, stil — değişken</div>
+						</div>
+					</div>
+					<p style="color:#9b59b6;font-size:0.7em;margin-top:22px;text-align:center;">→ "Doğru" neye benziyor? Bunu <strong>standartlar ve sertifikalar</strong> tanımlar.</p>
+				<aside class="notes">Türkçe slayt — aynı notlar geçerli.</aside>
 				</section>
 			</section>
 
@@ -377,6 +625,19 @@ function validateEmail(email: string): boolean {}</pre>
 						<li><span class="ztu-red">Ethics & judgment</span> — when to say "this shouldn't be built"</li>
 						<li><span class="ztu-orange">Review</span> — AI output always needs a human in the loop</li>
 					</ul>
+				<aside class="notes">Важливий баланс — AI це інструмент, не заміна. Доменні знання: AI не знає вашого бізнесу і ваших користувачів. Архітектурні рішення: ЧОМУ ми так зробили — це не в коді, а в голові людини. Відповідальність: хтось повинен підписати рішення. Ревʼю — завжди людина в петлі, це не опціонально.</aside>
+				</section>
+				<section>
+					<h2 class="ztu-blue">AI'NIN YERİNİ ALAMAYACAĞI ŞEYLER</h2>
+					<p class="ztu-orange" style="font-size:1em;margin-top:6px;">Kalması gereken insan katmanı</p>
+					<ul class="ztu-list" style="margin-top:22px;">
+						<li><span class="ztu-red">Alan bilgisi</span> — iş bağlamı, kenar durumlar, kullanıcı niyeti</li>
+						<li><span class="ztu-red">Mimari kararlar</span> — sadece NE değil NEDEN</li>
+						<li><span class="ztu-red">Hesap verebilirlik</span> — birinin çıktının sahibi olması gerekir</li>
+						<li><span class="ztu-red">Etik ve yargı</span> — "bu inşa edilmemeli" ne zaman denmeli</li>
+						<li><span class="ztu-orange">İnceleme</span> — AI çıktısı her zaman döngüde bir insan gerektirir</li>
+					</ul>
+				<aside class="notes">Türkçe slayt — aynı notlar geçerli.</aside>
 				</section>
 			</section>
 
@@ -404,6 +665,31 @@ function validateEmail(email: string): boolean {}</pre>
 						</div>
 					</div>
 					<p style="color:#27ae60;font-size:0.65em;margin-top:22px;text-align:center;opacity:0.8;">→ Next: ISO 9001 — Quality Management Systems</p>
+				<aside class="notes">Фінальний місток до ISO 9001. AI дає швидкість — але швидкість без напрямку = помилки швидше. ISO 9001 дає систему, процес, аудитабельність. Разом = якість, яку можна передбачити та відтворити. Наступна лекція про те, як побудувати цей процес.</aside>
+				</section>
+				<section>
+					<h2 class="ztu-blue">KALİTE TESADÜF DEĞİLDİR</h2>
+					<div style="display:flex;gap:20px;margin-top:35px;align-items:stretch;">
+						<div style="flex:1;border:2px solid #3498db;border-radius:10px;padding:22px 16px;text-align:center;">
+							<div style="font-size:2em;margin-bottom:10px;">⚡</div>
+							<div style="color:#3498db;font-weight:bold;font-size:0.75em;">AI</div>
+							<div style="font-size:0.6em;opacity:0.7;margin-top:8px;">hızı artırır</div>
+						</div>
+						<div style="align-self:center;font-size:1.8em;color:#27ae60;">+</div>
+						<div style="flex:1;border:2px solid #27ae60;border-radius:10px;padding:22px 16px;text-align:center;">
+							<div style="font-size:2em;margin-bottom:10px;">🧭</div>
+							<div style="color:#27ae60;font-weight:bold;font-size:0.75em;">ISO 9001</div>
+							<div style="font-size:0.6em;opacity:0.7;margin-top:8px;">yönü sağlar</div>
+						</div>
+						<div style="align-self:center;font-size:1.8em;color:#f39c12;">=</div>
+						<div style="flex:1;border:2px solid #f39c12;border-radius:10px;padding:22px 16px;text-align:center;">
+							<div style="font-size:2em;margin-bottom:10px;">✅</div>
+							<div style="color:#f39c12;font-weight:bold;font-size:0.75em;">Kalite</div>
+							<div style="font-size:0.6em;opacity:0.7;margin-top:8px;">güvenilir, denetlenebilir</div>
+						</div>
+					</div>
+					<p style="color:#27ae60;font-size:0.65em;margin-top:22px;text-align:center;opacity:0.8;">→ Sonraki: ISO 9001 — Kalite Yönetim Sistemleri</p>
+				<aside class="notes">Türkçe slayt — aynı notlar geçerli.</aside>
 				</section>
 			</section>
 
@@ -431,6 +717,31 @@ function validateEmail(email: string): boolean {}</pre>
 							<a href="https://roman-savitskyi.github.io/standart/feature-l1-Isparta/" style="display:block;margin-top:14px;background:#27ae60;color:white;border-radius:6px;padding:7px 10px;text-align:center;font-size:0.58em;font-weight:bold;text-decoration:none;">ISO 9001 Quality Management →</a>
 						</div>
 					</div>
+				<aside class="notes">Фінальний слайд — студенти обирають наступний напрямок. Три реальних посилання на три лекції. Ліцензії — практична проблема для кожного хто використовує AI-код сьогодні. Сертифікації — як довести стандарт якості замовнику. ISO 9001 — побудова системи якості. Навігація клацанням прямо зі слайду.</aside>
+				</section>
+				<section>
+					<h2 class="ztu-blue">SIRASI NEYİ ÇÖZMEK İSTİYORSUNUZ?</h2>
+					<div style="display:flex;gap:18px;margin-top:28px;align-items:stretch;">
+						<div style="flex:1;border:2px solid #e74c3c;border-radius:10px;padding:20px 14px;display:flex;flex-direction:column;">
+							<div style="font-size:1.4em;text-align:center;margin-bottom:10px;">⚖️</div>
+							<p style="color:#e74c3c;font-weight:bold;font-size:0.65em;text-align:center;margin-bottom:8px;">SORUN</p>
+							<p style="font-size:0.58em;opacity:0.8;text-align:center;flex:1;">AI açık kaynak kullanıyor — hangi lisanslar? Ticari olarak gönderilebilir mi?</p>
+							<a href="https://roman-savitskyi.github.io/standart/feature-l3-isparta/" style="display:block;margin-top:14px;background:#e74c3c;color:white;border-radius:6px;padding:7px 10px;text-align:center;font-size:0.58em;font-weight:bold;text-decoration:none;">Yazılım Lisansları &amp; Uyumluluk →</a>
+						</div>
+						<div style="flex:1;border:2px solid #9b59b6;border-radius:10px;padding:20px 14px;display:flex;flex-direction:column;">
+							<div style="font-size:1.4em;text-align:center;margin-bottom:10px;">🏅</div>
+							<p style="color:#9b59b6;font-weight:bold;font-size:0.65em;text-align:center;margin-bottom:8px;">SORUN</p>
+							<p style="font-size:0.58em;opacity:0.8;text-align:center;flex:1;">AI çıktısı ekipler arasında farklılık gösteriyor — sürecinizin doğru olduğunu nasıl kanıtlarsınız?</p>
+							<a href="https://roman-savitskyi.github.io/standart/feature-l2-isparta/" style="display:block;margin-top:14px;background:#9b59b6;color:white;border-radius:6px;padding:7px 10px;text-align:center;font-size:0.58em;font-weight:bold;text-decoration:none;">ISO/IEC Standartları &amp; Sertifikalar →</a>
+						</div>
+						<div style="flex:1;border:2px solid #27ae60;border-radius:10px;padding:20px 14px;display:flex;flex-direction:column;">
+							<div style="font-size:1.4em;text-align:center;margin-bottom:10px;">🔄</div>
+							<p style="color:#27ae60;font-weight:bold;font-size:0.65em;text-align:center;margin-bottom:8px;">SORUN</p>
+							<p style="font-size:0.58em;opacity:0.8;text-align:center;flex:1;">Hız yeterli değil — tekrarlanabilir, denetlenebilir kaliteyi nasıl garanti edersiniz?</p>
+							<a href="https://roman-savitskyi.github.io/standart/feature-l1-Isparta/" style="display:block;margin-top:14px;background:#27ae60;color:white;border-radius:6px;padding:7px 10px;text-align:center;font-size:0.58em;font-weight:bold;text-decoration:none;">ISO 9001 Kalite Yönetimi →</a>
+						</div>
+					</div>
+				<aside class="notes">Türkçe slayt — aynı notlar geçerli.</aside>
 				</section>
 			</section>
 
