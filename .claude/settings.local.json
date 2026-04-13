@@ -14,7 +14,8 @@
       "Bash(python3 -c \"\ncontent = open\\('/Users/savitskyiroman/Documents/викладацька діяльність/курси/стандартизація/standart/index.html', encoding='utf-8'\\).read\\(\\)\nidx = content.find\\('SCRUM / AGILE'\\)\nprint\\(repr\\(content[idx-200:idx+10]\\)\\)\n\")",
       "Bash(python3 -c \"\ncontent = open\\('/Users/savitskyiroman/Documents/викладацька діяльність/курси/стандартизація/standart/index.html', encoding='utf-8'\\).read\\(\\)\nidx = content.find\\('ІНШІ ПОПУЛЯРНІ'\\)\nprint\\(repr\\(content[idx-120:idx+10]\\)\\)\n\")",
       "Bash(ls \"/Users/savitskyiroman/Documents/викладацька діяльність/курси/стандартизація/standart/\"*.pdf)",
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "Bash(ls *.html)"
     ]
   }
 }
