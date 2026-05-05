@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<title>Архітектурна документація</title>
+	<title>Пітчинг: 10 порад</title>
 
 	<link rel="stylesheet" href="dist/reveal.css">
 	<link rel="stylesheet" href="dist/theme/ztu.css">
@@ -20,677 +20,282 @@
 
 			<!-- ===== 1. ТИТУЛЬНИЙ ===== -->
 			<section>
-				<h1 class="ztu-blue">Архітектурна документація</h1>
-				<p class="ztu-orange" style="margin-top:18px;">Від ідей в голові одного сеніора до живих, версіонованих
-					артефактів</p>
+				<h1 class="ztu-blue">Пітчинг</h1>
+				<p class="ztu-orange" style="margin-top:18px;">10 порад, як переконати за 5 хвилин</p>
 			</section>
 
-			<!-- ===== 2. НАВІЩО ДОКУМЕНТУВАТИ АРХІТЕКТУРУ ===== -->
+			<!-- ===== 2. ЩО ТАКЕ ПІТЧИНГ ===== -->
 			<section>
-				<h2 class="ztu-blue">НАВІЩО ДОКУМЕНТУВАТИ АРХІТЕКТУРУ?</h2>
-				<p class="ztu-orange" style="font-size:1em;margin-top:6px;">"Архітектура живе в голові одного сеніора"
-				</p>
-				<ul class="ztu-list" style="margin-top:22px;">
-					<li class="fragment"><span class="ztu-orange">Bus factor = 1</span> — одне звільнення і проект стає
-						чорною скринькою</li>
-					<li class="fragment"><span class="ztu-orange">Онбординг</span> — нові розробники вгадують замість
-						того, щоб читати</li>
-					<li class="fragment"><span class="ztu-orange">Узгодженість</span> — без спільної картини кожна
-						команда будує по-своєму</li>
-					<li class="fragment"><span class="ztu-orange">Аудити та відповідність</span> — ISO 9001, ISO 25010,
-						контракти вимагають доказів</li>
+				<h2 class="ztu-blue">ЩО ТАКЕ ПІТЧИНГ?</h2>
+				<p class="ztu-orange" style="font-size:1em;margin-top:6px;">Коротка, структурована презентація ідеї з метою отримати щось конкретне</p>
+				<div style="display:flex;gap:14px;margin-top:24px;align-items:stretch;">
+					<div style="flex:1;border:2px solid #3498db;border-radius:10px;padding:16px 12px;text-align:center;">
+						<div style="font-size:1.4em;margin-bottom:8px;">&#x1F4B0;</div>
+						<div style="color:#3498db;font-weight:bold;font-size:0.7em;">Інвестиції</div>
+						<div style="font-size:0.52em;opacity:0.7;margin-top:6px;">Investor pitch</div>
+					</div>
+					<div style="flex:1;border:2px solid #27ae60;border-radius:10px;padding:16px 12px;text-align:center;">
+						<div style="font-size:1.4em;margin-bottom:8px;">&#x1F91D;</div>
+						<div style="color:#27ae60;font-weight:bold;font-size:0.7em;">Партнерство</div>
+						<div style="font-size:0.52em;opacity:0.7;margin-top:6px;">Partnership pitch</div>
+					</div>
+					<div style="flex:1;border:2px solid #f39c12;border-radius:10px;padding:16px 12px;text-align:center;">
+						<div style="font-size:1.4em;margin-bottom:8px;">&#x1F3AF;</div>
+						<div style="color:#f39c12;font-weight:bold;font-size:0.7em;">Продажі</div>
+						<div style="font-size:0.52em;opacity:0.7;margin-top:6px;">Sales pitch</div>
+					</div>
+					<div style="flex:1;border:2px solid #9b59b6;border-radius:10px;padding:16px 12px;text-align:center;">
+						<div style="font-size:1.4em;margin-bottom:8px;">&#x1F4BC;</div>
+						<div style="color:#9b59b6;font-weight:bold;font-size:0.7em;">Робота</div>
+						<div style="font-size:0.52em;opacity:0.7;margin-top:6px;">Job pitch</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- ===== 3. ОГЛЯД 10 ПОРАД ===== -->
+			<section>
+				<h2 class="ztu-blue">10 ПОРАД ЕФЕКТИВНОГО ПІТЧИНГУ</h2>
+				<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px;font-size:0.6em;">
+					<div style="background:rgba(52,152,219,0.08);padding:10px 14px;border-radius:6px;border-left:3px solid #3498db;">1. Hook &mdash; перші 30 секунд</div>
+					<div style="background:rgba(52,152,219,0.08);padding:10px 14px;border-radius:6px;border-left:3px solid #3498db;">2. Проблема перед рішенням</div>
+					<div style="background:rgba(46,204,113,0.08);padding:10px 14px;border-radius:6px;border-left:3px solid #27ae60;">3. Один ключовий меседж</div>
+					<div style="background:rgba(46,204,113,0.08);padding:10px 14px;border-radius:6px;border-left:3px solid #27ae60;">4. Знай свою аудиторію</div>
+					<div style="background:rgba(243,156,18,0.08);padding:10px 14px;border-radius:6px;border-left:3px solid #f39c12;">5. Покажи, а не розповідай</div>
+					<div style="background:rgba(243,156,18,0.08);padding:10px 14px;border-radius:6px;border-left:3px solid #f39c12;">6. Простою мовою</div>
+					<div style="background:rgba(155,89,182,0.08);padding:10px 14px;border-radius:6px;border-left:3px solid #9b59b6;">7. Storytelling</div>
+					<div style="background:rgba(155,89,182,0.08);padding:10px 14px;border-radius:6px;border-left:3px solid #9b59b6;">8. Тайм-менеджмент</div>
+					<div style="background:rgba(231,76,60,0.08);padding:10px 14px;border-radius:6px;border-left:3px solid #e74c3c;">9. Чіткий ask</div>
+					<div style="background:rgba(231,76,60,0.08);padding:10px 14px;border-radius:6px;border-left:3px solid #e74c3c;">10. Сильне закриття</div>
+				</div>
+			</section>
+
+			<!-- ===== 4. HOOK ===== -->
+			<section>
+				<h2 class="ztu-blue">1. HOOK &mdash; ПЕРШІ 30 СЕКУНД</h2>
+				<p class="ztu-orange" style="font-size:1em;margin-top:6px;">У вас є пів хвилини, щоб захопити увагу</p>
+				<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:22px;">
+					<div style="border:2px solid #27ae60;border-radius:10px;padding:16px 14px;">
+						<p style="color:#27ae60;font-weight:bold;font-size:0.65em;margin-bottom:10px;">&#x2705; Працює</p>
+						<ul class="ztu-list" style="font-size:0.58em;">
+							<li>Вражаюча статистика</li>
+							<li>Провокативне питання</li>
+							<li>Коротка історія з життя</li>
+							<li>Контрінтуїтивний факт</li>
+						</ul>
+					</div>
+					<div style="border:2px solid #e74c3c;border-radius:10px;padding:16px 14px;">
+						<p style="color:#e74c3c;font-weight:bold;font-size:0.65em;margin-bottom:10px;">&#x274C; Не працює</p>
+						<ul class="ztu-list" style="font-size:0.58em;">
+							<li>"Привіт, мене звати..."</li>
+							<li>"Дякую за можливість..."</li>
+							<li>Довга передісторія</li>
+							<li>Зачитування слайда</li>
+						</ul>
+					</div>
+				</div>
+				<p style="font-size:0.58em;opacity:0.5;margin-top:14px;text-align:center;">Правило: якщо за 30 секунд не зацікавив &mdash; далі вже запізно</p>
+			</section>
+
+			<!-- ===== 5. ПРОБЛЕМА ПЕРЕД РІШЕННЯМ ===== -->
+			<section>
+				<h2 class="ztu-blue">2. ПРОБЛЕМА ПЕРЕД РІШЕННЯМ</h2>
+				<p class="ztu-orange" style="font-size:1em;margin-top:6px;">Спочатку біль &mdash; потім ліки</p>
+				<div style="display:flex;gap:12px;margin-top:24px;align-items:stretch;">
+					<div style="flex:1;border:2px solid #e74c3c;border-radius:10px;padding:18px 14px;text-align:center;">
+						<div style="font-size:1.6em;margin-bottom:8px;">&#x1F525;</div>
+						<div style="color:#e74c3c;font-weight:bold;font-size:0.7em;">Проблема</div>
+						<div style="font-size:0.55em;opacity:0.7;margin-top:8px;">Опишіть біль аудиторії так, щоб вони кивали</div>
+					</div>
+					<div style="align-self:center;font-size:1.4em;color:#888;">&#x2192;</div>
+					<div style="flex:1;border:2px solid #f39c12;border-radius:10px;padding:18px 14px;text-align:center;">
+						<div style="font-size:1.6em;margin-bottom:8px;">&#x1F4A1;</div>
+						<div style="color:#f39c12;font-weight:bold;font-size:0.7em;">Рішення</div>
+						<div style="font-size:0.55em;opacity:0.7;margin-top:8px;">Тепер ваша ідея виглядає як порятунок</div>
+					</div>
+					<div style="align-self:center;font-size:1.4em;color:#888;">&#x2192;</div>
+					<div style="flex:1;border:2px solid #27ae60;border-radius:10px;padding:18px 14px;text-align:center;">
+						<div style="font-size:1.6em;margin-bottom:8px;">&#x2705;</div>
+						<div style="color:#27ae60;font-weight:bold;font-size:0.7em;">Результат</div>
+						<div style="font-size:0.55em;opacity:0.7;margin-top:8px;">Покажіть, як змінюється світ</div>
+					</div>
+				</div>
+				<p style="font-size:0.58em;opacity:0.5;margin-top:16px;text-align:center;">Не кажіть "ми робимо X". Кажіть "є проблема Y, і ми вирішуємо її через X"</p>
+			</section>
+
+			<!-- ===== 6. ОДИН КЛЮЧОВИЙ МЕСЕДЖ ===== -->
+			<section>
+				<h2 class="ztu-blue">3. ОДИН КЛЮЧОВИЙ МЕСЕДЖ</h2>
+				<p class="ztu-orange" style="font-size:1em;margin-top:6px;">Якщо аудиторія запам'ятає лише одне речення &mdash; яке?</p>
+				<div style="border:2px solid #f39c12;border-radius:10px;padding:20px 18px;margin-top:24px;text-align:center;">
+					<p style="font-size:0.7em;opacity:0.6;margin-bottom:12px;">Тест "ліфтового пітчу":</p>
+					<p style="font-size:0.85em;font-weight:bold;color:#f39c12;">Чи можете ви пояснити свою ідею за 10 секунд?</p>
+				</div>
+				<ul class="ztu-list" style="margin-top:20px;">
+					<li><span class="ztu-orange">Airbnb:</span> "Бронюй унікальне житло у місцевих"</li>
+					<li><span class="ztu-orange">Uber:</span> "Натисни кнопку &mdash; отримай поїздку"</li>
+					<li><span class="ztu-orange">Slack:</span> "Вся комунікація команди в одному місці"</li>
 				</ul>
 			</section>
 
-			<!-- ===== 3. ЩО БУВАЄ БЕЗ ДОКУМЕНТАЦІЇ ===== -->
+			<!-- ===== 7. ЗНАЙ СВОЮ АУДИТОРІЮ ===== -->
 			<section>
-				<h2 class="ztu-blue">ЩО БУВАЄ БЕЗ ДОКУМЕНТАЦІЇ</h2>
-				<div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:24px;">
-					<div style="border:2px solid #e74c3c;border-radius:10px;padding:18px 16px;">
-						<p style="color:#e74c3c;font-weight:bold;font-size:0.75em;margin-bottom:12px;">БЕЗ документації
-						</p>
-						<div style="font-size:0.6em;line-height:1.7;">
-							<div>&#x274C; "Запитай Петра, він знає"</div>
-							<div>&#x274C; Конфліктні контракти мікросервісів</div>
-							<div>&#x274C; Дублювання функціональності між командами</div>
-							<div>&#x274C; Провалені аудити — немає доказів проєктування</div>
-						</div>
+				<h2 class="ztu-blue">4. ЗНАЙ СВОЮ АУДИТОРІЮ</h2>
+				<p class="ztu-orange" style="font-size:1em;margin-top:6px;">Різні люди &mdash; різні аргументи</p>
+				<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:22px;">
+					<div style="border:2px solid #3498db;border-radius:8px;padding:14px 10px;text-align:center;">
+						<div style="font-size:1.2em;margin-bottom:6px;">&#x1F4B8;</div>
+						<div style="color:#3498db;font-weight:bold;font-size:0.65em;">Інвестор</div>
+						<div style="font-size:0.5em;opacity:0.7;margin-top:6px;">ROI, масштабованість, ринок, unit-економіка</div>
 					</div>
-					<div style="border:2px solid #27ae60;border-radius:10px;padding:18px 16px;">
-						<p style="color:#27ae60;font-weight:bold;font-size:0.75em;margin-bottom:12px;">З документацією
-						</p>
-						<div style="font-size:0.6em;line-height:1.7;">
-							<div>&#x2705; Самостійний онбординг</div>
-							<div>&#x2705; Чіткі межі системи</div>
-							<div>&#x2705; Єдине джерело правди</div>
-							<div>&#x2705; Готовність до аудиту в будь-який момент</div>
-						</div>
+					<div style="border:2px solid #27ae60;border-radius:8px;padding:14px 10px;text-align:center;">
+						<div style="font-size:1.2em;margin-bottom:6px;">&#x1F468;&#x200D;&#x1F4BB;</div>
+						<div style="color:#27ae60;font-weight:bold;font-size:0.65em;">Технічна аудиторія</div>
+						<div style="font-size:0.5em;opacity:0.7;margin-top:6px;">архітектура, стек, продуктивність</div>
+					</div>
+					<div style="border:2px solid #f39c12;border-radius:8px;padding:14px 10px;text-align:center;">
+						<div style="font-size:1.2em;margin-bottom:6px;">&#x1F465;</div>
+						<div style="color:#f39c12;font-weight:bold;font-size:0.65em;">Клієнт</div>
+						<div style="font-size:0.5em;opacity:0.7;margin-top:6px;">цінність, простота, біль який вирішуєте</div>
 					</div>
 				</div>
+				<p style="font-size:0.6em;opacity:0.5;margin-top:16px;text-align:center;">Дослідіть аудиторію ДО пітчу. Адаптуйте мову, метрики та приклади.</p>
 			</section>
 
-			<!-- ===== 4. ІНТЕРАКТИВ Q1 ===== -->
+			<!-- ===== 8. ПОКАЖИ А НЕ РОЗПОВІДАЙ ===== -->
 			<section>
-				<div style="text-align:center;margin-top:30px;">
-					<div style="font-size:3em;margin-bottom:20px;">&#x270B;</div>
-					<h2 class="ztu-orange" style="font-size:1.1em;">Чи можете ви пояснити архітектуру свого поточного
-						проєкту за 2 хвилини?</h2>
-					<p style="font-size:0.7em;opacity:0.6;margin-top:16px;">Якщо ні — саме для цього ми тут</p>
-				</div>
-			</section>
-
-			<!-- ===== 5. ЩО ТАКЕ АРХІТЕКТУРНА ДОКУМЕНТАЦІЯ ===== -->
-			<section>
-				<h2 class="ztu-blue">ЩО ТАКЕ АРХІТЕКТУРНА ДОКУМЕНТАЦІЯ?</h2>
-				<p class="ztu-orange" style="font-size:1em;margin-top:6px;">Три рівні деталізації</p>
-				<div style="display:flex;align-items:stretch;gap:12px;margin-top:25px;">
-					<div style="flex:1;border:2px solid #3498db;border-radius:8px;padding:16px 12px;text-align:center;">
-						<div style="font-size:1.4em;margin-bottom:8px;">&#x1F30D;</div>
-						<div style="color:#3498db;font-weight:bold;font-size:0.7em;">Система</div>
-						<div style="font-size:0.55em;opacity:0.7;margin-top:6px;">контекст, актори, зовнішні системи
-						</div>
-					</div>
-					<div style="align-self:center;color:#888;font-size:1.2em;">&#x2192;</div>
-					<div style="flex:1;border:2px solid #f39c12;border-radius:8px;padding:16px 12px;text-align:center;">
-						<div style="font-size:1.4em;margin-bottom:8px;">&#x1F4E6;</div>
-						<div style="color:#f39c12;font-weight:bold;font-size:0.7em;">Компонент</div>
-						<div style="font-size:0.55em;opacity:0.7;margin-top:6px;">модулі, сервіси, потоки даних</div>
-					</div>
-					<div style="align-self:center;color:#888;font-size:1.2em;">&#x2192;</div>
-					<div style="flex:1;border:2px solid #27ae60;border-radius:8px;padding:16px 12px;text-align:center;">
-						<div style="font-size:1.4em;margin-bottom:8px;">&#x1F4BB;</div>
-						<div style="color:#27ae60;font-weight:bold;font-size:0.7em;">Код</div>
-						<div style="font-size:0.55em;opacity:0.7;margin-top:6px;">класи, інтерфейси, патерни</div>
-					</div>
-				</div>
-				<p style="font-size:0.62em;opacity:0.5;margin-top:16px;text-align:center;">Якісна документація покриває
-					щонайменше рівні Система та Компонент</p>
-			</section>
-
-			<!-- ===== 6. ЯК vs ЧОМУ ===== -->
-			<section>
-				<h2 class="ztu-blue">ЯК vs ЧОМУ</h2>
-				<p class="ztu-orange" style="font-size:1em;margin-top:6px;">Обидва важливі — але "чому" старіє краще</p>
+				<h2 class="ztu-blue">5. ПОКАЖИ, А НЕ РОЗПОВІДАЙ</h2>
+				<p class="ztu-orange" style="font-size:1em;margin-top:6px;">Демо вартує тисячі слів</p>
 				<div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:22px;">
-					<div style="border:2px solid #3498db;border-radius:10px;padding:18px 16px;">
-						<p style="color:#3498db;font-weight:bold;font-size:0.7em;margin-bottom:10px;">ЯК побудовано</p>
-						<ul class="ztu-list" style="font-size:0.62em;">
-							<li>Діаграми (C4, UML)</li>
-							<li>API-контракти</li>
-							<li>Моделі даних</li>
-							<li>Топологія розгортання</li>
-						</ul>
-					</div>
-					<div style="border:2px solid #f39c12;border-radius:10px;padding:18px 16px;">
-						<p style="color:#f39c12;font-weight:bold;font-size:0.7em;margin-bottom:10px;">ЧОМУ так
-							побудовано</p>
-						<ul class="ztu-list" style="font-size:0.62em;">
-							<li>ADR — записи рішень</li>
-							<li>Розглянуті компроміси</li>
-							<li>Обмеження та драйвери</li>
-							<li>Відхилені альтернативи</li>
-						</ul>
-					</div>
-				</div>
-			</section>
-
-			<!-- ===== 7. SSD ===== -->
-			<section>
-				<h2 class="ztu-blue">SSD — SYSTEM SPECIFICATION DOCUMENT</h2>
-				<p class="ztu-orange" style="font-size:1em;margin-top:6px;">ЩО система повинна робити</p>
-				<ul class="ztu-list" style="margin-top:20px;">
-					<li><span class="ztu-orange">Мета та обсяг</span> — яку проблему вирішує система
-					</li>
-					<li><span class="ztu-orange">Функціональні вимоги</span> — функції, сценарії
-						використання, user stories</li>
-					<li><span class="ztu-orange">Нефункціональні вимоги</span> — продуктивність,
-						безпека, масштабованість</li>
-					<li><span class="ztu-orange">Інтерфейси</span> — зовнішні системи, API, формати
-						даних</li>
-					<li><span class="ztu-orange">Обмеження</span> — технологічний стек, бюджет,
-						регуляції</li>
-				</ul>
-				<p style="font-size:0.6em;opacity:0.5;margin-top:16px;">SSD відповідає: "Що ми будуємо і для кого?"</p>
-			</section>
-
-			<!-- ===== 8. SDD ===== -->
-			<section>
-				<h2 class="ztu-blue">SDD — SOFTWARE DESIGN DOCUMENT</h2>
-				<p class="ztu-orange" style="font-size:1em;margin-top:6px;">ЯК система побудована</p>
-				<ul class="ztu-list" style="margin-top:20px;">
-					<li><span class="ztu-orange">Огляд архітектури</span> — високорівнева структура та
-						патерни</li>
-					<li><span class="ztu-orange">Декомпозиція модулів</span> — компоненти,
-						відповідальності, межі</li>
-					<li><span class="ztu-orange">Дизайн даних</span> — схема БД, потоки даних,
-						стратегія зберігання</li>
-					<li><span class="ztu-orange">Дизайн інтерфейсів</span> — API-контракти, протоколи,
-						формати повідомлень</li>
-					<li><span class="ztu-orange">Обробка помилок та логування</span> — режими збоїв,
-						відновлення, спостережуваність</li>
-				</ul>
-				<p style="font-size:0.6em;opacity:0.5;margin-top:16px;">SDD відповідає: "Як це працює всередині?"</p>
-			</section>
-
-			<!-- ===== 9. SSD vs SDD ===== -->
-			<section>
-				<h2 class="ztu-blue">SSD vs SDD</h2>
-				<p class="ztu-orange" style="font-size:1em;margin-top:6px;">Специфікація vs Дизайн — вони доповнюють
-					одне одного</p>
-				<div style="display:flex;gap:16px;margin-top:24px;align-items:stretch;">
-					<div
-						style="flex:1;border:2px solid #3498db;border-radius:10px;padding:18px 14px;text-align:center;">
-						<div style="font-size:1.6em;margin-bottom:8px;">&#x1F4CB;</div>
-						<div style="color:#3498db;font-weight:bold;font-size:0.7em;">SSD</div>
-						<div style="font-size:0.58em;opacity:0.7;margin-top:8px;">ЩО будувати</div>
-						<div style="font-size:0.55em;opacity:0.5;margin-top:4px;">пишеться до / під час проєктування
+					<div style="border:2px solid #e74c3c;border-radius:10px;padding:16px 14px;">
+						<p style="color:#e74c3c;font-weight:bold;font-size:0.65em;margin-bottom:10px;">&#x274C; Розповідай</p>
+						<div style="font-size:0.58em;line-height:1.8;">
+							<div>"Наша платформа дуже швидка"</div>
+							<div>"Інтерфейс інтуїтивний"</div>
+							<div>"Користувачі задоволені"</div>
 						</div>
 					</div>
-					<div style="align-self:center;font-size:1.4em;color:#888;">&#x2192;</div>
-					<div
-						style="flex:1;border:2px solid #27ae60;border-radius:10px;padding:18px 14px;text-align:center;">
-						<div style="font-size:1.6em;margin-bottom:8px;">&#x1F3D7;</div>
-						<div style="color:#27ae60;font-weight:bold;font-size:0.7em;">SDD</div>
-						<div style="font-size:0.58em;opacity:0.7;margin-top:8px;">ЯК будувати</div>
-						<div style="font-size:0.55em;opacity:0.5;margin-top:4px;">пишеться під час / після проєктування
+					<div style="border:2px solid #27ae60;border-radius:10px;padding:16px 14px;">
+						<p style="color:#27ae60;font-weight:bold;font-size:0.65em;margin-bottom:10px;">&#x2705; Покажи</p>
+						<div style="font-size:0.58em;line-height:1.8;">
+							<div>Живе демо за 60 секунд</div>
+							<div>Скріншот з реальними даними</div>
+							<div>Цитата клієнта + метрика</div>
 						</div>
 					</div>
-					<div style="align-self:center;font-size:1.4em;color:#888;">&#x2192;</div>
-					<div
-						style="flex:1;border:2px solid #9b59b6;border-radius:10px;padding:18px 14px;text-align:center;">
-						<div style="font-size:1.6em;margin-bottom:8px;">&#x1F4BB;</div>
-						<div style="color:#9b59b6;font-weight:bold;font-size:0.7em;">КОД</div>
-						<div style="font-size:0.58em;opacity:0.7;margin-top:8px;">реалізація</div>
-						<div style="font-size:0.55em;opacity:0.5;margin-top:4px;">базується на обох документах</div>
-					</div>
 				</div>
+				<p style="font-size:0.58em;opacity:0.5;margin-top:14px;text-align:center;">Якщо можете показати прототип або демо &mdash; завжди показуйте</p>
 			</section>
 
-			<!-- ===== 10. C4 МОДЕЛЬ ===== -->
+			<!-- ===== 9. ПРОСТОЮ МОВОЮ ===== -->
 			<section>
-				<h2 class="ztu-blue">C4 МОДЕЛЬ</h2>
-				<p class="ztu-orange" style="font-size:1em;margin-top:6px;">4 рівні масштабування — як Google Maps для
-					вашої архітектури</p>
-				<div style="display:flex;align-items:stretch;gap:4px;margin-top:25px;">
-					<div style="flex:1;border:2px solid #3498db;border-radius:7px;padding:12px 6px;text-align:center;">
-						<div style="color:#3498db;font-weight:bold;font-size:0.65em;">L1: Контекст</div>
-						<div style="font-size:0.5em;opacity:0.6;margin-top:4px;">система + користувачі + зовнішні</div>
-					</div>
-					<div style="align-self:center;color:#888;padding:0 3px;">&#x2192;</div>
-					<div style="flex:1;border:2px solid #2ecc71;border-radius:7px;padding:12px 6px;text-align:center;">
-						<div style="color:#2ecc71;font-weight:bold;font-size:0.65em;">L2: Контейнери</div>
-						<div style="font-size:0.5em;opacity:0.6;margin-top:4px;">додатки, БД, черги</div>
-					</div>
-					<div style="align-self:center;color:#888;padding:0 3px;">&#x2192;</div>
-					<div style="flex:1;border:2px solid #f39c12;border-radius:7px;padding:12px 6px;text-align:center;">
-						<div style="color:#f39c12;font-weight:bold;font-size:0.65em;">L3: Компоненти</div>
-						<div style="font-size:0.5em;opacity:0.6;margin-top:4px;">модулі всередині контейнера</div>
-					</div>
-					<div style="align-self:center;color:#888;padding:0 3px;">&#x2192;</div>
-					<div style="flex:1;border:2px solid #e67e22;border-radius:7px;padding:12px 6px;text-align:center;">
-						<div style="color:#e67e22;font-weight:bold;font-size:0.65em;">L4: Код</div>
-						<div style="font-size:0.5em;opacity:0.6;margin-top:4px;">класи, інтерфейси</div>
-					</div>
-				</div>
-				<p style="font-size:0.6em;opacity:0.5;margin-top:14px;text-align:center;">Більшості команд достатньо L1
-					+ L2. L3 для складних сервісів. L4 рідко малюють вручну.</p>
-			</section>
-
-			<!-- ===== 11. C4 РІВЕНЬ 1 — КОНТЕКСТ ===== -->
-			<section>
-				<h2 class="ztu-blue">C4 РІВЕНЬ 1 — КОНТЕКСТ СИСТЕМИ</h2>
-				<p class="ztu-orange" style="font-size:1em;margin-top:6px;">Загальна картина: хто використовує систему і
-					з чим вона взаємодіє?</p>
-				<div style="display:flex;gap:14px;margin-top:22px;align-items:center;justify-content:center;">
-					<div
-						style="border:2px solid #9b59b6;border-radius:50%;width:90px;height:90px;display:flex;align-items:center;justify-content:center;flex-direction:column;">
-						<div style="font-size:1.2em;">&#x1F464;</div>
-						<div style="font-size:0.45em;color:#9b59b6;font-weight:bold;">Користувач</div>
-					</div>
-					<div style="color:#888;font-size:0.7em;">&#x2192;</div>
-					<div
-						style="border:2px solid #3498db;border-radius:10px;padding:14px 20px;text-align:center;background:rgba(52,152,219,0.08);">
-						<div style="font-size:1.2em;">&#x1F4E6;</div>
-						<div style="color:#3498db;font-weight:bold;font-size:0.6em;">Ваша система</div>
-					</div>
-					<div style="color:#888;font-size:0.7em;">&#x2192;</div>
-					<div style="border:2px solid #e67e22;border-radius:10px;padding:14px 12px;text-align:center;">
-						<div style="font-size:1.2em;">&#x2601;</div>
-						<div style="color:#e67e22;font-weight:bold;font-size:0.5em;">Payment API</div>
-					</div>
-					<div style="color:#888;font-size:0.7em;">&#x2192;</div>
-					<div style="border:2px solid #e67e22;border-radius:10px;padding:14px 12px;text-align:center;">
-						<div style="font-size:1.2em;">&#x1F4E7;</div>
-						<div style="color:#e67e22;font-weight:bold;font-size:0.5em;">Email Service</div>
-					</div>
-				</div>
-				<p style="font-size:0.58em;opacity:0.5;margin-top:16px;text-align:center;">Аудиторія: всі —
-					стейкхолдери, менеджери, розробники</p>
-			</section>
-
-			<!-- ===== 12. C4 РІВЕНЬ 2 — КОНТЕЙНЕРИ ===== -->
-			<section>
-				<h2 class="ztu-blue">C4 РІВЕНЬ 2 — КОНТЕЙНЕРИ</h2>
-				<p class="ztu-orange" style="font-size:1em;margin-top:6px;">Наближення: що запущено, де і як спілкується
-				</p>
-				<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:22px;">
-					<div style="border:2px solid #3498db;border-radius:8px;padding:12px 8px;text-align:center;">
-						<div style="font-size:1.1em;">&#x1F310;</div>
-						<div style="color:#3498db;font-weight:bold;font-size:0.6em;">SPA Frontend</div>
-						<div style="font-size:0.48em;opacity:0.6;">React, порт 3000</div>
-					</div>
-					<div style="border:2px solid #27ae60;border-radius:8px;padding:12px 8px;text-align:center;">
-						<div style="font-size:1.1em;">&#x2699;</div>
-						<div style="color:#27ae60;font-weight:bold;font-size:0.6em;">API Server</div>
-						<div style="font-size:0.48em;opacity:0.6;">Node.js, порт 8080</div>
-					</div>
-					<div style="border:2px solid #f39c12;border-radius:8px;padding:12px 8px;text-align:center;">
-						<div style="font-size:1.1em;">&#x1F5C3;</div>
-						<div style="color:#f39c12;font-weight:bold;font-size:0.6em;">База даних</div>
-						<div style="font-size:0.48em;opacity:0.6;">PostgreSQL</div>
-					</div>
-					<div style="border:2px solid #9b59b6;border-radius:8px;padding:12px 8px;text-align:center;">
-						<div style="font-size:1.1em;">&#x1F4E8;</div>
-						<div style="color:#9b59b6;font-weight:bold;font-size:0.6em;">Черга повідомлень</div>
-						<div style="font-size:0.48em;opacity:0.6;">RabbitMQ</div>
-					</div>
-					<div style="border:2px solid #e74c3c;border-radius:8px;padding:12px 8px;text-align:center;">
-						<div style="font-size:1.1em;">&#x1F916;</div>
-						<div style="color:#e74c3c;font-weight:bold;font-size:0.6em;">Worker Service</div>
-						<div style="font-size:0.48em;opacity:0.6;">Python, async</div>
-					</div>
-					<div style="border:2px solid #e67e22;border-radius:8px;padding:12px 8px;text-align:center;">
-						<div style="font-size:1.1em;">&#x1F4BE;</div>
-						<div style="color:#e67e22;font-weight:bold;font-size:0.6em;">Object Storage</div>
-						<div style="font-size:0.48em;opacity:0.6;">S3 / MinIO</div>
-					</div>
-				</div>
-				<p style="font-size:0.58em;opacity:0.5;margin-top:14px;text-align:center;">Аудиторія: розробники та
-					DevOps</p>
-			</section>
-
-			<!-- ===== 13. C4 ЯК ГЛИБОКО ЗАНУРЮВАТИСЬ ===== -->
-			<section>
-				<h2 class="ztu-blue">ЯК ГЛИБОКО ЗАНУРЮВАТИСЬ?</h2>
+				<h2 class="ztu-blue">6. ПРОСТОЮ МОВОЮ</h2>
+				<p class="ztu-orange" style="font-size:1em;margin-top:6px;">Якщо бабуся не зрозуміє &mdash; спрощуй</p>
 				<div style="margin-top:24px;">
-					<div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;">
-						<div
-							style="background:#3498db;color:white;border-radius:6px;padding:6px 14px;font-size:0.65em;font-weight:bold;min-width:120px;text-align:center;">
-							L1 + L2</div>
-						<div style="font-size:0.62em;opacity:0.8;">Достатньо для <span class="ztu-orange">більшості
-								проєктів</span> — чіткі межі, схема розгортання</div>
+					<div style="display:flex;align-items:center;gap:14px;margin-bottom:16px;">
+						<div style="border:2px solid #e74c3c;border-radius:8px;padding:10px 14px;flex:1;font-size:0.6em;">
+							<span style="color:#e74c3c;font-weight:bold;">&#x274C;</span> "Ми розробляємо ML-driven SaaS-рішення для оптимізації supply chain з використанням предиктивної аналітики"
+						</div>
 					</div>
-					<div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;">
-						<div
-							style="background:#f39c12;color:white;border-radius:6px;padding:6px 14px;font-size:0.65em;font-weight:bold;min-width:120px;text-align:center;">
-							+ L3</div>
-						<div style="font-size:0.62em;opacity:0.8;">Додати, коли контейнер <span
-								class="ztu-orange">складний</span> — багато внутрішніх модулів</div>
-					</div>
-					<div style="display:flex;align-items:center;gap:12px;">
-						<div
-							style="background:#e67e22;color:white;border-radius:6px;padding:6px 14px;font-size:0.65em;font-weight:bold;min-width:120px;text-align:center;">
-							+ L4</div>
-						<div style="font-size:0.62em;opacity:0.8;">Рідко потрібний — <span
-								class="ztu-orange">автогенерується</span> з коду (UML class diagrams)</div>
+					<div style="display:flex;align-items:center;gap:14px;">
+						<div style="border:2px solid #27ae60;border-radius:8px;padding:10px 14px;flex:1;font-size:0.6em;">
+							<span style="color:#27ae60;font-weight:bold;">&#x2705;</span> "Ми допомагаємо магазинам замовляти рівно стільки товару, скільки вони продадуть &mdash; без залишків і дефіциту"
+						</div>
 					</div>
 				</div>
+				<ul class="ztu-list" style="margin-top:20px;">
+					<li><span class="ztu-orange">Без жаргону</span> &mdash; замініть терміни на зрозумілі аналогії</li>
+					<li><span class="ztu-orange">Короткі речення</span> &mdash; максимум 15 слів</li>
+					<li><span class="ztu-orange">Конкретика</span> &mdash; цифри замість "багато", "швидко", "ефективно"</li>
+				</ul>
 			</section>
 
-
-
-			<!-- ===== 15. ADR ВСТУП ===== -->
+			<!-- ===== 10. STORYTELLING ===== -->
 			<section>
-				<h2 class="ztu-blue">ADR — ARCHITECTURE DECISION RECORDS</h2>
-				<p class="ztu-orange" style="font-size:1em;margin-top:6px;">Документуйте ЧОМУ за кожним важливим
-					рішенням</p>
-				<div
-					style="border:2px solid #f39c12;border-radius:10px;padding:20px 18px;margin-top:22px;font-size:0.62em;">
-					<div style="margin-bottom:10px;"><span style="color:#f39c12;font-weight:bold;">Назва:</span>
-						ADR-007: Використовувати PostgreSQL замість MongoDB</div>
-					<div style="margin-bottom:10px;"><span style="color:#f39c12;font-weight:bold;">Статус:</span>
-						Прийнято</div>
-					<div style="margin-bottom:10px;"><span style="color:#f39c12;font-weight:bold;">Контекст:</span> Нам
-						потрібні ACID-транзакції для платежів. MongoDB ненадійно підтримує мультидокументні транзакції
-						на нашому масштабі.</div>
-					<div style="margin-bottom:10px;"><span style="color:#f39c12;font-weight:bold;">Рішення:</span>
-						Використовувати PostgreSQL 16 з JSONB-колонками для гнучких даних поряд з реляційними таблицями.
-					</div>
-					<div><span style="color:#f39c12;font-weight:bold;">Наслідки:</span> Команді потрібна експертиза в
-						SQL. Отримуємо сильну узгодженість, зрілий інструментарій та перевірений шлях масштабування.
-					</div>
-				</div>
-			</section>
-
-			<!-- ===== 16. ADR СТРУКТУРА ===== -->
-			<section>
-				<h2 class="ztu-blue">СТРУКТУРА ADR</h2>
-				<p class="ztu-orange" style="font-size:1em;margin-top:6px;">Легка, послідовна, версіонована</p>
+				<h2 class="ztu-blue">7. STORYTELLING</h2>
+				<p class="ztu-orange" style="font-size:1em;margin-top:6px;">Люди запам'ятовують історії в 22 рази краще за факти</p>
 				<div style="display:flex;align-items:stretch;gap:4px;margin-top:25px;">
 					<div style="flex:1;border:2px solid #3498db;border-radius:7px;padding:12px 8px;text-align:center;">
-						<div style="color:#3498db;font-weight:bold;font-size:0.65em;">Контекст</div>
-						<div style="font-size:0.5em;opacity:0.6;margin-top:4px;">в чому проблема?</div>
+						<div style="color:#3498db;font-weight:bold;font-size:0.65em;">Герой</div>
+						<div style="font-size:0.5em;opacity:0.6;margin-top:4px;">ваш клієнт або ви</div>
+					</div>
+					<div style="align-self:center;color:#888;padding:0 3px;">&#x2192;</div>
+					<div style="flex:1;border:2px solid #e74c3c;border-radius:7px;padding:12px 8px;text-align:center;">
+						<div style="color:#e74c3c;font-weight:bold;font-size:0.65em;">Виклик</div>
+						<div style="font-size:0.5em;opacity:0.6;margin-top:4px;">реальна проблема</div>
 					</div>
 					<div style="align-self:center;color:#888;padding:0 3px;">&#x2192;</div>
 					<div style="flex:1;border:2px solid #f39c12;border-radius:7px;padding:12px 8px;text-align:center;">
 						<div style="color:#f39c12;font-weight:bold;font-size:0.65em;">Рішення</div>
-						<div style="font-size:0.5em;opacity:0.6;margin-top:4px;">що обрали</div>
+						<div style="font-size:0.5em;opacity:0.6;margin-top:4px;">ваш продукт</div>
 					</div>
 					<div style="align-self:center;color:#888;padding:0 3px;">&#x2192;</div>
 					<div style="flex:1;border:2px solid #27ae60;border-radius:7px;padding:12px 8px;text-align:center;">
-						<div style="color:#27ae60;font-weight:bold;font-size:0.65em;">Наслідки</div>
-						<div style="font-size:0.5em;opacity:0.6;margin-top:4px;">що з цього випливає</div>
-					</div>
-					<div style="align-self:center;color:#888;padding:0 3px;">&#x2192;</div>
-					<div style="flex:1;border:2px solid #9b59b6;border-radius:7px;padding:12px 8px;text-align:center;">
-						<div style="color:#9b59b6;font-weight:bold;font-size:0.65em;">Статус</div>
-						<div style="font-size:0.5em;opacity:0.6;margin-top:4px;">запропоновано / прийнято / застаріло
-						</div>
+						<div style="color:#27ae60;font-weight:bold;font-size:0.65em;">Трансформація</div>
+						<div style="font-size:0.5em;opacity:0.6;margin-top:4px;">результат</div>
 					</div>
 				</div>
-				<p style="font-size:0.6em;opacity:0.5;margin-top:14px;text-align:center;">Зберігається в git: <span
-						style="font-family:monospace;">docs/adr/ADR-007-use-postgresql.md</span></p>
+				<p style="font-size:0.58em;opacity:0.5;margin-top:16px;text-align:center;">Почніть з "Уявіть..." або "Минулого тижня один з наших клієнтів..."</p>
 			</section>
 
-			<!-- ===== 17. ЧОМУ ADR ВАЖЛИВИЙ ===== -->
+			<!-- ===== 11. ТАЙМ-МЕНЕДЖМЕНТ ===== -->
 			<section>
-				<h2 class="ztu-blue">ЧОМУ ADR ВАЖЛИВИЙ</h2>
-				<ul class="ztu-list" style="margin-top:24px;">
-					<li class="fragment"><span class="ztu-orange">Запобігає повторним дискусіям</span> — "ми вже
-						вирішили це і ось чому"</li>
-					<li class="fragment"><span class="ztu-orange">Контекст для онбордингу</span> — нові розробники
-						розуміють логіку, а не лише код</li>
-					<li class="fragment"><span class="ztu-orange">Контекст для AI</span> — AI читає ADR і генерує код,
-						що поважає рішення</li>
-					<li class="fragment"><span class="ztu-orange">Аудиторський слід</span> — доказ, що рішення були
-						свідомими, а не випадковими</li>
-				</ul>
-			</section>
-
-			<!-- ===== 18. DoD ===== -->
-			<section>
-				<h2 class="ztu-blue">DoD — DEFINITION OF DONE</h2>
-				<p class="ztu-orange" style="font-size:1em;margin-top:6px;">Чеклист, який кожна задача повинна пройти
-					перед тим, як вважатись "зробленою"</p>
-				<div style="border:2px solid #27ae60;border-radius:10px;padding:18px 16px;margin-top:20px;">
-					<p style="color:#27ae60;font-weight:bold;font-size:0.7em;margin-bottom:12px;">Приклад DoD</p>
-					<div style="font-size:0.6em;line-height:1.9;">
-						<div class="fragment">&#x2705; Код перевірений та затверджений (code review)</div>
-						<div class="fragment">&#x2705; Unit-тести написані та проходять</div>
-						<div class="fragment">&#x2705; Інтеграційні тести зелені в CI</div>
-						<div class="fragment">&#x2705; Документація оновлена</div>
-						<div class="fragment">&#x2705; Немає відомих критичних багів</div>
-						<div class="fragment">&#x2705; Задеплоєно на staging</div>
+				<h2 class="ztu-blue">8. ТАЙМ-МЕНЕДЖМЕНТ</h2>
+				<p class="ztu-orange" style="font-size:1em;margin-top:6px;">Закінчити раніше &mdash; це плюс. Перевищити час &mdash; це провал.</p>
+				<div style="border:2px solid #3498db;border-radius:10px;padding:18px 16px;margin-top:22px;">
+					<p style="color:#3498db;font-weight:bold;font-size:0.7em;margin-bottom:12px;">Розподіл часу для 5-хвилинного пітчу</p>
+					<div style="font-size:0.6em;line-height:2;">
+						<div><span class="ztu-orange">0:00&ndash;0:30</span> &mdash; Hook (захопити увагу)</div>
+						<div><span class="ztu-orange">0:30&ndash;1:30</span> &mdash; Проблема + контекст</div>
+						<div><span class="ztu-orange">1:30&ndash;3:00</span> &mdash; Рішення + демо</div>
+						<div><span class="ztu-orange">3:00&ndash;4:00</span> &mdash; Бізнес-модель / доказ тяги</div>
+						<div><span class="ztu-orange">4:00&ndash;4:30</span> &mdash; Команда</div>
+						<div><span class="ztu-orange">4:30&ndash;5:00</span> &mdash; Ask + закриття</div>
 					</div>
 				</div>
-				<p style="font-size:0.58em;opacity:0.5;margin-top:14px;">DoD спільний для всієї команди — однаковий
-					стандарт для кожного</p>
+				<p style="font-size:0.58em;opacity:0.5;margin-top:12px;">Репетируйте з таймером. Мінімум 5 разів.</p>
 			</section>
 
-			<!-- ===== 19. DoR ===== -->
+			<!-- ===== 12. ЧІТКИЙ ASK ===== -->
 			<section>
-				<h2 class="ztu-blue">DoR — DEFINITION OF READY</h2>
-				<p class="ztu-orange" style="font-size:1em;margin-top:6px;">Чеклист, який кожна задача повинна пройти
-					перед початком роботи</p>
-				<div style="border:2px solid #3498db;border-radius:10px;padding:18px 16px;margin-top:20px;">
-					<p style="color:#3498db;font-weight:bold;font-size:0.7em;margin-bottom:12px;">Приклад DoR</p>
-					<div style="font-size:0.6em;line-height:1.9;">
-						<div class="fragment">&#x2705; User story чітко написана</div>
-						<div class="fragment">&#x2705; Критерії приймання визначені</div>
-						<div class="fragment">&#x2705; Залежності ідентифіковані</div>
-						<div class="fragment">&#x2705; Дизайн / макет затверджений</div>
-						<div class="fragment">&#x2705; Оцінена командою</div>
-					</div>
-				</div>
-				<p style="font-size:0.58em;opacity:0.5;margin-top:14px;">DoR запобігає "розберусь по ходу" — зменшує
-					втрати та переробки</p>
-			</section>
-
-			<!-- ===== 20. DoD vs DoR ===== -->
-			<section>
-				<h2 class="ztu-blue">DoR vs DoD</h2>
-				<p class="ztu-orange" style="font-size:1em;margin-top:6px;">Ворота на вхід, ворота на вихід</p>
-				<div style="display:flex;gap:12px;margin-top:24px;align-items:stretch;">
-					<div
-						style="flex:1;border:2px solid #3498db;border-radius:10px;padding:16px 14px;text-align:center;">
-						<div style="font-size:1.4em;margin-bottom:6px;">&#x1F6AA;</div>
-						<div style="color:#3498db;font-weight:bold;font-size:0.7em;">DoR</div>
-						<div style="font-size:0.55em;opacity:0.7;margin-top:6px;">Чи достатньо зрозуміла задача, щоб
-							почати?</div>
-					</div>
-					<div style="align-self:center;font-size:1.2em;color:#888;">&#x2192; робота &#x2192;</div>
-					<div
-						style="flex:1;border:2px solid #27ae60;border-radius:10px;padding:16px 14px;text-align:center;">
-						<div style="font-size:1.4em;margin-bottom:6px;">&#x2705;</div>
-						<div style="color:#27ae60;font-weight:bold;font-size:0.7em;">DoD</div>
-						<div style="font-size:0.55em;opacity:0.7;margin-top:6px;">Чи справді задача завершена?</div>
-					</div>
-				</div>
-				<p style="font-size:0.62em;opacity:0.6;margin-top:18px;text-align:center;">Без DoR починаєш незрозумілу
-					роботу. Без DoD випускаєш незавершену.</p>
-			</section>
-
-			<!-- ===== 21. ACCEPTANCE CRITERIA ===== -->
-			<section>
-				<h2 class="ztu-blue">ACCEPTANCE CRITERIA</h2>
-				<p class="ztu-orange" style="font-size:1em;margin-top:6px;">Конкретні, тестовані умови, яким повинна
-					відповідати функція</p>
-				<div style="border:2px solid #f39c12;border-radius:10px;padding:18px 16px;margin-top:20px;">
-					<p style="color:#f39c12;font-weight:bold;font-size:0.65em;margin-bottom:10px;">User Story: Як
-						клієнт, я хочу скинути пароль</p>
-					<div style="font-size:0.58em;line-height:1.9;">
-						<div class="fragment"><span class="ztu-green">AC1:</span> Користувач отримує лист для скидання
-							протягом 60 секунд</div>
-						<div class="fragment"><span class="ztu-green">AC2:</span> Посилання для скидання діє 24 години
-						</div>
-						<div class="fragment"><span class="ztu-green">AC3:</span> Новий пароль повинен відповідати
-							вимогам (8+ символів, 1 велика літера, 1 цифра)</div>
-						<div class="fragment"><span class="ztu-green">AC4:</span> Після успішного скидання користувача
-							перенаправляє на логін</div>
-						<div class="fragment"><span class="ztu-green">AC5:</span> Недійсні або прострочені посилання
-							показують зрозуміле повідомлення про помилку</div>
-					</div>
-				</div>
-			</section>
-
-			<!-- ===== 22. ФОРМАТ AC ===== -->
-			<section>
-				<h2 class="ztu-blue">ЯК ПИСАТИ ЯКІСНІ ACCEPTANCE CRITERIA</h2>
-				<p class="ztu-orange" style="font-size:1em;margin-top:6px;">Given / When / Then — BDD-формат</p>
-				<div style="margin-top:22px;">
-					<pre style="font-size:0.55em;background:rgba(0,0,0,0.3);padding:14px;border-radius:8px;"><code class="language-gherkin">Given  користувач запросив скидання пароля
-  And  лист для скидання було надіслано
-
-When   користувач натискає посилання протягом 24 годин
-  And  вводить валідний новий пароль
-
-Then   пароль оновлюється
-  And  користувача перенаправляє на логін
-  And  старий пароль більше не працює</code></pre>
-				</div>
-				<p style="font-size:0.58em;opacity:0.5;margin-top:14px;text-align:center;">Конкретно. Тестовано. Без
-					двозначності.</p>
-			</section>
-
-
-			<!-- ===== 24. ДІАГРАМИ ЯК КОД ===== -->
-			<section>
-				<h2 class="ztu-blue">ДІАГРАМИ ЯК КОД</h2>
-				<p class="ztu-orange" style="font-size:1em;margin-top:6px;">Версіоновані, порівнювані, ревʼюовані</p>
-				<div style="display:flex;gap:12px;margin-top:22px;">
-					<div style="flex:1;border:2px solid #3498db;border-radius:8px;padding:14px 10px;text-align:center;">
-						<div style="color:#3498db;font-weight:bold;font-size:0.65em;">Mermaid</div>
-						<div style="font-size:0.5em;opacity:0.7;margin-top:6px;">вбудований в GitHub, GitLab, Notion
-						</div>
-					</div>
-					<div style="flex:1;border:2px solid #27ae60;border-radius:8px;padding:14px 10px;text-align:center;">
-						<div style="color:#27ae60;font-weight:bold;font-size:0.65em;">PlantUML</div>
-						<div style="font-size:0.5em;opacity:0.7;margin-top:6px;">UML-стандарт, багатий синтаксис</div>
-					</div>
-					<div style="flex:1;border:2px solid #f39c12;border-radius:8px;padding:14px 10px;text-align:center;">
-						<div style="color:#f39c12;font-weight:bold;font-size:0.65em;">Structurizr</div>
-						<div style="font-size:0.5em;opacity:0.7;margin-top:6px;">нативний інструмент C4</div>
-					</div>
-					<div style="flex:1;border:2px solid #9b59b6;border-radius:8px;padding:14px 10px;text-align:center;">
-						<div style="color:#9b59b6;font-weight:bold;font-size:0.65em;">D2</div>
-						<div style="font-size:0.5em;opacity:0.7;margin-top:6px;">сучасний, декларативний синтаксис</div>
-					</div>
-				</div>
-				<p style="font-size:0.58em;opacity:0.5;margin-top:14px;text-align:center;">Малюй текстом. Зберігай в
-					git. Ревʼюй в PR. Генеруй зображення в CI.</p>
-			</section>
-
-			<!-- ===== 25. MERMAID ПРИКЛАД ===== -->
-			<section>
-				<h2 class="ztu-blue">MERMAID — ПРИКЛАД</h2>
-				<div style="display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px;">
-					<div>
-						<p class="ztu-orange" style="font-size:0.65em;margin-bottom:8px;">Код</p>
-						<pre style="font-size:0.48em;background:rgba(0,0,0,0.3);padding:12px;border-radius:6px;"><code class="language-markdown">```mermaid
-graph LR
-  User -->|HTTP| Frontend
-  Frontend -->|REST| API
-  API -->|SQL| Database
-  API -->|AMQP| Queue
-  Queue --> Worker
-```</code></pre>
-					</div>
-					<div>
-						<p class="ztu-orange" style="font-size:0.65em;margin-bottom:8px;">Результат</p>
-						<div style="border:1px solid #555;border-radius:8px;padding:14px;font-size:0.5em;">
-							<div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;justify-content:center;">
-								<span
-									style="border:1px solid #9b59b6;border-radius:4px;padding:3px 8px;color:#9b59b6;">User</span>
-								<span style="color:#888;">&#x2192;</span>
-								<span
-									style="border:1px solid #3498db;border-radius:4px;padding:3px 8px;color:#3498db;">Frontend</span>
-								<span style="color:#888;">&#x2192;</span>
-								<span
-									style="border:1px solid #27ae60;border-radius:4px;padding:3px 8px;color:#27ae60;">API</span>
-								<span style="color:#888;">&#x2192;</span>
-								<span
-									style="border:1px solid #f39c12;border-radius:4px;padding:3px 8px;color:#f39c12;">DB</span>
-							</div>
-							<div style="display:flex;align-items:center;gap:6px;margin-top:8px;justify-content:center;">
-								<span
-									style="border:1px solid #27ae60;border-radius:4px;padding:3px 8px;color:#27ae60;">API</span>
-								<span style="color:#888;">&#x2192;</span>
-								<span
-									style="border:1px solid #e74c3c;border-radius:4px;padding:3px 8px;color:#e74c3c;">Queue</span>
-								<span style="color:#888;">&#x2192;</span>
-								<span
-									style="border:1px solid #9b59b6;border-radius:4px;padding:3px 8px;color:#9b59b6;">Worker</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<!-- ===== 26. ARC42 ===== -->
-			<section>
-				<h2 class="ztu-blue">ARC42 — ШАБЛОН ДОКУМЕНТАЦІЇ</h2>
-				<p class="ztu-orange" style="font-size:1em;margin-top:6px;">Перевірена структура для архітектурної
-					документації</p>
-				<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-top:20px;font-size:0.55em;">
-					<div
-						style="background:rgba(52,152,219,0.08);padding:8px 10px;border-radius:6px;border-left:3px solid #3498db;">
-						1. Вступ та цілі</div>
-					<div
-						style="background:rgba(52,152,219,0.08);padding:8px 10px;border-radius:6px;border-left:3px solid #3498db;">
-						2. Обмеження</div>
-					<div
-						style="background:rgba(52,152,219,0.08);padding:8px 10px;border-radius:6px;border-left:3px solid #3498db;">
-						3. Контекст та обсяг</div>
-					<div
-						style="background:rgba(46,204,113,0.08);padding:8px 10px;border-radius:6px;border-left:3px solid #27ae60;">
-						4. Стратегія рішення</div>
-					<div
-						style="background:rgba(46,204,113,0.08);padding:8px 10px;border-radius:6px;border-left:3px solid #27ae60;">
-						5. Будівельні блоки</div>
-					<div
-						style="background:rgba(46,204,113,0.08);padding:8px 10px;border-radius:6px;border-left:3px solid #27ae60;">
-						6. Runtime View</div>
-					<div
-						style="background:rgba(243,156,18,0.08);padding:8px 10px;border-radius:6px;border-left:3px solid #f39c12;">
-						7. Deployment View</div>
-					<div
-						style="background:rgba(243,156,18,0.08);padding:8px 10px;border-radius:6px;border-left:3px solid #f39c12;">
-						8. Наскрізні концепції</div>
-					<div
-						style="background:rgba(243,156,18,0.08);padding:8px 10px;border-radius:6px;border-left:3px solid #f39c12;">
-						9. Архітектурні рішення</div>
-					<div
-						style="background:rgba(155,89,182,0.08);padding:8px 10px;border-radius:6px;border-left:3px solid #9b59b6;">
-						10. Вимоги до якості</div>
-					<div
-						style="background:rgba(155,89,182,0.08);padding:8px 10px;border-radius:6px;border-left:3px solid #9b59b6;">
-						11. Ризики та техборг</div>
-					<div
-						style="background:rgba(155,89,182,0.08);padding:8px 10px;border-radius:6px;border-left:3px solid #9b59b6;">
-						12. Глосарій</div>
-				</div>
-				<p style="font-size:0.55em;opacity:0.5;margin-top:12px;text-align:center;">Не потрібні всі 12 — почніть
-					з 1, 3, 5, 9</p>
-			</section>
-
-			<!-- ===== 27. AI + АРХІТЕКТУРА ===== -->
-			<section>
-				<h2 class="ztu-blue">AI ТА АРХІТЕКТУРНА ДОКУМЕНТАЦІЯ</h2>
-				<p class="ztu-orange" style="font-size:1em;margin-top:6px;">AI прискорює документування — але не замінює
-					архітекторів</p>
-				<div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:22px;">
-					<div style="border:2px solid #27ae60;border-radius:10px;padding:16px 14px;">
-						<p style="color:#27ae60;font-weight:bold;font-size:0.65em;margin-bottom:10px;">AI може</p>
-						<div style="font-size:0.55em;line-height:1.8;">
-							<div>&#x2705; Генерувати Mermaid-діаграми з тексту</div>
-							<div>&#x2705; Створювати чернетки ADR з нотаток зустрічей</div>
-							<div>&#x2705; Будувати скелети SDD з коду</div>
-							<div>&#x2705; Виявляти недокументовані компоненти</div>
-						</div>
-					</div>
+				<h2 class="ztu-blue">9. ЧІТКИЙ ASK</h2>
+				<p class="ztu-orange" style="font-size:1em;margin-top:6px;">Завжди кажіть, що саме вам потрібно</p>
+				<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:22px;">
 					<div style="border:2px solid #e74c3c;border-radius:10px;padding:16px 14px;">
-						<p style="color:#e74c3c;font-weight:bold;font-size:0.65em;margin-bottom:10px;">AI не може</p>
-						<div style="font-size:0.55em;line-height:1.8;">
-							<div>&#x274C; Приймати архітектурні рішення</div>
-							<div>&#x274C; Розуміти бізнес-обмеження</div>
-							<div>&#x274C; Оцінювати компроміси у вашому контексті</div>
-							<div>&#x274C; Замінити peer review</div>
+						<p style="color:#e74c3c;font-weight:bold;font-size:0.65em;margin-bottom:10px;">&#x274C; Розмито</p>
+						<div style="font-size:0.58em;line-height:1.8;">
+							<div>"Будемо раді співпраці"</div>
+							<div>"Шукаємо підтримку"</div>
+							<div>"Відкриті до пропозицій"</div>
+						</div>
+					</div>
+					<div style="border:2px solid #27ae60;border-radius:10px;padding:16px 14px;">
+						<p style="color:#27ae60;font-weight:bold;font-size:0.65em;margin-bottom:10px;">&#x2705; Чітко</p>
+						<div style="font-size:0.58em;line-height:1.8;">
+							<div>"Шукаємо $200K за 10% equity"</div>
+							<div>"Потрібно 3 пілотних клієнти"</div>
+							<div>"Хочемо інтро до CTO компанії X"</div>
 						</div>
 					</div>
 				</div>
+				<p style="font-size:0.58em;opacity:0.5;margin-top:14px;text-align:center;">Конкретний ask показує зрілість і повагу до часу аудиторії</p>
 			</section>
 
-			<!-- ===== 28. AI ЧИТАЄ ВАШІ ДОКИ ===== -->
+			<!-- ===== 13. СИЛЬНЕ ЗАКРИТТЯ ===== -->
 			<section>
-				<h2 class="ztu-blue">AI ЧИТАЄ ВАШІ ДОКИ</h2>
-				<p class="ztu-orange" style="font-size:1em;margin-top:6px;">Кращі доки = кращий AI-згенерований код</p>
-				<div style="display:flex;align-items:stretch;gap:4px;margin-top:25px;">
-					<div style="flex:1;border:2px solid #3498db;border-radius:7px;padding:10px 6px;text-align:center;">
-						<div style="color:#3498db;font-weight:bold;font-size:0.6em;">ADR</div>
-						<div style="font-size:0.48em;opacity:0.6;margin-top:3px;">рішення</div>
-					</div>
-					<div style="align-self:center;color:#888;padding:0 2px;font-size:0.8em;">+</div>
-					<div style="flex:1;border:2px solid #27ae60;border-radius:7px;padding:10px 6px;text-align:center;">
-						<div style="color:#27ae60;font-weight:bold;font-size:0.6em;">C4 діаграми</div>
-						<div style="font-size:0.48em;opacity:0.6;margin-top:3px;">структура</div>
-					</div>
-					<div style="align-self:center;color:#888;padding:0 2px;font-size:0.8em;">+</div>
-					<div style="flex:1;border:2px solid #f39c12;border-radius:7px;padding:10px 6px;text-align:center;">
-						<div style="color:#f39c12;font-weight:bold;font-size:0.6em;">Rules-файли</div>
-						<div style="font-size:0.48em;opacity:0.6;margin-top:3px;">обмеження</div>
-					</div>
-					<div style="align-self:center;color:#888;padding:0 3px;">&#x2192;</div>
-					<div
-						style="flex:1.2;border:2px solid #9b59b6;border-radius:7px;padding:10px 6px;text-align:center;background:rgba(155,89,182,0.08);">
-						<div style="color:#9b59b6;font-weight:bold;font-size:0.6em;">AI генерує</div>
-						<div style="font-size:0.48em;opacity:0.6;margin-top:3px;">узгоджений, вирівняний код</div>
-					</div>
+				<h2 class="ztu-blue">10. СИЛЬНЕ ЗАКРИТТЯ</h2>
+				<p class="ztu-orange" style="font-size:1em;margin-top:6px;">Останнє враження &mdash; найсильніше</p>
+				<ul class="ztu-list" style="margin-top:22px;">
+					<li><span class="ztu-orange">Поверніться до хуку</span> &mdash; замкніть коло історії</li>
+					<li><span class="ztu-orange">Повторіть ключовий меседж</span> &mdash; одне речення, яке запам'ятають</li>
+					<li><span class="ztu-orange">Call-to-action</span> &mdash; що конкретно робити далі?</li>
+					<li><span class="ztu-orange">Впевнене "Дякую"</span> &mdash; не вибачайтесь, не мнітесь</li>
+				</ul>
+				<div style="border:2px solid #f39c12;border-radius:8px;padding:12px 16px;margin-top:18px;text-align:center;font-size:0.62em;">
+					<span style="color:#f39c12;font-weight:bold;">Ніколи:</span> "Ну от, мабуть, все..." / "Якщо є питання..." / тихе завершення
 				</div>
-				<p style="font-size:0.6em;opacity:0.5;margin-top:14px;text-align:center;">Погані доки на вході &#x2192;
-					поганий код. Якісні доки &#x2192; узгоджений код.</p>
 			</section>
 
-			<!-- ===== 29. ДЯКУЮ ===== -->
+			<!-- ===== 14. ДЯКУЮ ===== -->
 			<section>
 				<h1 class="ztu-blue">ДЯКУЮ ЗА УВАГУ!</h1>
 				<p class="ztu-orange" style="margin-top:20px;font-size:1.1em;">Запитання?</p>
